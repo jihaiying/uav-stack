@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import css from "./assets/SupportPanel.css";
 import SupportTab from "./partial/SupportTab";
-class ProductPanel extends Component {
+import { injectIntl } from "react-intl";
+class SupportPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,54 +11,66 @@ class ProductPanel extends Component {
   }
 
   componentDidMount() {
+    const { formatMessage } = this.props.intl;
     this.setState({
+      title: formatMessage({ id: "supportPanel_title" }),
       data: [
         {
-          title: "JDK版本",
-          tips: ["JDK6", "JDK7", "JDK8", "JDK9"]
+          title: formatMessage({ id: "supportTab_1_title" }),
+          tips: [
+            formatMessage({ id: "supportTab_1_tip_1" }),
+            formatMessage({ id: "supportTab_1_tip_2" }),
+            formatMessage({ id: "supportTab_1_tip_3" }),
+            formatMessage({ id: "supportTab_1_tip_4" })
+          ]
         },
         {
-          title: "应用框架",
+          title: formatMessage({ id: "supportTab_2_title" }),
           tips: [
-            "Dubbo | DubboX | CXF | AXIS2",
-            "XFIRE | SUN JAXWS | Jersey",
-            "SpringMVC | SpringRESTService | Servlet（2.5/3.x）",
-            "Struts 2.x | Wink | Apache HttpClient（同步/异步）",
-            "Web Filter（2.5/3.x | Log4j | LogBack",
-            "Java Logging"
+            formatMessage({ id: "supportTab_2_tip_1" }),
+            formatMessage({ id: "supportTab_2_tip_2" }),
+            formatMessage({ id: "supportTab_2_tip_3" }),
+            formatMessage({ id: "supportTab_2_tip_4" }),
+            formatMessage({ id: "supportTab_2_tip_5" })
           ],
           width: 270
         },
         {
-          title: "应用服务器",
-          tips: ["Tomcat（6+）", "SpringBoot", "Jetty（7+）", "MSCP", "任意JSE"]
+          title: formatMessage({ id: "supportTab_3_title" }),
+          tips: [
+            formatMessage({ id: "supportTab_3_tip_1" }),
+            formatMessage({ id: "supportTab_3_tip_2" }),
+            formatMessage({ id: "supportTab_3_tip_3" }),
+            formatMessage({ id: "supportTab_3_tip_4" }),
+            formatMessage({ id: "supportTab_3_tip_5" })
+          ]
         },
         {
-          title: "数据源",
+          title: formatMessage({ id: "supportTab_4_title" }),
           tips: [
-            "MySQL",
-            "Oracle等JDBC数据源",
-            "MongoDB（MongoClient）",
-            "Redis（JEDIS，LETTUCE，ARedis）",
-            "ESClient（Transport）"
+            formatMessage({ id: "supportTab_4_tip_1" }),
+            formatMessage({ id: "supportTab_4_tip_2" }),
+            formatMessage({ id: "supportTab_4_tip_3" }),
+            formatMessage({ id: "supportTab_4_tip_4" }),
+            formatMessage({ id: "supportTab_4_tip_5" })
           ],
           width: 200
         },
         {
-          title: "消息中间件",
+          title: formatMessage({ id: "supportTab_5_title" }),
           tips: [
-            "RabbitMQ（消费/生产）",
-            "RocketMQ（消费/生产）",
-            "Kafka（消费/生产）"
+            formatMessage({ id: "supportTab_5_tip_1" }),
+            formatMessage({ id: "supportTab_5_tip_2" }),
+            formatMessage({ id: "supportTab_5_tip_3" })
           ]
         },
         {
-          title: "数据库连接池",
+          title: formatMessage({ id: "supportTab_6_title" }),
           tips: [
-            "DBCP/2 | c3p0",
-            "Druid | Proxool",
-            "Hikari | MyBatis CP",
-            "Tomcat DBCP/2"
+            formatMessage({ id: "supportTab_6_tip_1" }),
+            formatMessage({ id: "supportTab_6_tip_2" }),
+            formatMessage({ id: "supportTab_6_tip_3" }),
+            formatMessage({ id: "supportTab_6_tip_4" })
           ]
         }
       ]
@@ -65,15 +78,15 @@ class ProductPanel extends Component {
   }
 
   render() {
-    const { data } = this.state;
+    const { title, data } = this.state;
     return (
       <div className={css.container}>
         <div className={css.content}>
-          <div className={css.title}>JAVA探针支持</div>
+          <div className={css.title}>{title}</div>
           <div className={css.line} />
           <div className={css.divider} />
           {data.map((item, key) => (
-            <SupportTab data={item} />
+            <SupportTab key={key} data={item} />
           ))}
         </div>
       </div>
@@ -81,4 +94,4 @@ class ProductPanel extends Component {
   }
 }
 
-export default ProductPanel;
+export default injectIntl(SupportPanel);

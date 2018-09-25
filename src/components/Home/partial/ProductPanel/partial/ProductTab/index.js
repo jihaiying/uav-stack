@@ -3,10 +3,6 @@ import css from "./assets/ProductTab.css";
 import { Link } from "react-router-dom";
 
 class ProductTab extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { data } = this.props;
     let site = null;
@@ -47,7 +43,9 @@ class ProductTab extends Component {
       >
         <div className={css.title}>{data.title}</div>
         {data.tips.map((item, key) => (
-          <div className={css.tip}>{item}</div>
+          <div key={key} className={css.tip}>
+            {item}
+          </div>
         ))}
         {site}
       </div>

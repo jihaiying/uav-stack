@@ -13,7 +13,9 @@ class ProductTab extends Component {
       >
         <div className={css.title}>{data.title}</div>
         {data.tips.map((item, key) => (
-          <div className={css.tip}>{item}</div>
+          <div key={key} className={css.tip}>
+            {item}
+          </div>
         ))}
       </div>
     );

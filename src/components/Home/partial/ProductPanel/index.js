@@ -8,108 +8,125 @@ import hit from "./assets/HIT.png";
 import monitor from "./assets/Monitor.png";
 import mscp from "./assets/MSCP.png";
 import servicegovern from "./assets/ServiceGovern.png";
+import { injectIntl } from "react-intl";
 
 class ProductPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      title: {
+        tips: []
+      },
       data: []
     };
   }
 
   componentDidMount() {
+    const { formatMessage } = this.props.intl;
     this.setState({
+      title: {
+        title: formatMessage({ id: "productPanel_title" }),
+        tips: [
+          formatMessage({ id: "productPanel_tip_1" }),
+          formatMessage({ id: "productPanel_tip_2" }),
+          formatMessage({ id: "productPanel_tip_3" }),
+          formatMessage({ id: "productPanel_tip_4" })
+        ]
+      },
       data: [
         {
-          title: "客户端体验（UEM）",
-          tips: ["追踪Web浏览器端用户访问状况", "端到端跟踪联通"],
+          title: formatMessage({ id: "productTab_1_title" }),
+          tips: [
+            formatMessage({ id: "productTab_1_tip_1" }),
+            formatMessage({ id: "productTab_1_tip_2" })
+          ],
           bg: uem,
-          width: 360,
+          width: 350,
           site: "/product"
         },
         {
-          title: "应用性能管理（APM）",
-          tips: ["提供应用性能诊断工具箱", "提供调用链支持"],
+          title: formatMessage({ id: "productTab_2_title" }),
+          tips: [
+            formatMessage({ id: "productTab_2_tip_1" }),
+            formatMessage({ id: "productTab_2_tip_2" })
+          ],
           bg: apm,
-          width: 360
+          width: 350
         },
         {
-          title: "(微）服务治理（ServiceGovern）",
+          title: formatMessage({ id: "productTab_3_title" }),
           tips: [
-            "以服务画像实现服务注册",
-            "提供服务发现接口",
-            "无侵入实现服务调用干预",
-            "提供服务授权访问机制",
-            "提供服务降级与保护机制"
+            formatMessage({ id: "productTab_3_tip_1" }),
+            formatMessage({ id: "productTab_3_tip_2" }),
+            formatMessage({ id: "productTab_3_tip_3" }),
+            formatMessage({ id: "productTab_3_tip_4" }),
+            formatMessage({ id: "productTab_3_tip_5" })
           ],
           bg: servicegovern,
-          width: 360
+          width: 350
         },
         {
-          title: "（微）服务监控（Monitor）",
+          title: formatMessage({ id: "productTab_4_title" }),
           tips: [
-            "以无侵入方式实现对Java程序的画像与监控",
-            "以心跳数据实现对应用容器的画像与监控",
-            "提供预警策略实现自动报警",
-            "提供应用/服务流图谱"
+            formatMessage({ id: "productTab_4_tip_1" }),
+            formatMessage({ id: "productTab_4_tip_2" }),
+            formatMessage({ id: "productTab_4_tip_3" }),
+            formatMessage({ id: "productTab_4_tip_4" })
           ],
           bg: monitor,
-          width: 360
+          width: 350
         },
         {
-          title: "容器生态支持（Container）",
+          title: formatMessage({ id: "productTab_5_title" }),
           tips: [
-            "对容器生态的支持，包括Monitor+APM所有能力",
-            "为容器生态提供智能容量规划与决策支持"
+            formatMessage({ id: "productTab_5_tip_1" }),
+            formatMessage({ id: "productTab_5_tip_2" })
           ],
           bg: container,
-          width: 360
+          width: 350
         },
         {
-          title: "任务机器人平台（HIT）",
-          tips: ["AI+ChatOps", "智能报警", "智能巡检"],
+          title: formatMessage({ id: "productTab_6_title" }),
+          tips: [
+            formatMessage({ id: "productTab_6_tip_1" }),
+            formatMessage({ id: "productTab_6_tip_2" }),
+            formatMessage({ id: "productTab_6_tip_3" })
+          ],
           bg: hit,
-          width: 360,
+          width: 350,
           site: "/product"
         },
         {
-          title: "微服务计算平台（MSCP）",
+          title: formatMessage({ id: "productTab_7_title" }),
           tips: [
-            "提供微服务计算的编程框架和运行时，框架是以抽象组件为基础；提供通信，工作流，定时任务，处理模型（多线程，异步等），IO处理等组件",
-            "提供以组件编程构建业务功能的能力，即Feature；提供单binary多配置实现差异化运行的部署方式，即Profile",
-            "基于共识数据，实现多个运行实例的协作能力，即动态计算编排；以动态计算编排为基础，实现跨实例多个Feature的协作能力，即动态服务编排",
-            "端到端跟踪联通"
+            formatMessage({ id: "productTab_7_tip_1" }),
+            formatMessage({ id: "productTab_7_tip_2" }),
+            formatMessage({ id: "productTab_7_tip_3" }),
+            formatMessage({ id: "productTab_7_tip_4" })
           ],
           bg: mscp,
-          width: 1140
+          width: 1110
         }
       ]
     });
   }
 
   render() {
-    const { data } = this.state;
+    const { title, data } = this.state;
     return (
       <div className={css.container}>
         <div className={css.content}>
-          <div className={css.title}>产品与服务</div>
+          <div className={css.title}>{title.title}</div>
           <div className={css.line} />
           <div className={css.divider} />
-          <div className={css.tip}>
-            UAVStack是一套智能化服务技术栈，是研发运维一体化的解决方案。
-          </div>
-          <div className={css.tip}>
-            UAV是无人机的缩写，寓意无人机翱翔蓝天，智能的，透明的完成任务。
-          </div>
-          <div className={css.tip}>
-            它包括任务机器人（HIT），全维监控（UAV.Monitor），应用性能管理（UAV.APM），容器化支持（UAV.Container）
-          </div>
-          <div className={css.tip}>
-            服务治理（UAV.ServiceGovern），微服务计算（UAV.MSCP），用户体验管理（UAV.UEM）等。
-          </div>
+          {title.tips.map((item, key) => (
+            <p key={key} className={css.tip}>
+              {item}
+            </p>
+          ))}
           <div className={css.divider} />
           {data.map((item, key) => (
-            <ProductTab data={item} />
+            <ProductTab key={key} data={item} />
           ))}
         </div>
       </div>
@@ -117,4 +134,4 @@ class ProductPanel extends Component {
   }
 }
 
-export default ProductPanel;
+export default injectIntl(ProductPanel);
