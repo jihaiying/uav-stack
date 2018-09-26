@@ -84,7 +84,7 @@ const zh_CN = {
     "基于共识数据，实现多个运行实例的协作能力，即动态计算编排；以动态计算编排为基础，实现跨实例多个Feature的协作能力，即动态服务编排",
   productTab_7_tip_4: "端到端跟踪联通",
 
-  outlineTab_title: "全维度监控+应用运维解决方案",
+  outline_title: "全维度监控+应用运维解决方案",
 
   supportPanel_title: "JAVA探针支持",
 
@@ -125,6 +125,53 @@ const zh_CN = {
   supportTab_6_tip_1: "DBCP/2 | c3p0",
   supportTab_6_tip_2: "Druid | Proxool",
   supportTab_6_tip_3: "Hikari | MyBatis CP",
-  supportTab_6_tip_4: "Tomcat DBCP/2"
+  supportTab_6_tip_4: "Tomcat DBCP/2",
+
+  documentTab_more: "更多",
+
+  documentTab_download_title: "下载",
+  documentTab_download_title2: "UAV.Monitor+APM",
+  documentTab_download_line1_title: "中间件增强框架（MOF探针）",
+  documentTab_download_line1_tip: "提供应用画像，性能数据收集等功能",
+  documentTab_download_line1_link:
+    "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+
+  documentTab_document_title: "文档资料",
+  documentTab_document_line1_title: "JAVA服务治理实践之无侵入的应用服务监控",
+  documentTab_document_line1_time: "09月22日",
+  documentTab_document_line1_link:
+    "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+
+  documentTab_paper_title: "相关文献",
+  documentTab_paper_line1_title: "调用链与日志关联的探索式查询",
+  documentTab_paper_line1_link:
+    "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+
+  contributor_title: "开源贡献者",
+
+  contributorTab_1_name: "张真",
+  contributorTab_1_tip_1: "Dev.Founder of UAVStack, ",
+  contributorTab_1_tip_2:
+    "Focus on AIOps, APM, MicroService, Service-Governonce, Cloud Middleware.",
+  contributorTab_1_tip_3: " International Patent Inventor. Opensource Commitor",
+
+  contributorTab_2_name: "杨宏壮",
+  contributorTab_2_tip_1: "UAV.Monitor/APM Domain Senior Commitor",
+  contributorTab_2_tip_2: "关注系统性能、高并发、高可用",
+  contributorTab_2_tip_3: "座右铭：知其然更要知其所以然 ",
+
+  contributorTab_3_name: "肖龙",
+  contributorTab_3_tip_1: "UAV.Monitor/APM Domain Senior Commitor",
+
+  contributorTab_4_name: "李崇",
+  contributorTab_4_tip_1: "UAV.ServiceGovern Domain Senior Commitor",
+  contributorTab_4_tip_2: "座右铭：做一个有追求的工程师",
+
+  contributorTab_5_name: "刘波安野",
+  contributorTab_5_tip_1: "Staff Commitor",
+  contributorTab_5_tip_2: "全栈工程师",
+
+  contributorTab_6_name: "周新宇",
+  contributorTab_6_tip_1: "Staff Commitor & Community Ops Owner"
 };
 export default zh_CN;

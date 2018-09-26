@@ -5,8 +5,10 @@ import Banner from "./partial/Banner";
 import Header from "../shared/Header";
 import UpdateTab from "./partial/UpdateTab";
 import ProductPanel from "./partial/ProductPanel";
-import OutlineTab from "./partial/OutlineTab";
+import Outline from "./partial/Outline";
+import Document from "./partial/Document";
 import SupportPanel from "./partial/SupportPanel";
+import Contributor from "./partial/Contributor";
 class Home extends Component {
   render() {
     const { formatMessage } = this.props.intl;
@@ -21,8 +23,10 @@ class Home extends Component {
         <Banner />
         <UpdateTab />
         <ProductPanel />
-        <OutlineTab />
+        <Outline />
         <SupportPanel />
+        <Document />
+        <Contributor />
       </div>
     );
   }

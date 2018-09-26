@@ -1,0 +1,28 @@
+.container {
+  height: 320px;
+  width: 160px;
+  background: rgba(212, 234, 246, 0.23);
+  padding: 10px;
+}
+.img {
+  margin-top: 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+.link {
+  text-decoration: none !important;
+}
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000000;
+}
+.descCon {
+  margin-top: 10px;
+}
+.descCon li {
+  text-align: left;
+  font-size: 12px;
+  color: #4a4a4a;
+  line-height: 16px;
+}

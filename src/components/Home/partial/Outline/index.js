@@ -8,7 +8,7 @@ class OutlineTab extends Component {
     return (
       <div className={css.container}>
         <div className={css.title}>
-          <FormattedMessage id="outlineTab_title" />
+          <FormattedMessage id="outline_title" />
         </div>
         <div className={css.line} />
         <img className={css.img} src={outline} alt="应用运维解决方案" />

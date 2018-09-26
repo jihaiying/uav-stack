@@ -32,7 +32,6 @@ class UpdateTab extends Component {
         <div className={css.content}>
           <div className={css.tab}>
             <p>
-              {" "}
               <FormattedMessage id="updateTab_update_title" />
             </p>
             <a href={href}>{href}</a>
@@ -42,7 +41,6 @@ class UpdateTab extends Component {
           </div>
           <div className={css.tab}>
             <p>
-              {" "}
               <FormattedMessage id="updateTab_fix_title" />
             </p>
             {fix.map((item, key) => (

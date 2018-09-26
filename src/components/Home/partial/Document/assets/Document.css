@@ -1,0 +1,91 @@
+.container {
+  border: 1px solid #f5f5f5;
+  color: #4a4a4a;
+  line-height: 26px;
+  text-align: center;
+}
+.content {
+  padding: 20px;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.tab {
+  padding: 30px;
+  text-align: left;
+  width: 33%;
+  display: inline-block;
+  tab-size: 14px;
+  vertical-align: top;
+}
+.title {
+  font-size: 22px;
+}
+.title2 {
+  font-size: 18px;
+}
+.right {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #9b9b9b;
+  float: right;
+  text-decoration: none !important;
+}
+.line {
+  margin-top: 5px;
+  width: 30px;
+  height: 2px;
+  background-color: #69c1ed;
+  margin-bottom: 10px;
+}
+.img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.download_link {
+  color: #4a4a4a;
+  display: block;
+  text-decoration: none !important;
+}
+.title2 {
+  display: block;
+  height: 30px;
+  text-decoration: none !important;
+}
+
+.document_link {
+  color: #4a4a4a;
+  display: block;
+  text-decoration: none !important;
+}
+.paper_link {
+  color: #4a4a4a;
+  display: block;
+  text-decoration: none !important;
+}
+.time {
+  word-break: break-all;
+  font-size: 12px;
+  color: #9b9b9b;
+  letter-spacing: 0;
+  line-height: 12px;
+  width: 25px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.document_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+.document_tip {
+  font-size: 12px;
+}
