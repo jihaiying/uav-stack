@@ -8,7 +8,9 @@ import ProductPanel from "./partial/ProductPanel";
 import Outline from "./partial/Outline";
 import Document from "./partial/Document";
 import SupportPanel from "./partial/SupportPanel";
+import JoinUs from "./partial/JoinUs";
 import Contributor from "./partial/Contributor";
+import ContactUs from "./partial/ContactUs";
 class Home extends Component {
   render() {
     const { formatMessage } = this.props.intl;
@@ -26,7 +28,9 @@ class Home extends Component {
         <Outline />
         <SupportPanel />
         <Document />
+        <JoinUs />
         <Contributor />
+        <ContactUs />
       </div>
     );
   }

@@ -45,9 +45,11 @@ const zh_CN = {
   productPanel_tip_4:
     " 服务治理（UAV.ServiceGovern），微服务计算（UAV.MSCP），用户体验管理（UAV.UEM）等。",
 
-  productTab_1_title: "客户端体验（UEM）",
-  productTab_1_tip_1: "追踪Web浏览器端用户访问状况",
-  productTab_1_tip_2: "端到端跟踪联通",
+  productTab_1_title: "（微）服务监控（Monitor）",
+  productTab_1_tip_1: "以无侵入方式实现对Java程序的画像与监控",
+  productTab_1_tip_2: "以心跳数据实现对应用容器的画像与监控",
+  productTab_1_tip_3: "提供预警策略实现自动报警",
+  productTab_1_tip_4: "提供应用/服务流图谱",
 
   productTab_2_title: "应用性能管理（APM）",
   productTab_2_tip_1: "提供应用性能诊断工具箱",
@@ -60,11 +62,9 @@ const zh_CN = {
   productTab_3_tip_4: "提供服务授权访问机制",
   productTab_3_tip_5: "提供服务降级与保护机制",
 
-  productTab_4_title: "（微）服务监控（Monitor）",
-  productTab_4_tip_1: "以无侵入方式实现对Java程序的画像与监控",
-  productTab_4_tip_2: "以心跳数据实现对应用容器的画像与监控",
-  productTab_4_tip_3: "提供预警策略实现自动报警",
-  productTab_4_tip_4: "提供应用/服务流图谱",
+  productTab_4_title: "客户端体验（UEM）",
+  productTab_4_tip_1: "追踪Web浏览器端用户访问状况",
+  productTab_4_tip_2: "端到端跟踪联通",
 
   productTab_5_title: "容器生态支持（Container）",
   productTab_5_tip_1: "对容器生态的支持，包括Monitor+APM所有能力",
@@ -127,25 +127,44 @@ const zh_CN = {
   supportTab_6_tip_3: "Hikari | MyBatis CP",
   supportTab_6_tip_4: "Tomcat DBCP/2",
 
-  documentTab_more: "更多",
+  document_more: "更多",
 
-  documentTab_download_title: "下载",
-  documentTab_download_title2: "UAV.Monitor+APM",
-  documentTab_download_line1_title: "中间件增强框架（MOF探针）",
-  documentTab_download_line1_tip: "提供应用画像，性能数据收集等功能",
-  documentTab_download_line1_link:
+  document_download_title: "下载",
+  document_download_title2: "UAV.Monitor+APM",
+
+  document_download_line_1_title: "中间件增强框架（MOF探针）",
+  document_download_line_1_tip: "提供应用画像，性能数据收集等功能",
+  document_download_line_1_link: "https://pan.baidu.com/s/1cg4J0q",
+
+  document_download_line_2_title: "监控代理程序（MA)",
+  document_download_line_2_tip: "提供数据采集功能和节点容器控制功能的JSE应用。",
+  document_download_line_2_link: "https://pan.baidu.com/s/1ge5MJ9h",
+
+  document_download_line_3_title: "健康管理服务（HM）",
+  document_download_line_3_tip:
+    "提供数据处理程序的JSE应用：数据分析、存储、查询等功能。",
+  document_download_line_3_link: "https://pan.baidu.com/s/1i4HnV85",
+
+  document_download_line_4_title: "AppHub（war包）",
+  document_download_line_4_tip: "提供数据展示及控制管理功能的JEE应用",
+  document_download_line_4_link:
     "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
 
-  documentTab_document_title: "文档资料",
-  documentTab_document_line1_title: "JAVA服务治理实践之无侵入的应用服务监控",
-  documentTab_document_line1_time: "09月22日",
-  documentTab_document_line1_link:
+  document_document_title: "文档资料",
+  document_document_line1_title: "JAVA服务治理实践之无侵入的应用服务监控",
+  document_document_line1_time: "09月22日",
+  document_document_line1_link:
     "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
 
-  documentTab_paper_title: "相关文献",
-  documentTab_paper_line1_title: "调用链与日志关联的探索式查询",
-  documentTab_paper_line1_link:
-    "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+  document_paper_title: "相关文献",
+  document_paper_line1_title: "调用链与日志关联的探索式查询",
+  document_paper_line1_link: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+
+  JoinUs_title: "加入项目",
+  JoinUS_tip:
+    "UAVStack社区正式开放IDE以及IDE搭建手册，陆续还将开放更多开发文档，欢迎大家加入社区贡献力量！",
+  JoinUs_manual: "UAVStackIDE搭建手册",
+  JoinUs_download: "UAVStackIDE下载",
 
   contributor_title: "开源贡献者",
 
@@ -172,6 +191,11 @@ const zh_CN = {
   contributorTab_5_tip_2: "全栈工程师",
 
   contributorTab_6_name: "周新宇",
-  contributorTab_6_tip_1: "Staff Commitor & Community Ops Owner"
+  contributorTab_6_tip_1: "Staff Commitor & Community Ops Owner",
+
+  contactUs_title: "联系我们",
+  contactUs_tip_1: "扫下方二维码进入UAVStack官方公众号",
+  contactUs_tip_2: "获取更多UAVStack的相关信息",
+  contactUs_mail: "发送邮件"
 };
 export default zh_CN;

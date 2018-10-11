@@ -5,13 +5,13 @@
   text-align: center;
 }
 .content {
-  padding: 20px;
+  padding: 20px 10px;
   width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
 .tab {
-  padding: 30px;
+  padding: 30px 10px;
   text-align: left;
   width: 33%;
   display: inline-block;
@@ -26,6 +26,7 @@
 }
 .right {
   margin-top: 5px;
+  margin-right: 5px;
   font-size: 12px;
   color: #9b9b9b;
   float: right;
@@ -48,7 +49,7 @@
   margin-bottom: 5px;
 }
 
-.download_link {
+.download_line {
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;
@@ -59,12 +60,12 @@
   text-decoration: none !important;
 }
 
-.document_link {
+.document_line {
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;
 }
-.paper_link {
+.paper_line {
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;

@@ -1,0 +1,40 @@
+.container {
+  background-size: cover;
+  background: url("./bcg.jpg") center center;
+  border-radius: 2px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.content {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 17px;
+}
+.line {
+  margin: 10px auto;
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.title {
+  font-size: 36px;
+}
+.tab {
+  text-align: center;
+  width: 210px;
+  margin: 28px 20px;
+  display: inline-flex;
+  padding: 15px;
+  color: #60beca;
+  background-color: #ffffff;
+}
+.tab img {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  margin-right: 15px;
+  margin-top: -2px;
+}

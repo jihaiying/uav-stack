@@ -38,9 +38,11 @@ class ProductPanel extends Component {
           title: formatMessage({ id: "productTab_1_title" }),
           tips: [
             formatMessage({ id: "productTab_1_tip_1" }),
-            formatMessage({ id: "productTab_1_tip_2" })
+            formatMessage({ id: "productTab_1_tip_2" }),
+            formatMessage({ id: "productTab_1_tip_3" }),
+            formatMessage({ id: "productTab_1_tip_4" })
           ],
-          bg: uem,
+          bg: monitor,
           width: 350,
           site: "/product"
         },
@@ -69,11 +71,9 @@ class ProductPanel extends Component {
           title: formatMessage({ id: "productTab_4_title" }),
           tips: [
             formatMessage({ id: "productTab_4_tip_1" }),
-            formatMessage({ id: "productTab_4_tip_2" }),
-            formatMessage({ id: "productTab_4_tip_3" }),
-            formatMessage({ id: "productTab_4_tip_4" })
+            formatMessage({ id: "productTab_4_tip_2" })
           ],
-          bg: monitor,
+          bg: uem,
           width: 350
         },
         {
@@ -118,7 +118,6 @@ class ProductPanel extends Component {
         <div className={css.content}>
           <div className={css.title}>{title.title}</div>
           <div className={css.line} />
-          <div className={css.divider} />
           {title.tips.map((item, key) => (
             <p key={key} className={css.tip}>
               {item}
