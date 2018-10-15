@@ -39,6 +39,9 @@
   text-decoration: none !important;
   color: #ffffff;
 }
+.link:hover {
+  color: #69c1ed;
+}
 .language {
   padding-top: 25px;
   float: right;

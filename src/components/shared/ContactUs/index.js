@@ -41,7 +41,7 @@ class SupportPanel extends Component {
               <br />
               Beijing China
             </p>
-            <div className="divCenter emailDiv">
+            <div>
               <a href="mailto:uavstacksupport@163.com" className={css.email}>
                 {mail}
               </a>

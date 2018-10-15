@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import css from "./assets/BannerTag.css";
 import cx from "classnames";
+import { FormattedMessage } from "react-intl";
 
 class BannerTag extends Component {
   render() {
@@ -21,6 +22,11 @@ class BannerTag extends Component {
               </li>
             ))}
           </ul>
+          <div>
+            <a className={css.button}>
+              <FormattedMessage id="banner_popup_title" />
+            </a>
+          </div>
         </div>
       </div>
     );

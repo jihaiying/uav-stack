@@ -17,6 +17,9 @@
   font-size: 18px;
   color: #000000;
 }
+.title:hover {
+  color: #69c1ed;
+}
 .descCon {
   margin-top: 10px;
 }

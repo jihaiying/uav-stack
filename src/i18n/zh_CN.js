@@ -2,8 +2,10 @@ const zh_CN = {
   home: "首页",
   product: "产品",
   download: "下载",
+  document: "文档",
   productPage: "产品页",
   downloadPage: "下载页",
+
   banner_1_title: "UAV.Monitor新能力开放：可动态切换的报警收敛模式",
   banner_1_word_1:
     "●基于事件自动压制的收敛：默认收敛模式，无需任何配置，自动识别同一事件，在一定时间内只发生约定次数的报警",
@@ -22,6 +24,8 @@ const zh_CN = {
   banner_2_word_3: "●线程Dump可视化展示：",
   banner_2_word_3_desc_1: "-单次线程Dump可视化（锁依赖）",
   banner_2_word_3_desc_2: "-多次线程Dump可视化（含时序状态，锁依赖）",
+
+  banner_popup_title: "开发演示",
 
   updateTab_update_title: "UAVStack周更新",
   updateTab_update_href:
@@ -127,38 +131,34 @@ const zh_CN = {
   supportTab_6_tip_3: "Hikari | MyBatis CP",
   supportTab_6_tip_4: "Tomcat DBCP/2",
 
-  document_more: "更多",
+  documentTab_more: "更多",
 
-  document_download_title: "下载",
-  document_download_title2: "UAV.Monitor+APM",
+  documentTab_download_title: "下载",
+  documentTab_download_title2: "UAV.Monitor+APM",
 
-  document_download_line_1_title: "中间件增强框架（MOF探针）",
-  document_download_line_1_tip: "提供应用画像，性能数据收集等功能",
-  document_download_line_1_link: "https://pan.baidu.com/s/1cg4J0q",
+  documentTab_download_line_1_title: "中间件增强框架（MOF探针）",
+  documentTab_download_line_1_tip: "提供应用画像，性能数据收集等功能",
+  documentTab_download_line_1_link: "https://pan.baidu.com/s/1cg4J0q",
 
-  document_download_line_2_title: "监控代理程序（MA)",
-  document_download_line_2_tip: "提供数据采集功能和节点容器控制功能的JSE应用。",
-  document_download_line_2_link: "https://pan.baidu.com/s/1ge5MJ9h",
+  documentTab_download_line_2_title: "监控代理程序（MA)",
+  documentTab_download_line_2_tip:
+    "提供数据采集功能和节点容器控制功能的JSE应用。",
+  documentTab_download_line_2_link: "https://pan.baidu.com/s/1ge5MJ9h",
 
-  document_download_line_3_title: "健康管理服务（HM）",
-  document_download_line_3_tip:
+  documentTab_download_line_3_title: "健康管理服务（HM）",
+  documentTab_download_line_3_tip:
     "提供数据处理程序的JSE应用：数据分析、存储、查询等功能。",
-  document_download_line_3_link: "https://pan.baidu.com/s/1i4HnV85",
+  documentTab_download_line_3_link: "https://pan.baidu.com/s/1i4HnV85",
 
-  document_download_line_4_title: "AppHub（war包）",
-  document_download_line_4_tip: "提供数据展示及控制管理功能的JEE应用",
-  document_download_line_4_link:
+  documentTab_download_line_4_title: "AppHub（war包）",
+  documentTab_download_line_4_tip: "提供数据展示及控制管理功能的JEE应用",
+  documentTab_download_line_4_tip2: "以war包的形式部署在JEE服务器中",
+  documentTab_download_line_4_link:
     "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
 
-  document_document_title: "文档资料",
-  document_document_line1_title: "JAVA服务治理实践之无侵入的应用服务监控",
-  document_document_line1_time: "09月22日",
-  document_document_line1_link:
-    "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+  documentTab_document_title: "文档资料",
 
-  document_paper_title: "相关文献",
-  document_paper_line1_title: "调用链与日志关联的探索式查询",
-  document_paper_line1_link: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+  documentTab_paper_title: "相关文献",
 
   JoinUs_title: "加入项目",
   JoinUS_tip:
@@ -196,6 +196,53 @@ const zh_CN = {
   contactUs_title: "联系我们",
   contactUs_tip_1: "扫下方二维码进入UAVStack官方公众号",
   contactUs_tip_2: "获取更多UAVStack的相关信息",
-  contactUs_mail: "发送邮件"
+  contactUs_mail: "发送邮件",
+
+  document_head: "文档资料",
+
+  document_1_title: "JAVA服务治理实践之无侵入的应用服务监控",
+  document_1_href:
+    "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=2&sn=79ea1b9830df9d0bb713d9d3adf06b60&mpshare=1&scene=1&srcid=1010niyXsvUnT26D3ziFIsZQ#rd",
+
+  document_2_title: "微服务治理实战：服务流的自动化构建与应用",
+  document_2_href:
+    "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650759250&idx=2&sn=4599d2938cd6795c5f79f391e3ba7b15&chksm=f3f9d5c7c48e5cd17e697c04446e39c9284357a12a2669780265af1a321e1cec0609b8691df5&mpshare=1&scene=1&srcid=0116NrH9XDgruRORvPBsUFeJ#rd",
+
+  document_3_title: "微服务架构下，如何打造别具一格的服务治理体验？(上)",
+  document_3_href:
+    "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650757450&idx=1&sn=13a2bb60c41821a9f9d0ef7ef75f3720&chksm=f3f9ecdfc48e65c9535ecd601078a90b60481d4f22a79a4f0187cdaa0499fb3d6c7f3e68cb9e&mpshare=1&scene=1&srcid=1027vkuRK6yeafgKeHEATEq5#rd",
+
+  document_4_title: "微服务架构下，如何打造别具一格的服务治理体验？(下)",
+  document_4_href:
+    "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650758431&idx=2&sn=2f7e9877da720a5bee1d718bb0443436&chksm=f3f9e88ac48e619cf46edd9fbccedd00ea7f085fa49467401c6a86a06e58f3cb984d86422fb7&mpshare=1&scene=1&srcid=0908p8Wd2wGlrpihwF58lFXI#rd",
+
+  document_5_title: "调用链与日志关联的探索式查询",
+  document_5_href:
+    "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992942&idx=1&sn=3026cebc5e04ec5d9d97345ac469ec45&chksm=83037439b474fd2f5e0e3f5de905d29f72342ff2866b15ebafcf8b0f0cf6a84062d755ff406c&mpshare=1&scene=1&srcid=1218dAbH9ikMRUsGkCgEPhzh#rd",
+
+  document_6_title: "WOT2018议题分享：运维机器人之任务决策系统演进",
+  document_6_href: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+
+  document_7_title: "洞察架构细节：如何设计AIOps平台架构",
+  document_7_href: "https://pan.baidu.com/s/1PoqaUfepBfDMJreOSWk9iw",
+
+  document_8_title: "基于统计的预警：同环比预警实现深度剖析",
+  document_8_href:
+    "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992937&idx=1&sn=3a63bff00b0ec443e0ce8bb31189dd29&chksm=8303743eb474fd28e7800665b46843c12b0e4097567d10422c2da13a3b31fc981b657bcd53e2&mpshare=1&scene=1&srcid=1212QtHzvVQiIjYwT58D8tsh#rd",
+
+  document_9_title:
+    "CNUTcon全球运维技术大会分享视频：AIOps的核心技术之任务机器人",
+  document_9_href: "http://pan.baidu.com/s/1hrLWsvU",
+
+  document_10_title: "CNUTcon全球运维技术大会ppt：AIOps的核心技术之任务机器人",
+  document_10_href: "http://pan.baidu.com/s/1bpD9nQn",
+
+  document_11_title: "到底该如何理解AIOps？又如何落地AIOps？",
+  document_11_href:
+    "http://mp.weixin.qq.com/s?__biz=MzIwMzg1ODcwMw==&mid=2247486714&idx=1&sn=be87de43465c09a05a67a9dfdecca0ed&chksm=96c9ba9aa1be338c4f00af86f1b535c56dfa53138eca9fb583509e757a4acda82100252552c3&mpshare=1&scene=1&srcid=0729gVcJHnLi12B0NRwmwf6Q#rd",
+
+  document_12_title: "先悟透这三个理念，再来谈如何扩展你的架构",
+  document_12_href:
+    "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=4&sn=33956aee393137dc0c6e870610d0a9d5&mpshare=1&scene=1&srcid=1010ZVGISQYwg6phHFpEP86f#rd"
 };
 export default zh_CN;

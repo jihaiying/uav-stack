@@ -5,6 +5,12 @@ import "swiper/dist/css/swiper.min.css";
 import BannerTag from "./partial/BannerTag";
 import bg1 from "./assets/bg1.jpg";
 import bg2 from "./assets/bg2.jpg";
+import bg3 from "./assets/bg3.jpg";
+import bg4 from "./assets/bg4.jpg";
+import bg5 from "./assets/bg1.jpg";
+import bg6 from "./assets/bg6.jpg";
+import bg7 from "./assets/bg7.png";
+import bg8 from "./assets/bg8.jpg";
 
 class Banner extends Component {
   constructor(props) {

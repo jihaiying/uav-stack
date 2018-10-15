@@ -25,6 +25,11 @@ class Header extends Component {
             </Link>
           </div>
           <div className={css.tag}>
+            <Link to={"/document"} className={css.link}>
+              <FormattedMessage id="document" />
+            </Link>
+          </div>
+          <div className={css.tag}>
             <Link to={"/download"} className={css.link}>
               <FormattedMessage id="download" />
             </Link>

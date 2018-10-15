@@ -6,11 +6,11 @@ import Header from "../shared/Header";
 import UpdateTab from "./partial/UpdateTab";
 import ProductPanel from "./partial/ProductPanel";
 import Outline from "./partial/Outline";
-import Document from "./partial/Document";
+import DocumentTab from "./partial/DocumentTab";
 import SupportPanel from "./partial/SupportPanel";
 import JoinUs from "./partial/JoinUs";
 import Contributor from "./partial/Contributor";
-import ContactUs from "./partial/ContactUs";
+import ContactUs from "../shared/ContactUs";
 class Home extends Component {
   render() {
     const { formatMessage } = this.props.intl;
@@ -27,7 +27,7 @@ class Home extends Component {
         <ProductPanel />
         <Outline />
         <SupportPanel />
-        <Document />
+        <DocumentTab />
         <JoinUs />
         <Contributor />
         <ContactUs />

@@ -1,7 +1,9 @@
 const en_US = {
   home: "Home",
   product: "Product",
+  document: "Document",
   download: "Download",
+  documentPage: "Document Page",
   productPage: "Product Page",
   downloadPage: "Download Page",
   banner_1_title: "UAV.Monitor新能力开放：可动态切换的报警收敛模式",

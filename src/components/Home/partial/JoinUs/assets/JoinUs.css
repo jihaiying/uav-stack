@@ -30,6 +30,7 @@
   padding: 15px;
   color: #60beca;
   background-color: #ffffff;
+  text-decoration: none !important;
 }
 .tab img {
   width: 20px;
