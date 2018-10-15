@@ -25,8 +25,6 @@ const zh_CN = {
   banner_2_word_3_desc_1: "-单次线程Dump可视化（锁依赖）",
   banner_2_word_3_desc_2: "-多次线程Dump可视化（含时序状态，锁依赖）",
 
-  banner_popup_title: "开发演示",
-
   updateTab_update_title: "UAVStack周更新",
   updateTab_update_href:
     "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20180914",
@@ -197,6 +195,15 @@ const zh_CN = {
   contactUs_tip_1: "扫下方二维码进入UAVStack官方公众号",
   contactUs_tip_2: "获取更多UAVStack的相关信息",
   contactUs_mail: "发送邮件",
+
+  popup_title: "开发演示",
+  popup_title2:
+    "AllInOne安装是用于开发环境以及演示的安装包，开箱即用，一键启动。",
+  popup_tip: "注：",
+  popup_tip2:
+    "开发演示版的健康管理服务(HM)仅适合开发环境，演示环境，小规模测试环境。",
+  popup_tip3: "生产环境推荐使用",
+  popup_link: "分布式部署",
 
   document_head: "文档资料",
 

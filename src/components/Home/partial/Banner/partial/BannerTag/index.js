@@ -24,7 +24,7 @@ class BannerTag extends Component {
           </ul>
           <div>
             <a className={css.button}>
-              <FormattedMessage id="banner_popup_title" />
+              <FormattedMessage id="popup_title" />
             </a>
           </div>
         </div>

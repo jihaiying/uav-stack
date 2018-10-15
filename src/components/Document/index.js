@@ -5,7 +5,7 @@ import ContactUs from "../shared/ContactUs";
 import css from "./assets/Document.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 
-class Download extends Component {
+class Document extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -79,8 +79,7 @@ class Download extends Component {
         <Header />
         <div className={css.container}>
           <h1 className={css.head}>
-            {" "}
-            <FormattedMessage id="documentTab_paper_title" />
+            <FormattedMessage id="document_head" />
           </h1>
           <div className={css.body}>
             {data.map((item, key) => (
@@ -97,8 +96,8 @@ class Download extends Component {
   }
 }
 
-Download.propTypes = {
+Document.propTypes = {
   intl: intlShape.isRequired
 };
 
-export default injectIntl(Download);
+export default injectIntl(Document);
