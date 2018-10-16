@@ -79,7 +79,7 @@ class Document extends Component {
         <Header />
         <div className={css.container}>
           <h1 className={css.head}>
-            <FormattedMessage id="document_head" />
+            <FormattedMessage id="download_head" />
           </h1>
           <div className={css.body}>
             {data.map((item, key) => (

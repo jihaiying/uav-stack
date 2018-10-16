@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  vertical-align: top;
+  height: 240px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+  box-shadow: 2px 2px 3px #aaaaaa;
+  width: 280px;
+  margin-bottom: 30px;
+}
+.img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 18px;
+  color: #4a4a4a;
+}

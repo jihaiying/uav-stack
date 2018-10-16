@@ -217,7 +217,22 @@ const zh_CN = {
   popup_linux: "Linux(CentOS)",
   popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
 
-  document_head: "开发演示版",
+  product_advangtage_title: "产品特色",
+  product_advangtage_tip_1: "代码无侵入，全面支持java主流技术栈",
+  product_advangtage_tip_2: "随时随地的运维体验",
+  product_advangtage_tip_3: "一站式全维监控，全维关联。",
+  product_advangtage_tip_4: "全自动服务画像，可视化服务间调用关联",
+  product_advangtage_tip_5: "全维预警，所有指标均可配置预警",
+
+  product_outline_title: "产品架构",
+  product_help_title: "帮助文档",
+
+  product_help_1_tip: " 安装部署",
+  product_help_2_tip: " 架构说明",
+  product_help_3_tip: " 用户指南",
+  product_help_4_tip: " 用户指南",
+
+  document_head: "文档资料",
 
   document_1_title: "JAVA服务治理实践之无侵入的应用服务监控",
   document_1_link:

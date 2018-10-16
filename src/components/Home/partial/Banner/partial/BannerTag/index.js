@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import css from "./assets/BannerTag.css";
 import Dialog from "../Dialog";
 import cx from "classnames";
-import { FormattedMessage } from "react-intl";
 
 class BannerTag extends Component {
   render() {

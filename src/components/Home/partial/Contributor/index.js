@@ -112,7 +112,7 @@ class Contributor extends Component {
           <div className={css.title}>{title}</div>
           <div className={css.line} />
           <img
-            className={css.button}
+            className={css.left}
             ref={self => (this.pervID = self)}
             src={left}
             alt="left"
@@ -130,7 +130,7 @@ class Contributor extends Component {
             </div>
           </div>
           <img
-            className={css.button}
+            className={css.right}
             ref={self => (this.nextID = self)}
             src={right}
             alt="right"
