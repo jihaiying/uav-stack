@@ -41,11 +41,9 @@ class SupportPanel extends Component {
               <br />
               Beijing China
             </p>
-            <div>
-              <a href="mailto:uavstacksupport@163.com" className={css.email}>
-                {mail}
-              </a>
-            </div>
+            <a href="mailto:uavstacksupport@163.com" className={css.email}>
+              {mail}
+            </a>
           </div>
         </div>
         <p className={css.org}>© 2016-2018 UAVStack Organization</p>

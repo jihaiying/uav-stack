@@ -131,7 +131,7 @@ const zh_CN = {
 
   documentTab_more: "更多",
 
-  documentTab_download_title: "下载",
+  documentTab_download_title: "开发演示版",
   documentTab_download_title2: "UAV.Monitor+APM",
 
   documentTab_download_line_1_title: "中间件增强框架（MOF探针）",
@@ -172,6 +172,9 @@ const zh_CN = {
     "Focus on AIOps, APM, MicroService, Service-Governonce, Cloud Middleware.",
   contributorTab_1_tip_3: " International Patent Inventor. Opensource Commitor",
 
+  contributorTab_7_name: "谢知求",
+  contributorTab_7_tip_1: "Architect, PM  && Product Service Owner",
+
   contributorTab_2_name: "杨宏壮",
   contributorTab_2_tip_1: "UAV.Monitor/APM Domain Senior Commitor",
   contributorTab_2_tip_2: "关注系统性能、高并发、高可用",
@@ -203,53 +206,65 @@ const zh_CN = {
   popup_tip2:
     "开发演示版的健康管理服务(HM)仅适合开发环境，演示环境，小规模测试环境。",
   popup_tip3: "生产环境推荐使用",
-  popup_link: "分布式部署",
+  popup_tip_link: "分布式部署",
+  popup_link:
+    "https://uavorg.github.io/documents/uavdoc_deploydocs/healmanagerInstall/healmanagerInstall/microservice.html",
 
-  document_head: "文档资料",
+  popup_windows: "windows 64位",
+  popup_windows_link: "https://pan.baidu.com/s/1jIF0wNs",
+  popup_mac: "Mac",
+  popup_mac_link: "https://pan.baidu.com/s/1mhCykp6#list/path=%2F",
+  popup_linux: "Linux(CentOS)",
+  popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
+
+  document_head: "开发演示版",
 
   document_1_title: "JAVA服务治理实践之无侵入的应用服务监控",
-  document_1_href:
+  document_1_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=2&sn=79ea1b9830df9d0bb713d9d3adf06b60&mpshare=1&scene=1&srcid=1010niyXsvUnT26D3ziFIsZQ#rd",
 
   document_2_title: "微服务治理实战：服务流的自动化构建与应用",
-  document_2_href:
+  document_2_link:
     "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650759250&idx=2&sn=4599d2938cd6795c5f79f391e3ba7b15&chksm=f3f9d5c7c48e5cd17e697c04446e39c9284357a12a2669780265af1a321e1cec0609b8691df5&mpshare=1&scene=1&srcid=0116NrH9XDgruRORvPBsUFeJ#rd",
 
   document_3_title: "微服务架构下，如何打造别具一格的服务治理体验？(上)",
-  document_3_href:
+  document_3_link:
     "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650757450&idx=1&sn=13a2bb60c41821a9f9d0ef7ef75f3720&chksm=f3f9ecdfc48e65c9535ecd601078a90b60481d4f22a79a4f0187cdaa0499fb3d6c7f3e68cb9e&mpshare=1&scene=1&srcid=1027vkuRK6yeafgKeHEATEq5#rd",
 
   document_4_title: "微服务架构下，如何打造别具一格的服务治理体验？(下)",
-  document_4_href:
+  document_4_link:
     "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650758431&idx=2&sn=2f7e9877da720a5bee1d718bb0443436&chksm=f3f9e88ac48e619cf46edd9fbccedd00ea7f085fa49467401c6a86a06e58f3cb984d86422fb7&mpshare=1&scene=1&srcid=0908p8Wd2wGlrpihwF58lFXI#rd",
 
   document_5_title: "调用链与日志关联的探索式查询",
-  document_5_href:
+  document_5_link:
     "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992942&idx=1&sn=3026cebc5e04ec5d9d97345ac469ec45&chksm=83037439b474fd2f5e0e3f5de905d29f72342ff2866b15ebafcf8b0f0cf6a84062d755ff406c&mpshare=1&scene=1&srcid=1218dAbH9ikMRUsGkCgEPhzh#rd",
 
   document_6_title: "WOT2018议题分享：运维机器人之任务决策系统演进",
-  document_6_href: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+  document_6_link: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
 
   document_7_title: "洞察架构细节：如何设计AIOps平台架构",
-  document_7_href: "https://pan.baidu.com/s/1PoqaUfepBfDMJreOSWk9iw",
+  document_7_link: "https://pan.baidu.com/s/1PoqaUfepBfDMJreOSWk9iw",
 
   document_8_title: "基于统计的预警：同环比预警实现深度剖析",
-  document_8_href:
+  document_8_link:
     "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992937&idx=1&sn=3a63bff00b0ec443e0ce8bb31189dd29&chksm=8303743eb474fd28e7800665b46843c12b0e4097567d10422c2da13a3b31fc981b657bcd53e2&mpshare=1&scene=1&srcid=1212QtHzvVQiIjYwT58D8tsh#rd",
 
   document_9_title:
     "CNUTcon全球运维技术大会分享视频：AIOps的核心技术之任务机器人",
-  document_9_href: "http://pan.baidu.com/s/1hrLWsvU",
+  document_9_link: "http://pan.baidu.com/s/1hrLWsvU",
 
   document_10_title: "CNUTcon全球运维技术大会ppt：AIOps的核心技术之任务机器人",
-  document_10_href: "http://pan.baidu.com/s/1bpD9nQn",
+  document_10_link: "http://pan.baidu.com/s/1bpD9nQn",
 
   document_11_title: "到底该如何理解AIOps？又如何落地AIOps？",
-  document_11_href:
+  document_11_link:
     "http://mp.weixin.qq.com/s?__biz=MzIwMzg1ODcwMw==&mid=2247486714&idx=1&sn=be87de43465c09a05a67a9dfdecca0ed&chksm=96c9ba9aa1be338c4f00af86f1b535c56dfa53138eca9fb583509e757a4acda82100252552c3&mpshare=1&scene=1&srcid=0729gVcJHnLi12B0NRwmwf6Q#rd",
 
   document_12_title: "先悟透这三个理念，再来谈如何扩展你的架构",
-  document_12_href:
-    "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=4&sn=33956aee393137dc0c6e870610d0a9d5&mpshare=1&scene=1&srcid=1010ZVGISQYwg6phHFpEP86f#rd"
+  document_12_link:
+    "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=4&sn=33956aee393137dc0c6e870610d0a9d5&mpshare=1&scene=1&srcid=1010ZVGISQYwg6phHFpEP86f#rd",
+
+  download_head: "开发演示版"
 };
+
 export default zh_CN;

@@ -5,6 +5,7 @@ import "swiper/dist/css/swiper.min.css";
 import css from "./assets/Contributor.css";
 import ContributorTab from "./partial/ContributorTab";
 import zhangzhen from "./assets/zhangzhen.png";
+import zhiqiu from "./assets/zhiqiu.png";
 import yanghongzhuang from "./assets/yanghongzhuang.jpg";
 import lichong from "./assets/lichong.jpg";
 import xiaolong from "./assets/xiaolong.jpg";
@@ -36,6 +37,12 @@ class Contributor extends Component {
               formatMessage({ id: "contributorTab_1_tip_2" }),
               formatMessage({ id: "contributorTab_1_tip_3" })
             ]
+          },
+          {
+            pic: zhiqiu,
+            name: formatMessage({ id: "contributorTab_7_name" }),
+            gitid: "zhiqiuxie",
+            tips: [formatMessage({ id: "contributorTab_7_tip_1" })]
           },
           {
             pic: yanghongzhuang,

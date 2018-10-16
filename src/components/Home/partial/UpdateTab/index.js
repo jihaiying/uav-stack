@@ -31,20 +31,20 @@ class UpdateTab extends Component {
       <div className={css.container}>
         <div className={css.content}>
           <div className={css.tab}>
-            <p>
+            <div>
               <FormattedMessage id="updateTab_update_title" />
-            </p>
+            </div>
             <a href={href}>{href}</a>
             {update.map((item, key) => (
-              <p key={key}>{item}</p>
+              <div key={key}>{item}</div>
             ))}
           </div>
           <div className={css.tab}>
-            <p>
+            <div>
               <FormattedMessage id="updateTab_fix_title" />
-            </p>
+            </div>
             {fix.map((item, key) => (
-              <p key={key}>{item}</p>
+              <div key={key}>{item}</div>
             ))}
           </div>
         </div>

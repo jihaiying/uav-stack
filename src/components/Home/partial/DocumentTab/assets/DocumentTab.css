@@ -23,6 +23,8 @@
 }
 .title2 {
   font-size: 18px;
+  display: block;
+  text-decoration: none !important;
 }
 .right {
   margin-top: 5px;
@@ -49,25 +51,12 @@
   margin-bottom: 5px;
 }
 
-.download_line {
-  color: #4a4a4a;
-  display: block;
-  text-decoration: none !important;
-}
 .download_line:hover {
   color: #69c1ed;
 }
 
-.title2 {
-  display: block;
-  height: 30px;
-  text-decoration: none !important;
-}
-
-.document_line :hover {
-  color: #69c1ed;
-}
 .paper_line {
+  line-height: 18px;
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;

@@ -43,49 +43,49 @@ class DocumentTab extends Component {
       document: [
         {
           title: formatMessage({ id: "document_1_title" }),
-          link: formatMessage({ id: "document_1_href" })
+          link: formatMessage({ id: "document_1_link" })
         },
         {
           title: formatMessage({ id: "document_2_title" }),
-          link: formatMessage({ id: "document_2_href" })
+          link: formatMessage({ id: "document_2_link" })
         },
         {
           title: formatMessage({ id: "document_3_title" }),
-          link: formatMessage({ id: "document_3_href" })
+          link: formatMessage({ id: "document_3_link" })
         },
         {
           title: formatMessage({ id: "document_4_title" }),
-          link: formatMessage({ id: "document_4_href" })
+          link: formatMessage({ id: "document_4_link" })
         },
         {
           title: formatMessage({ id: "document_5_title" }),
-          link: formatMessage({ id: "document_5_href" })
+          link: formatMessage({ id: "document_5_link" })
         }
       ],
       paper: [
         {
           title: formatMessage({ id: "document_6_title" }),
-          link: formatMessage({ id: "document_6_href" })
+          link: formatMessage({ id: "document_6_link" })
         },
         {
           title: formatMessage({ id: "document_7_title" }),
-          link: formatMessage({ id: "document_7_href" })
+          link: formatMessage({ id: "document_7_link" })
         },
         {
           title: formatMessage({ id: "document_8_title" }),
-          link: formatMessage({ id: "document_8_href" })
+          link: formatMessage({ id: "document_8_link" })
         },
         {
           title: formatMessage({ id: "document_9_title" }),
-          link: formatMessage({ id: "document_9_href" })
+          link: formatMessage({ id: "document_9_link" })
         },
         {
           title: formatMessage({ id: "document_10_title" }),
-          link: formatMessage({ id: "document_10_href" })
+          link: formatMessage({ id: "document_10_link" })
         },
         {
           title: formatMessage({ id: "document_11_title" }),
-          link: formatMessage({ id: "document_11_href" })
+          link: formatMessage({ id: "document_11_link" })
         }
       ]
     });
@@ -106,7 +106,7 @@ class DocumentTab extends Component {
           <FormattedMessage id="documentTab_download_title2" />
         </p>
         {download.map((item, key) => (
-          <a key={key} href={item.link} className={css.download_line}>
+          <a key={key} link={item.link} className={css.paper_line}>
             <img src={downloadpic} alt="download" className={css.img} />
             <p className={css.document_title}>{item.title}</p>
             <p className={css.document_tip}>{item.tip}</p>
@@ -127,7 +127,6 @@ class DocumentTab extends Component {
         <div className={css.line} />
         {document.map((item, key) => (
           <a key={key} href={item.link} className={css.paper_line}>
-            <p className={css.time}>{item.time}</p>
             <p className={css.documentTab_title}>{item.title}</p>
           </a>
         ))}

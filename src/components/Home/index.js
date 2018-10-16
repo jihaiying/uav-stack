@@ -11,6 +11,7 @@ import SupportPanel from "./partial/SupportPanel";
 import JoinUs from "./partial/JoinUs";
 import Contributor from "./partial/Contributor";
 import ContactUs from "../shared/ContactUs";
+import "antd/dist/antd.css";
 class Home extends Component {
   render() {
     const { formatMessage } = this.props.intl;
