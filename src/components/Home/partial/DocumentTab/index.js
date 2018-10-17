@@ -96,7 +96,7 @@ class DocumentTab extends Component {
     var downloadhtml = (
       <div className={css.tab}>
         <span className={css.title}>
-          <FormattedMessage id="documentTab_download_title" />
+          <FormattedMessage id="download" />
         </span>
         <Link to={"/download"} className={css.right}>
           <FormattedMessage id="documentTab_more" /> >
@@ -109,8 +109,8 @@ class DocumentTab extends Component {
           <a key={key} link={item.link} className={css.paper_line}>
             <img src={downloadpic} alt="download" className={css.img} />
             <p className={css.document_title}>{item.title}</p>
-            <p className={css.document_tip}>{item.tip}</p>
-            <p className={css.document_tip}>{item.tip2}</p>
+            <div className={css.document_tip}>{item.tip}</div>
+            <div className={css.document_tip}>{item.tip2}</div>
           </a>
         ))}
       </div>

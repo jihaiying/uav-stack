@@ -217,6 +217,47 @@ const zh_CN = {
   popup_linux: "Linux(CentOS)",
   popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
 
+  product_banner_tip:
+    "UAV.Monitor+APM是业务，应用/服务，基础三维一体的监控与管理平台，只需部署1个Agent即可采集全维度数据，并实现对应用/服务性能全方位的管理。同时支持单体架构，SOA架构，微服务架构。",
+  product_banner_use: "立即使用",
+
+  product_introductPanel_title: "功能介绍",
+
+  product_introductTab_1_title: "基础环境监控",
+  product_introductTab_1_tip:
+    "操作系统以及进程级性能指标（CPU，内存，连接数，网络流量，磁盘IO等）",
+
+  product_introductTab_2_title: "应用/服务监控",
+  product_introductTab_2_tip:
+    "自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。\n",
+
+  product_introductTab_3_title: "应用/服务画像",
+  product_introductTab_3_tip:
+    "自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。\n",
+
+  product_introductTab_4_title: "应用/服务关联",
+  product_introductTab_4_tip:
+    "自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。",
+
+  product_introductTab_5_title: "应用日志采集",
+  product_introductTab_5_tip: "系统/应用日志自动归集和搜索，支持动态开关策略\n",
+
+  product_introductTab_6_title: "全维预警",
+  product_introductTab_6_tip:
+    "支持基础/应用/服务的性能指标，业务指标以及日志报警",
+  product_introductTab_6_tip_2: "报警条件支持多维表达式",
+
+  product_introductTab_7_title: "调用链生成",
+  product_introductTab_7_tip:
+    "无需添加额外代码，自动生成调用链，支持主流技术栈服务，客户端，方法级的全量/采样跟踪\n",
+  product_introductTab_7_tip_2:
+    "两种粒度动态调节：轻调用链，全量采集近乎无损；重调用链，包含所有请求/响应，方法入参/出参的内容\n",
+  product_introductTab_7_tip_3: "支持调用链与日志关联，便捷查看相关日志",
+
+  product_introductTab_8_title: "一键式线程分析",
+  product_introductTab_8_tip: "一键收集目标JVM的线程Dump和线程性能数据",
+  product_introductTab_8_tip_2: "线程深度分析，线程竞态可视化与死锁检测",
+
   product_advangtage_title: "产品特色",
   product_advangtage_tip_1: "代码无侵入，全面支持java主流技术栈",
   product_advangtage_tip_2: "随时随地的运维体验",

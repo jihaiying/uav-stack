@@ -19,47 +19,47 @@ class Document extends Component {
       data: [
         {
           title: formatMessage({ id: "document_1_title" }),
-          href: formatMessage({ id: "document_1_href" })
+          href: formatMessage({ id: "document_1_link" })
         },
         {
           title: formatMessage({ id: "document_2_title" }),
-          href: formatMessage({ id: "document_2_href" })
+          href: formatMessage({ id: "document_2_link" })
         },
         {
           title: formatMessage({ id: "document_3_title" }),
-          href: formatMessage({ id: "document_3_href" })
+          href: formatMessage({ id: "document_3_link" })
         },
         {
           title: formatMessage({ id: "document_4_title" }),
-          href: formatMessage({ id: "document_4_href" })
+          href: formatMessage({ id: "document_4_link" })
         },
         {
           title: formatMessage({ id: "document_5_title" }),
-          href: formatMessage({ id: "document_5_href" })
+          href: formatMessage({ id: "document_5_link" })
         },
         {
           title: formatMessage({ id: "document_6_title" }),
-          href: formatMessage({ id: "document_6_href" })
+          href: formatMessage({ id: "document_6_link" })
         },
         {
           title: formatMessage({ id: "document_7_title" }),
-          href: formatMessage({ id: "document_7_href" })
+          href: formatMessage({ id: "document_7_link" })
         },
         {
           title: formatMessage({ id: "document_8_title" }),
-          href: formatMessage({ id: "document_8_href" })
+          href: formatMessage({ id: "document_8_link" })
         },
         {
           title: formatMessage({ id: "document_9_title" }),
-          href: formatMessage({ id: "document_9_href" })
+          href: formatMessage({ id: "document_9_link" })
         },
         {
           title: formatMessage({ id: "document_10_title" }),
-          href: formatMessage({ id: "document_10_href" })
+          href: formatMessage({ id: "document_10_link" })
         },
         {
           title: formatMessage({ id: "document_11_title" }),
-          href: formatMessage({ id: "document_11_href" })
+          href: formatMessage({ id: "document_11_link" })
         }
       ]
     });
@@ -79,7 +79,7 @@ class Document extends Component {
         <Header />
         <div className={css.container}>
           <h1 className={css.head}>
-            <FormattedMessage id="download_head" />
+            <FormattedMessage id="document_head" />
           </h1>
           <div className={css.body}>
             {data.map((item, key) => (

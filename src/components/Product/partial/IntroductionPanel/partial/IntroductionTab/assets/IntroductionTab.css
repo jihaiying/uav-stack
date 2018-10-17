@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  padding: 40px;
+  box-shadow: 2px 2px 3px #aaaaaa;
+  width: 1200px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+.img {
+  margin-top: 10px;
+  width: 1100px;
+  margin-bottom: 30px;
+}
+.title {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 600;
+}

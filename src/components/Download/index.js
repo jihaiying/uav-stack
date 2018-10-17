@@ -74,7 +74,7 @@ class Download extends Component {
         <div className={css.container}>
           <div className={css.content}>
             <h1 className={css.head}>
-              <FormattedMessage id="document_head" />
+              <FormattedMessage id="download_head" />
             </h1>
             <div className={css.body}>
               <h2 className={css.head2}>

@@ -51,8 +51,6 @@ class AdvangtagePanel extends Component {
       <div className={css.container}>
         <div className={css.content}>
           <div className={css.title}>{title}</div>
-          <div className={css.line} />
-          <div className={css.divider} />
           {data.map((item, key) => (
             <AdvangtageTab key={key} data={item} />
           ))}

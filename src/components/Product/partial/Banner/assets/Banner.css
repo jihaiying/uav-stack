@@ -1,0 +1,32 @@
+.container {
+  background-size: cover;
+  background: url("./bcg.png") center center;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+.title {
+  font-size: 36px;
+}
+.line {
+  margin: 5px auto 0;
+  width: 50px;
+  height: 2px;
+  background-color: #69c1ed;
+}
+.email {
+  display: block;
+  width: 120px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-top: 40px;
+  padding: 5px 20px;
+  background-color: #69c1ed;
+  font-size: 18px;
+  color: #ffffff;
+}

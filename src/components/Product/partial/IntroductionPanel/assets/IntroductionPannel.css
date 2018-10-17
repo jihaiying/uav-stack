@@ -1,0 +1,29 @@
+.container {
+  background: #f7f8fa;
+  border-radius: 2px;
+  text-align: center;
+}
+.content {
+  background: #f7f8fa;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.title {
+  font-size: 36px;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+.tab {
+  font-size: 16px;
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  padding: 5px;
+  line-height: 44px;
+}
+.tab:hover {
+  color: #69c1ed;
+}
