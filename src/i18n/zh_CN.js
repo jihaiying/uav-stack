@@ -15,6 +15,7 @@ const zh_CN = {
   banner_1_word_4: "●细粒度配置支持：收敛模式可配置到单个报警表达式",
   banner_1_word_5:
     "●自动优先级判断：同策略包含多个报警表达式，按梯度优先，以及最长梯度优先",
+
   banner_2_title: "UAV.APM新能力开放：深度线程分析",
   banner_2_word_1: "●单次线程Dump文件深度分析：",
   banner_2_word_1_desc_1: "-自动发现死锁，跟踪死锁关系",
@@ -24,6 +25,88 @@ const zh_CN = {
   banner_2_word_3: "●线程Dump可视化展示：",
   banner_2_word_3_desc_1: "-单次线程Dump可视化（锁依赖）",
   banner_2_word_3_desc_2: "-多次线程Dump可视化（含时序状态，锁依赖）",
+
+  banner_3_title: "UAV.APM新能力开放：调用链与日志关联的探索式查询",
+  banner_3_word_1:
+    "●调用链为入口模式：从应用的调用链直观追踪每个环节的应用日志",
+  banner_3_word_2:
+    "●日志为入口模式：从应用日志搜索，直观关联每条日志对应的调用链",
+  banner_3_word_3:
+    "●切换模式：调用链和日志两种模式可随时互相切换，实现闭环探索式查询",
+
+  banner_4_title:
+    "UAV.Monitor新能力开放：多模式预警支持（流式预警、统计预警、混合预警",
+  banner_4_word_1: "●流式预警：基于流式窗口时序数据的预警",
+  banner_4_word_2: "●统计预警：基于时序指标历史统计值对标的预警",
+  banner_4_word_2_desc_1: "-同比预警",
+  banner_4_word_2_desc_2: "-环比预警",
+  banner_4_word_3:
+    "●混合预警告：允许双模式（流式预警，统计预警）共存的预警策略定义",
+
+  banner_5_title:
+    "UAV.Monitor：是业务，应用/服务，基础三维一体的监控平台，同时支持单体架构，SOA架构，微服务架构。",
+  banner_5_title_2:
+    "只需部署1个Agent即可采集全维度数据，支持物理机，虚拟机，Docker。",
+  banner_5_word_1:
+    "●基础监控：操作系统以及进程级性能指标（CPU，内存，连接数，网络流量，磁盘IO等）",
+  banner_5_word_2:
+    "●应用/服务性能监控：Java应用无需修改代码，即可采集应用/服务实例，应用服务器，JVM，客户端(http/dubbo/SQL/MQ/redis/mongoDB等)，数据库连接池等的性能指标",
+  banner_5_word_3: "●日志监控：系统/应用日志自动归集和搜索，支持动态开关策略",
+  banner_5_word_4: "●业务监控：支持自定义指标归集",
+  banner_5_word_5:
+    "●多技术栈支持：Java系列Tomcat/Jetty/SpringBoot/JSE/MSCP,其他JVM语言Scala，Groovy等",
+  banner_5_word_6:
+    "●全维报警：支持基础/应用/服务的性能指标，业务指标以及日志报警，报警条件支持多维表达式",
+
+  banner_6_title:
+    "UAV.APM：是UAV.Monitor的增强扩展，实现对应用/服务性能全方位的管理。",
+  banner_6_title_2: "支持主流技术栈，与UAV.Monitor相同。",
+  banner_6_word_1: "●代码无侵入性，JVM语言支持Java，Scala，Groovy等。",
+  banner_6_word_2:
+    "●应用/服务画像：自动化提取应用的技术栈和实例元数据，包括服务接口，客户端使用，实例URL，日志配置，类库等。",
+  banner_6_word_3:
+    "●服务图谱：自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。之所以称为服务“流”，是强调更加动态，涵盖应用拓扑的内容，比应用拓扑提供更深入的抽象粒度，也提供更丰富的运行时状态",
+  banner_6_word_4:
+    "●全量无侵入式调用链跟踪：支持主流技术栈服务，客户端，方法级的全量/采样跟踪；两种粒度动态调节：轻调用链，全量采集近乎无损；重调用链，包含所有请求/响应，方法入参/出参的内容",
+  banner_6_word_5:
+    "●一键式线程分析：一键收集目标JVM的线程Dump和线程性能数据，支持代码关联",
+  banner_6_word_6:
+    "●浏览器访问跟踪：自动追踪来自浏览器的访问来源，访问目标，访问时间。",
+  banner_6_word_7:
+    "●多维可视化看板：同视图多维度（业务指标，性能指标，日志，调用链等）数据对标分析",
+  banner_6_word_8: "●历史追踪：任意时间范围的不同指标组合的性能指标展示",
+
+  banner_7_title:
+    "UAV.MSCP（Micro-Service Computing Platform）提供了一套基于微服务架构的计算平台。",
+  banner_7_title_2:
+    "UAV系列软件包括任务机器人，全维监控，APM，服务治理等都是基于MSCP构建的。",
+  banner_7_title_3:
+    "它使用Java语言，并提供了一系列特性来简化计算任务的开发工作。",
+  banner_7_word_1:
+    "●开发框架/组件支持：Http/RPC通信，定时调度任务，并行处理，异步化响应，资源限制器，配置管理中心，共享资源管理，流程处理等",
+  banner_7_word_2:
+    "●功能即服务：每个功能被定义为Feature，每个进程被定义为计算节点，计算节点支持多Feature运行，支持Feature热启停，热配置更新，Class/配置隔离，资源限制.",
+  banner_7_word_3:
+    "●服务化支持：服务注册与发现，负载均衡，自动切换/重试，熔断隔离",
+  banner_7_word_4:
+    "●组件图谱：可自动生成组件图谱，清晰了解代码静态结构与动态关联关系",
+  banner_7_word_5:
+    "●动态服务编排：根据Feature语义自动协调具备符合业务能力的节点参与任务执行",
+  banner_7_word_6: "●动态计算编排：根据计算资源自动协调合适的节点参与任务执行",
+
+  banner_8_title:
+    "UAV.ServiceGovern：是UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持，特别是连接异构服务系统的利器。",
+  banner_8_title_2: "支持主流技术栈，与UAV.Monitor相同。",
+  banner_8_title_3:
+    "UAV.ServiceGovern和UAV.Monitor，UAV.APM实现天然的一站式微服务治理/运维方案。",
+  banner_8_word_1:
+    "●服务生命周期管理：自动化实现同构或异构服务的注册，下线，集群管理等。",
+  banner_8_word_2:
+    "●统一服务发现机制：对同构/异构服务统一发现机制，支持负载均衡，自动切换，自动重试，自动隔离。",
+  banner_8_word_3:
+    "●服务授权管理：实现外部对服务集群，服务集群之间的权限与安全管控",
+  banner_8_word_4:
+    "●服务降级保护：对同构/异构服务实现统一的降级保护策略，支持客户端降级",
 
   updateTab_update_title: "UAVStack周更新",
   updateTab_update_href:

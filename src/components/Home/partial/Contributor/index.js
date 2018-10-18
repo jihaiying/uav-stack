@@ -109,7 +109,7 @@ class Contributor extends Component {
     return (
       <div className={css.container}>
         <div className={css.content}>
-          <div className={css.title}>{title}</div>
+          <h1 className={css.title}>{title}</h1>
           <div className={css.line} />
           <img
             className={css.left}

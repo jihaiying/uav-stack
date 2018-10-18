@@ -3,17 +3,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import * as languageActionCreator from "../../../../actions/language";
 import { LANGUAGES } from "../../../../config/enum";
-
-class LanguageSwitchBtn extends Component {
-  render() {
-    const { lang, actions } = this.props;
-    return (
-      <button onClick={actions.switchLanguage}>
-        {lang === LANGUAGES.en ? "中文" : "English"}
-      </button>
-    );
-  }
-}
+import { Menu, Dropdown, Icon } from "antd";
 
 function mapStateToProps(state) {
   return {
@@ -30,6 +20,26 @@ function mapDispatchToProps(dispatch) {
       dispatch
     )
   };
+}
+
+class LanguageSwitchBtn extends Component {
+  render() {
+    const { lang, actions } = this.props;
+    const menu = (
+      <Menu>
+        <Menu.Item onClick={actions.switchLanguage}>
+          {lang === LANGUAGES.en ? "中文" : "English"}
+        </Menu.Item>
+      </Menu>
+    );
+    return (
+      <Dropdown overlay={menu}>
+        <p className="ant-dropdown-link">
+          {lang === LANGUAGES.en ? "English" : "中文"} <Icon type="down" />
+        </p>
+      </Dropdown>
+    );
+  }
 }
 
 export default connect(

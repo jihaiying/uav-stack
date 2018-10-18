@@ -95,20 +95,20 @@ class DocumentTab extends Component {
 
     var downloadhtml = (
       <div className={css.tab}>
-        <span className={css.title}>
+        <h1 className={css.title}>
           <FormattedMessage id="download" />
-        </span>
+        </h1>
         <Link to={"/download"} className={css.right}>
           <FormattedMessage id="documentTab_more" /> >
         </Link>
         <div className={css.line} />
-        <p className={css.title2}>
+        <h2 className={css.title2}>
           <FormattedMessage id="documentTab_download_title2" />
-        </p>
+        </h2>
         {download.map((item, key) => (
           <a key={key} link={item.link} className={css.paper_line}>
             <img src={downloadpic} alt="download" className={css.img} />
-            <p className={css.document_title}>{item.title}</p>
+            <div className={css.document_title}>{item.title}</div>
             <div className={css.document_tip}>{item.tip}</div>
             <div className={css.document_tip}>{item.tip2}</div>
           </a>
@@ -118,16 +118,16 @@ class DocumentTab extends Component {
 
     var documenthtml = (
       <div className={css.tab}>
-        <span className={css.title}>
+        <h1 className={css.title}>
           <FormattedMessage id="documentTab_document_title" />
-        </span>
+        </h1>
         <Link to={"/document"} className={css.right}>
           <FormattedMessage id="documentTab_more" /> >
         </Link>
         <div className={css.line} />
         {document.map((item, key) => (
           <a key={key} href={item.link} className={css.paper_line}>
-            <p className={css.documentTab_title}>{item.title}</p>
+            <div className={css.documentTab_title}>{item.title}</div>
           </a>
         ))}
       </div>
@@ -135,9 +135,9 @@ class DocumentTab extends Component {
 
     var paperhtml = (
       <div className={css.tab}>
-        <span className={css.title}>
+        <h1 className={css.title}>
           <FormattedMessage id="documentTab_paper_title" />
-        </span>
+        </h1>
         <Link to={"/document"} className={css.right}>
           <FormattedMessage id="documentTab_more" /> >
         </Link>

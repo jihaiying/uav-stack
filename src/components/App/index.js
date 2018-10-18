@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
           <Route path="/product" component={Product} />
           <Route path="/document" component={Document} />
           <Route path="/download" component={Download} />
+          <Route exact path="/" component={Home} />
           <Route component={NoMatch} />
         </Switch>
       </div>

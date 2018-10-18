@@ -119,9 +119,9 @@ class ProductPanel extends Component {
           <div className={css.title}>{title.title}</div>
           <div className={css.line} />
           {title.tips.map((item, key) => (
-            <p key={key} className={css.tip}>
+            <div key={key} className={css.tip}>
               {item}
-            </p>
+            </div>
           ))}
           <div className={css.divider} />
           {data.map((item, key) => (

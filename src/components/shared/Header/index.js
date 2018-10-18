@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LanguageSwitchBtn from "./partial/LanguageSwitchBtn";
 import { FormattedMessage } from "react-intl";
 import css from "./assets/Header.css";
@@ -15,24 +15,45 @@ class Header extends Component {
             <span>UAV Stack</span>
           </div>
           <div className={css.tag}>
-            <Link to={"/"} className={css.link}>
+            <NavLink
+              exact
+              to={"/"}
+              activeClassName={css.selected}
+              className={css.link}
+            >
               <FormattedMessage id="home" />
-            </Link>
+              <div className={css.line} />
+            </NavLink>
           </div>
           <div className={css.tag}>
-            <Link to={"/product"} className={css.link}>
+            <NavLink
+              to={"/product"}
+              activeClassName={css.selected}
+              className={css.link}
+            >
               <FormattedMessage id="product" />
-            </Link>
+              <div className={css.line} />
+            </NavLink>
           </div>
           <div className={css.tag}>
-            <Link to={"/document"} className={css.link}>
+            <NavLink
+              to={"/document"}
+              activeClassName={css.selected}
+              className={css.link}
+            >
               <FormattedMessage id="document" />
-            </Link>
+              <div className={css.line} />
+            </NavLink>
           </div>
           <div className={css.tag}>
-            <Link to={"/download"} className={css.link}>
+            <NavLink
+              to={"/download"}
+              activeClassName={css.selected}
+              className={css.link}
+            >
               <FormattedMessage id="download" />
-            </Link>
+              <div className={css.line} />
+            </NavLink>
           </div>
           <div className={css.tag}>
             <a href={"https://github.com/uavorg"} className={css.link}>

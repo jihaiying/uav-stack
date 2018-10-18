@@ -19,6 +19,7 @@
   vertical-align: top;
 }
 .title {
+  display: inline;
   font-size: 22px;
 }
 .title2 {

@@ -87,11 +87,12 @@ class IntroductionPanel extends Component {
           <h1 className={css.title}>{title}</h1>
           {data.map((item, key) => (
             <h2
-              className={css.tab}
+              className={key === count ? css.selected : css.tab}
               key={key}
               onClick={this.setCount.bind(this, key)}
             >
               {item.title}
+              <div className={css.line} />
             </h2>
           ))}
           <IntroductionTab data={data[count]} />
