@@ -351,10 +351,15 @@ const zh_CN = {
   product_outline_title: "产品架构",
   product_help_title: "帮助文档",
 
-  product_help_1_tip: " 安装部署",
-  product_help_2_tip: " 架构说明",
-  product_help_3_tip: " 用户指南",
-  product_help_4_tip: " 用户指南",
+  product_help_1_tip: "安装部署",
+  product_help_1_link:
+    "https://uavorg.github.io/documents/uavdoc_deploydocs/index.html",
+  product_help_2_tip: "架构说明",
+  product_help_2_link:
+    "https://uavorg.github.io/documents/uavdoc_architecture/index.html",
+  product_help_3_tip: "用户指南",
+  product_help_3_link:
+    "https://uavorg.github.io/documents/uavdoc_useroperation/index.html",
 
   document_head: "文档资料",
 

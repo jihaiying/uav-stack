@@ -13,7 +13,7 @@ class ProductTab extends Component {
           className={css.cover}
           style={{
             width: data.width + "px",
-            backgroundColor: "cyan"
+            backgroundColor: "#69C1ED"
           }}
         >
           <span className={css.link}>查看详情</span>
@@ -25,7 +25,7 @@ class ProductTab extends Component {
           className={css.cover}
           style={{
             width: data.width + "px",
-            backgroundColor: "gray"
+            backgroundColor: "#808492"
           }}
         >
           <span className={css.next}>敬请期待...</span>

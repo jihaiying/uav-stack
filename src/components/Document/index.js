@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Header from "../shared/Header";
+import Header1 from "../shared/Header1";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Document.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
@@ -65,6 +65,7 @@ class Document extends Component {
     });
   }
   render() {
+    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
     const { data } = this.state;
     return (
@@ -76,14 +77,20 @@ class Document extends Component {
             })}
           </title>
         </Helmet>
-        <Header />
+        <Header1 />
         <div className={css.container}>
           <h1 className={css.head}>
             <FormattedMessage id="document_head" />
           </h1>
           <div className={css.body}>
             {data.map((item, key) => (
-              <a key={key} href={item.href} data={item} className={css.line}>
+              <a
+                key={key}
+                href={item.href}
+                data={item}
+                className={css.line}
+                target="_blank"
+              >
                 {item.title}
               </a>
             ))}

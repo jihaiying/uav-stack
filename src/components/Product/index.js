@@ -11,6 +11,7 @@ import { injectIntl, intlShape } from "react-intl";
 
 class Product extends Component {
   render() {
+    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
     return (
       <div>

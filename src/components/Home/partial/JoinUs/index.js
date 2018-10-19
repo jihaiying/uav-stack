@@ -27,6 +27,7 @@ class SupportPanel extends Component {
           <div className={css.line} />
           <p>{tip}</p>
           <a
+            target="_blank"
             href={"https://pan.baidu.com/s/1o81LNS2#list/path=%2F"}
             className={css.tab}
           >
@@ -34,6 +35,7 @@ class SupportPanel extends Component {
             <span>{manual}</span>
           </a>
           <a
+            target="_blank"
             href={"https://pan.baidu.com/s/1o81LNS2#list/path=%2F"}
             className={css.tab}
           >

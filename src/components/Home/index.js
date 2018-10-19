@@ -14,6 +14,7 @@ import ContactUs from "../shared/ContactUs";
 import "antd/dist/antd.css";
 class Home extends Component {
   render() {
+    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
     return (
       <div>

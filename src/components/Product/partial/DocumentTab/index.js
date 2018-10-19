@@ -17,15 +17,15 @@ class Outline extends Component {
       data: [
         {
           title: formatMessage({ id: "product_help_1_tip" }),
-          link: formatMessage({ id: "product_help_1_tip" })
+          link: formatMessage({ id: "product_help_1_link" })
         },
         {
           title: formatMessage({ id: "product_help_2_tip" }),
-          link: formatMessage({ id: "product_help_2_tip" })
+          link: formatMessage({ id: "product_help_2_link" })
         },
         {
           title: formatMessage({ id: "product_help_3_tip" }),
-          link: formatMessage({ id: "product_help_3_tip" })
+          link: formatMessage({ id: "product_help_3_link" })
         }
       ],
       document_title: formatMessage({ id: "documentTab_paper_title" })
@@ -40,7 +40,7 @@ class Outline extends Component {
           {formatMessage({ id: "product_help_title" })}
         </div>
         {data.map((item, key) => (
-          <a href={item.link} key={key} className={css.tab}>
+          <a href={item.link} target="_blank" key={key} className={css.tab}>
             {item.title}
           </a>
         ))}

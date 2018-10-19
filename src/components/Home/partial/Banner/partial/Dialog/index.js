@@ -81,14 +81,19 @@ class Dialog extends Component {
             </div>
             <div>
               <FormattedMessage id="popup_tip3" />
-              <a href={popup_href}>
+              <a target="_blank" href={popup_href}>
                 <FormattedMessage id="popup_tip_link" />
               </a>
             </div>
           </div>
           <div className={css.pad}>
             {popup_os.map((item, key) => (
-              <a key={key} href={item.link} className={css.email}>
+              <a
+                key={key}
+                href={item.link}
+                target="_blank"
+                className={css.email}
+              >
                 {item.title}
               </a>
             ))}

@@ -34,7 +34,7 @@ class AdvangtagePanel extends Component {
           bg: transfer
         },
         {
-          title: formatMessage({ id: "documentTab_paper_title" }),
+          title: formatMessage({ id: "product_advangtage_tip_4" }),
           bg: cpu
         },
         {

@@ -7,7 +7,11 @@ class ContributorTab extends Component {
     const { data } = this.props;
     return (
       <div className={cx(css.container, "swiper-slide")}>
-        <a className={css.link} href={"https://github.com/" + data.gitid}>
+        <a
+          className={css.link}
+          href={"https://github.com/" + data.gitid}
+          target="_blank"
+        >
           <img className={css.head} src={data.pic} alt={data.name} />
           <img className={css.img} src={git} alt="git" />
           <h2 className={css.title}>{data.name}</h2>

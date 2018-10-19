@@ -34,7 +34,9 @@ class UpdateTab extends Component {
             <div>
               <FormattedMessage id="updateTab_update_title" />
             </div>
-            <a href={href}>{href}</a>
+            <a href={href} target="_blank">
+              {href}
+            </a>
             {update.map((item, key) => (
               <div key={key}>{item}</div>
             ))}

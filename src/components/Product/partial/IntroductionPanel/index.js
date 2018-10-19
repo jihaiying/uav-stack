@@ -95,7 +95,9 @@ class IntroductionPanel extends Component {
               <div className={css.line} />
             </h2>
           ))}
-          <IntroductionTab data={data[count]} />
+          {data.map((item, key) => (
+            <IntroductionTab key={key} data={item} hide={key !== count} />
+          ))}
         </div>
       </div>
     );

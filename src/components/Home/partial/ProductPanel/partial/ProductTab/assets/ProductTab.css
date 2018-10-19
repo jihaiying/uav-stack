@@ -12,7 +12,7 @@
   box-shadow: 2px 2px 3px #aaaaaa;
 }
 .container:hover .cover {
-  opacity: 0.5;
+  opacity: 0.79;
 }
 .cover {
   transition: opacity 0.3s;

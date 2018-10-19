@@ -126,7 +126,12 @@ class DocumentTab extends Component {
         </Link>
         <div className={css.line} />
         {document.map((item, key) => (
-          <a key={key} href={item.link} className={css.paper_line}>
+          <a
+            key={key}
+            target="_blank"
+            href={item.link}
+            className={css.paper_line}
+          >
             <div className={css.documentTab_title}>{item.title}</div>
           </a>
         ))}
@@ -143,7 +148,12 @@ class DocumentTab extends Component {
         </Link>
         <div className={css.line} />
         {paper.map((item, key) => (
-          <a key={key} href={item.link} className={css.paper_line}>
+          <a
+            key={key}
+            target="_blank"
+            href={item.link}
+            className={css.paper_line}
+          >
             <p className={css.documentTab_title}>{"● " + item.title}</p>
           </a>
         ))}
