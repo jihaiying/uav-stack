@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import css from "./assets/SupportTab.css";
 
-class ProductTab extends Component {
+class SupportTab extends Component {
   render() {
     const { data } = this.props;
     return (
@@ -22,4 +22,4 @@ class ProductTab extends Component {
   }
 }
 
-export default ProductTab;
+export default SupportTab;

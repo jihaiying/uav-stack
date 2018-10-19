@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import css from "./assets/Banner.css";
+import Header2 from "../../../shared/Header2";
+import css from "./assets/Head.css";
 import { Link } from "react-router-dom";
 import { injectIntl } from "react-intl";
-class SupportPanel extends Component {
+class Head extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,6 +22,7 @@ class SupportPanel extends Component {
     const { title, tip, use } = this.state;
     return (
       <div className={css.container}>
+        <Header2 position="static" />
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <p className={css.org}>{tip}</p>
@@ -33,4 +35,4 @@ class SupportPanel extends Component {
   }
 }
 
-export default injectIntl(SupportPanel);
+export default injectIntl(Head);

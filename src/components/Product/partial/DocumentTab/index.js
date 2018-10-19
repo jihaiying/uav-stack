@@ -3,7 +3,7 @@ import css from "./assets/DocumentTab.css";
 import { injectIntl } from "react-intl";
 import { Link } from "react-router-dom";
 
-class Outline extends Component {
+class DocumentTab extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +36,10 @@ class Outline extends Component {
     const { document_title, data } = this.state;
     return (
       <div className={css.container}>
+        <div
+          id={formatMessage({ id: "product_help_title" })}
+          className={css.anchor}
+        />
         <div className={css.title}>
           {formatMessage({ id: "product_help_title" })}
         </div>
@@ -51,4 +55,4 @@ class Outline extends Component {
     );
   }
 }
-export default injectIntl(Outline);
+export default injectIntl(DocumentTab);

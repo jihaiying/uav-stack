@@ -28,7 +28,7 @@ class Header extends Component {
     const top = this.state.top;
     return (
       <div>
-        <Header1 hide={top < 50} />
+        <Header1 hide={top <= 50} />
         <Header2 hide={top > 50} />
       </div>
     );

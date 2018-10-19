@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import css from "./assets/OutlineTab.css";
+import css from "./assets/Outline.css";
 import outline from "./assets/Outline.png";
 import { FormattedMessage } from "react-intl";
 
-class OutlineTab extends Component {
+class Outline extends Component {
   render() {
     return (
       <div className={css.container}>
@@ -17,4 +17,4 @@ class OutlineTab extends Component {
   }
 }
 
-export default OutlineTab;
+export default Outline;

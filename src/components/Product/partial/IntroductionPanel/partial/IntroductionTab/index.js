@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import css from "./assets/IntroductionTab.css";
 
-class AdvangtageTab extends Component {
+class IntroductTab extends Component {
   render() {
     const { data, hide } = this.props;
     var value = hide ? 0 : 0.99;
@@ -18,4 +18,4 @@ class AdvangtageTab extends Component {
   }
 }
 
-export default AdvangtageTab;
+export default IntroductTab;

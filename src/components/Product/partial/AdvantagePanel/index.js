@@ -49,6 +49,7 @@ class AdvangtagePanel extends Component {
     const { title, data } = this.state;
     return (
       <div className={css.container}>
+        <div id={title} className={css.anchor} />
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           {data.map((item, key) => (

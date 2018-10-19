@@ -3,7 +3,7 @@ import css from "./assets/JoinUs.css";
 import { injectIntl } from "react-intl";
 import book from "./assets/book.png";
 import down from "./assets/down.png";
-class SupportPanel extends Component {
+class JoinUs extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -48,4 +48,4 @@ class SupportPanel extends Component {
   }
 }
 
-export default injectIntl(SupportPanel);
+export default injectIntl(JoinUs);

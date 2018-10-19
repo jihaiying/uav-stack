@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import css from "./assets/ContactUs.css";
 import qrcode from "./assets/qrcode.jpg";
 import { injectIntl } from "react-intl";
-class SupportPanel extends Component {
+class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,4 +52,4 @@ class SupportPanel extends Component {
   }
 }
 
-export default injectIntl(SupportPanel);
+export default injectIntl(ContactUs);

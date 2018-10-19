@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Header from "../shared/Header";
 import ContactUs from "../shared/ContactUs";
-import Banner from "./partial/Banner";
+import Head from "./partial/Head";
+import ScrollBar from "./partial/ScrollBar";
 import AdvangtagePanel from "./partial/AdvantagePanel";
 import IntroductionPanel from "./partial/IntroductionPanel";
 import Outline from "./partial/Outline";
@@ -22,8 +22,8 @@ class Product extends Component {
             })}
           </title>
         </Helmet>
-        <Header />
-        <Banner />
+        <Head />
+        <ScrollBar />
         <AdvangtagePanel />
         <IntroductionPanel />
         <Outline />

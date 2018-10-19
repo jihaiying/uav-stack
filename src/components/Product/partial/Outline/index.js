@@ -8,6 +8,10 @@ class Outline extends Component {
     const { formatMessage } = this.props.intl;
     return (
       <div className={css.container}>
+        <div
+          id={formatMessage({ id: "product_outline_title" })}
+          className={css.anchor}
+        />
         <div className={css.title}>
           {formatMessage({ id: "product_outline_title" })}
         </div>

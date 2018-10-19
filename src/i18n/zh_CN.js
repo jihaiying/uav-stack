@@ -312,11 +312,11 @@ const zh_CN = {
 
   product_introductTab_2_title: "应用/服务监控",
   product_introductTab_2_tip:
-    "自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。\n",
+    " Java应用无需修改代码，即可采集应用/服务实例、应用服务器、JVM、客户端(http/dubbo/SQL/MQ/redis/mongoDB等)、数据库连接池等的性能指标。",
 
   product_introductTab_3_title: "应用/服务画像",
   product_introductTab_3_tip:
-    "自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。\n",
+    "自动化提取应用的技术栈和实例元数据，包括服务接口，客户端使用，实例URL，日志配置，类库等。",
 
   product_introductTab_4_title: "应用/服务关联",
   product_introductTab_4_tip:

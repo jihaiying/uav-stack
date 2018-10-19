@@ -83,6 +83,7 @@ class IntroductionPanel extends Component {
     ];
     return (
       <div className={css.container}>
+        <div id={title} className={css.anchor} />
         <div className={css.content}>
           <h1 className={css.title}>{title}</h1>
           {data.map((item, key) => (
