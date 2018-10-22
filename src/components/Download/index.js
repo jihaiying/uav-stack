@@ -81,7 +81,7 @@ class Download extends Component {
               <h2 className={css.head2}>
                 <FormattedMessage id="popup_title2" />
               </h2>
-              <p>
+              <p className={css.tip}>
                 <FormattedMessage id="popup_tip" />
                 <FormattedMessage id="popup_tip2" />
                 <FormattedMessage id="popup_tip3" />

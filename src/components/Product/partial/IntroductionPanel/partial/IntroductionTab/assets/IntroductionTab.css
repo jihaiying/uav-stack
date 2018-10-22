@@ -3,20 +3,21 @@
   vertical-align: top;
   display: block;
   text-align: left;
-  padding: 40px;
+  height: 680px;
+  padding: 50px;
   box-shadow: 2px 2px 3px #aaaaaa;
-  width: 1200px;
+  width: 1150px;
+  margin-left: 30px;
   margin-bottom: 30px;
   background-color: #ffffff;
   transition: opacity 0.5s;
 }
 .img {
   margin-top: 10px;
-  width: 1100px;
+  width: 1000px;
   margin-bottom: 30px;
 }
 .title {
   font-size: 14px;
   color: #4a4a4a;
-  font-weight: 600;
 }

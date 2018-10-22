@@ -9,13 +9,11 @@
 .content {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 30px;
+  text-align: left;
   padding-bottom: 30px;
 }
-.divider {
-  height: 30px;
-}
 .title {
+  margin-top: 30px;
   font-size: 36px;
   color: #4a4a4a;
   margin-bottom: 30px;

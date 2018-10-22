@@ -2,7 +2,7 @@
   background: #f7f8fa;
   border-radius: 2px;
   text-align: center;
-  height: 1010px;
+  height: 920px;
   overflow: hidden;
 }
 .anchor {
@@ -13,14 +13,14 @@
   background: #f7f8fa;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
 .title {
   font-size: 36px;
   color: #4a4a4a;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .tab {
   font-size: 16px;

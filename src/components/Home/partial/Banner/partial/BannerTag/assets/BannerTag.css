@@ -7,20 +7,23 @@
   width: 1200px;
   margin: 0 auto;
 }
+.text {
+  width: 800px;
+}
 .title {
-  font-size: 22px;
-  color: #fff;
+  font-size: 18px;
+  color: #ffffff;
   line-height: 40px;
 }
 .descCon li {
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   line-height: 24px;
 }
 .descCon li p {
   margin-top: 8px;
-  line-height: 24px;
+  line-height: 20px;
   margin-bottom: 0;
   padding-left: 40px;
 }

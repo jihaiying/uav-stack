@@ -80,8 +80,9 @@
 .document_title {
   white-space: nowrap;
   overflow: hidden;
+  font-weight: 600;
   text-overflow: ellipsis;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 3px;
 }
 .document_tip {

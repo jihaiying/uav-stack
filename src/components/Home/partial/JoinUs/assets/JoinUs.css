@@ -32,10 +32,11 @@
   background-color: #ffffff;
   text-decoration: none !important;
 }
-.tab img {
+.img {
   width: 20px;
   height: 20px;
   display: inline;
+  margin-left: 5px;
   margin-right: 15px;
-  margin-top: -2px;
+  margin-top: 2px;
 }

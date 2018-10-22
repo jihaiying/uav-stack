@@ -7,8 +7,8 @@
   padding: 20px;
   margin-left: 30px;
   margin-top: 30px;
-  background: #ffffff no-repeat bottom right;
-  background-size: 120px;
+  background: #ffffff no-repeat bottom 10px right 10px;
+  background-size: 90px;
   box-shadow: 2px 2px 3px #aaaaaa;
 }
 .container:hover .cover {
@@ -41,13 +41,13 @@
 }
 
 .link {
-  width: 90px;
+  width: 100px;
   height: 30px;
-  border: 2px solid;
-  padding: 2px;
+  border: 1px solid;
+  padding-top: 3px;
   color: #ffffff;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 98px;
 }
 .next {
   text-align: center;

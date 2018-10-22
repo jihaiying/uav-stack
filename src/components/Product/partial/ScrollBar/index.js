@@ -27,7 +27,7 @@ class ScrollBar extends Component {
     if (anchorName) {
       let anchorElement = document.getElementById(anchorName);
       if (anchorElement) {
-        anchorElement.scrollIntoView();
+        anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
       }
     }
   };

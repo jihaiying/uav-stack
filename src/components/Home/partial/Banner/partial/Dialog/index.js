@@ -64,7 +64,7 @@ class Dialog extends Component {
           footer={null}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
-          width={950}
+          width={800}
         >
           <div className={css.pad}>
             <h1 className={css.head}>
@@ -86,7 +86,7 @@ class Dialog extends Component {
               </a>
             </div>
           </div>
-          <div className={css.pad}>
+          <div className={css.pad2}>
             {popup_os.map((item, key) => (
               <a
                 key={key}

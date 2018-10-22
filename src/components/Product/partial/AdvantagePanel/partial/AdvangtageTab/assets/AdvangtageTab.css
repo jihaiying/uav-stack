@@ -5,13 +5,13 @@
   display: inline-block;
   text-align: center;
   padding: 20px;
-  margin-left: 50px;
-  box-shadow: 2px 2px 3px #aaaaaa;
+  margin-left: 85px;
   width: 280px;
   margin-bottom: 30px;
 }
 .img {
   width: 100px;
+  height: 100px;
   margin-bottom: 20px;
 }
 .title {
