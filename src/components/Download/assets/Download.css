@@ -31,8 +31,9 @@
   width: 200px;
   text-align: center;
   display: inline-block;
-  margin-top: 10px;
   color: #4a4a4a;
+  margin-left: -20px;
+  margin-right: 20px;
 }
 .email {
   text-align: center;
@@ -44,6 +45,7 @@
   margin-top: 5px;
   padding: 5px 5px;
   background-color: #69c1ed;
+  border-radius: 1px;
 }
 .pad2 {
   vertical-align: top;

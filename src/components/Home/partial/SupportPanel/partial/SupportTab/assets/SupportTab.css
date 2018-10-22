@@ -1,7 +1,7 @@
 .container {
   position: relative;
   vertical-align: top;
-  height: 320px;
+  height: 280px;
   display: inline-block;
   text-align: left;
   padding: 20px;
@@ -14,19 +14,16 @@
   height: 30px;
 }
 .title {
-  font-family: PingFangSC-Medium;
   font-size: 18px;
   color: #4a4a4a;
   letter-spacing: 0;
   line-height: 42px;
-  text-align: center;
 }
 .tip {
-  font-family: PingFangSC-Regular;
-  font-size: 10px;
+  font-size: 12px;
   color: #9b9b9b;
   letter-spacing: 0;
-  line-height: 28px;
+  line-height: 24px;
 }
 .link {
   border: 2px solid WHITE;

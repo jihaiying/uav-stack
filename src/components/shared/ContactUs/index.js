@@ -31,16 +31,14 @@ class ContactUs extends Component {
           <div className={css.line} />
           <div className={css.tab}>
             {account.map((item, key) => (
-              <p key={key}>{item}</p>
+              <div key={key}>{item}</div>
             ))}
             <img src={qrcode} alt="download" className={css.img} />
           </div>
           <div className={css.tab}>
-            <p>
-              UAVStack Organization
-              <br />
-              Beijing China
-            </p>
+            UAVStack Organization
+            <br />
+            Beijing China
             <a href="mailto:uavstacksupport@163.com" className={css.email}>
               {mail}
             </a>

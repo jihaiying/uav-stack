@@ -85,16 +85,16 @@ class IntroductionPanel extends Component {
       <div className={css.container}>
         <div id={title} className={css.anchor} />
         <div className={css.content}>
-          <h1 className={css.title}>{title}</h1>
+          <div className={css.title}>{title}</div>
           {data.map((item, key) => (
-            <h2
+            <div
               className={key === count ? css.selected : css.tab}
               key={key}
               onClick={this.setCount.bind(this, key)}
             >
               {item.title}
               <div className={css.line} />
-            </h2>
+            </div>
           ))}
           {data.map((item, key) => (
             <IntroductionTab key={key} data={item} hide={key !== count} />

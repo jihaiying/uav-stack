@@ -1,6 +1,7 @@
 .container {
   background-size: cover;
   background: url("./bcg.png") center center;
+  background-size: 100%;
   border-radius: 2px;
   text-align: center;
   color: #ffffff;
@@ -8,8 +9,8 @@
 .content {
   width: 800px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .line {
   margin: 5px auto 0;
@@ -26,7 +27,7 @@
   display: inline-block;
   vertical-align: top;
   line-height: 20px;
-  padding: 50px;
+  padding: 30px;
 }
 .img {
   width: 150px;

@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 import Header1 from "../shared/Header1";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Download.css";
+import { Button } from "antd";
+
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 
 class Download extends Component {
@@ -92,9 +94,14 @@ class Download extends Component {
               {popup_os.map((item, key) => (
                 <div key={key} className={css.pad}>
                   <div className={css.head2}>{item.title}</div>
-                  <a href={item.link} className={css.email}>
+                  <Button
+                    type="primary"
+                    href={item.link}
+                    className={css.email}
+                    target="_blank"
+                  >
                     <FormattedMessage id="download" />
-                  </a>
+                  </Button>
                 </div>
               ))}
             </div>
@@ -109,9 +116,14 @@ class Download extends Component {
                     <div>{item.tip}</div>
                     <div>{item.tip2}</div>
                   </div>
-                  <a href={item.link} className={css.email}>
+                  <Button
+                    type="primary"
+                    href={item.link}
+                    className={css.email}
+                    target="_blank"
+                  >
                     <FormattedMessage id="download" />
-                  </a>
+                  </Button>
                 </div>
               ))}
             </div>

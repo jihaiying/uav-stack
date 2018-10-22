@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import css from "./assets/Dialog.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 import { Modal } from "antd";
+import { Button } from "antd";
 
 class Dialog extends Component {
   constructor(props) {
@@ -88,14 +89,15 @@ class Dialog extends Component {
           </div>
           <div className={css.pad2}>
             {popup_os.map((item, key) => (
-              <a
+              <Button
                 key={key}
+                type="primary"
                 href={item.link}
                 target="_blank"
                 className={css.email}
               >
                 {item.title}
-              </a>
+              </Button>
             ))}
           </div>
         </Modal>

@@ -3,6 +3,7 @@ import css from "./assets/JoinUs.css";
 import { injectIntl } from "react-intl";
 import book from "./assets/book.png";
 import down from "./assets/down.png";
+
 class JoinUs extends Component {
   constructor(props) {
     super(props);

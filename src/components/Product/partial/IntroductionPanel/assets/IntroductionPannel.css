@@ -18,11 +18,12 @@
 }
 
 .title {
-  font-size: 36px;
+  font-size: 32px;
   color: #4a4a4a;
   margin-bottom: 20px;
 }
 .tab {
+  text-decoration: none !important;
   font-size: 16px;
   display: inline-block;
   width: 140px;
@@ -31,6 +32,7 @@
   line-height: 44px;
 }
 .tab:hover {
+  cursor: pointer;
   color: #69c1ed;
 }
 .selected {
@@ -40,7 +42,12 @@
   width: 140px;
   text-align: center;
   padding: 5px;
+  text-decoration: none !important;
   line-height: 44px;
+}
+.selected:hover {
+  cursor: pointer;
+  color: #69c1ed;
 }
 .selected .line {
   margin-left: auto;

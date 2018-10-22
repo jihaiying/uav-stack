@@ -43,6 +43,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_1_tip_4" })
           ],
           bg: monitor,
+          site: "/product",
           width: 350
         },
         {
@@ -64,6 +65,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_3_tip_4" }),
             formatMessage({ id: "productTab_3_tip_5" })
           ],
+          site: "/product",
           bg: servicegovern,
           width: 350
         },
@@ -73,6 +75,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_4_tip_1" }),
             formatMessage({ id: "productTab_4_tip_2" })
           ],
+          site: "/product",
           bg: uem,
           width: 350
         },
@@ -82,6 +85,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_5_tip_1" }),
             formatMessage({ id: "productTab_5_tip_2" })
           ],
+          site: "/product",
           bg: container,
           width: 350
         },
@@ -103,6 +107,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_7_tip_3" }),
             formatMessage({ id: "productTab_7_tip_4" })
           ],
+          site: "/product",
           bg: mscp,
           width: 1110
         }

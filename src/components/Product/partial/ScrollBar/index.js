@@ -18,7 +18,9 @@ class ScrollBar extends Component {
   };
 
   scrollHandler(event) {
-    let scrollTop = event.srcElement.body.scrollTop;
+    let scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    console.log("songjiayu", scrollTop);
     this.setState({
       top: scrollTop
     });
