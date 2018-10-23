@@ -4,6 +4,7 @@
   text-align: center;
   height: 920px;
   overflow: hidden;
+  min-width: 1200px;
 }
 .anchor {
   height: 120px;

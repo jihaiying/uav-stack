@@ -186,7 +186,7 @@ class Banner extends Component {
     return (
       <div
         className="swiper-container"
-        style={{ height: "650px" }}
+        style={{ height: "650px", minWidth: "1200px" }}
         ref={self => (this.swiperID = self)}
       >
         <div className="swiper-wrapper">

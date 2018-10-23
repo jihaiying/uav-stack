@@ -6,6 +6,7 @@
   left: 0;
   top: 0;
   text-align: center;
+  min-width: 1200px;
 }
 .content {
   margin: auto;

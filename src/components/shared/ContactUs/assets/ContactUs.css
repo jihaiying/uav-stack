@@ -5,6 +5,7 @@
   border-radius: 2px;
   text-align: center;
   color: #ffffff;
+  min-width: 1200px;
 }
 .content {
   width: 800px;

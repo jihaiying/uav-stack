@@ -51,11 +51,13 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-.download_line:hover {
-  color: #69c1ed;
+.download_line {
+  line-height: 18px;
+  color: #4a4a4a;
+  display: block;
+  text-decoration: none !important;
+  margin-top: 15px;
 }
-
 .paper_line {
   line-height: 18px;
   color: #4a4a4a;
@@ -80,6 +82,7 @@
 .document_title {
   white-space: nowrap;
   overflow: hidden;
+  color: #4a4a4a;
   font-weight: 600;
   text-overflow: ellipsis;
   font-size: 14px;

@@ -106,7 +106,7 @@ class DocumentTab extends Component {
           <FormattedMessage id="documentTab_download_title2" />
         </h2>
         {download.map((item, key) => (
-          <a key={key} link={item.link} className={css.paper_line}>
+          <a key={key} link={item.link} className={css.download_line}>
             <img src={downloadpic} alt="download" className={css.img} />
             <div className={css.document_title}>{item.title}</div>
             <div className={css.document_tip}>{item.tip}</div>

@@ -6,6 +6,7 @@
   text-align: left;
   padding: 20px;
   margin-left: 20px;
+  transition: background 0.3s;
 }
 .container:hover {
   background: #ffffff;

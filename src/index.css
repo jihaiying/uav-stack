@@ -5,6 +5,7 @@
 }
 body {
   font-family: sans-serif;
+  min-width: 1200px;
 }
 li {
   list-style: none;

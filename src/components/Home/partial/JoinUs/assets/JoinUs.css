@@ -6,6 +6,7 @@
   color: #ffffff;
   font-size: 14px;
   vertical-align: middle;
+  min-width: 1200px;
 }
 .content {
   width: 800px;

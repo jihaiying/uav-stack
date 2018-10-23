@@ -1,6 +1,7 @@
 .container {
   border-radius: 2px;
   text-align: center;
+  min-width: 1200px;
 }
 .anchor {
   height: 120px;
