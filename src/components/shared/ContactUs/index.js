@@ -25,23 +25,25 @@ class ContactUs extends Component {
   render() {
     const { title, account, mail } = this.state;
     return (
-      <div className={css.container}>
-        <div className={css.content}>
-          <div className={css.title}>{title}</div>
-          <div className={css.line} />
-          <div className={css.tab}>
-            {account.map((item, key) => (
-              <div key={key}>{item}</div>
-            ))}
-            <img src={qrcode} alt="download" className={css.img} />
-          </div>
-          <div className={css.tab}>
-            UAVStack Organization
-            <br />
-            Beijing China
-            <a href="mailto:uavstacksupport@163.com" className={css.email}>
-              {mail}
-            </a>
+      <div>
+        <div className={css.container}>
+          <div className={css.content}>
+            <div className={css.title}>{title}</div>
+            <div className={css.line} />
+            <div className={css.tab}>
+              {account.map((item, key) => (
+                <div key={key}>{item}</div>
+              ))}
+              <img src={qrcode} alt="download" className={css.img} />
+            </div>
+            <div className={css.tab}>
+              UAVStack Organization
+              <br />
+              Beijing China
+              <a href="mailto:uavstacksupport@163.com" className={css.email}>
+                {mail}
+              </a>
+            </div>
           </div>
         </div>
         <p className={css.org}>© 2016-2018 UAVStack Organization</p>

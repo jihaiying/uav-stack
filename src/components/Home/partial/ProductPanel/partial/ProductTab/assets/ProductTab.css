@@ -43,6 +43,7 @@
   width: 100px;
   height: 30px;
   border: 1px solid;
+  border-radius: 3px;
   padding-top: 3px;
   color: #ffffff;
   display: inline-block;

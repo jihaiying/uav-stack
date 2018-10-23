@@ -76,21 +76,21 @@ class Download extends Component {
         <Header1 />
         <div className={css.container}>
           <div className={css.content}>
-            <h1 className={css.head}>
+            <div className={css.head}>
               <FormattedMessage id="download_head" />
-            </h1>
+            </div>
             <div className={css.body}>
-              <h2 className={css.head2}>
+              <div className={css.head2}>
                 <FormattedMessage id="popup_title2" />
-              </h2>
-              <p className={css.tip}>
+              </div>
+              <div className={css.tip}>
                 <FormattedMessage id="popup_tip" />
                 <FormattedMessage id="popup_tip2" />
                 <FormattedMessage id="popup_tip3" />
-                <a href={popup_href}>
+                <a className={css.link} href={popup_href} target="_blank">
                   <FormattedMessage id="popup_tip_link" />
                 </a>
-              </p>
+              </div>
               {popup_os.map((item, key) => (
                 <div key={key} className={css.pad}>
                   <div className={css.head2}>{item.title}</div>
@@ -108,25 +108,23 @@ class Download extends Component {
             <h1 className={css.head}>
               <FormattedMessage id="documentTab_download_title2" />
             </h1>
-            <div className={css.body}>
-              {download.map((item, key) => (
-                <div key={key} className={css.pad2}>
-                  <div className={css.head2}>{item.title}</div>
-                  <div className={css.tip}>
-                    <div>{item.tip}</div>
-                    <div>{item.tip2}</div>
-                  </div>
-                  <Button
-                    type="primary"
-                    href={item.link}
-                    className={css.email}
-                    target="_blank"
-                  >
-                    <FormattedMessage id="download" />
-                  </Button>
+            {download.map((item, key) => (
+              <div key={key} className={css.pad2}>
+                <div className={css.head2}>{item.title}</div>
+                <div className={css.tip2}>
+                  <div>{item.tip}</div>
+                  <div>{item.tip2}</div>
                 </div>
-              ))}
-            </div>
+                <Button
+                  type="primary"
+                  href={item.link}
+                  className={css.email}
+                  target="_blank"
+                >
+                  <FormattedMessage id="download" />
+                </Button>
+              </div>
+            ))}
           </div>
         </div>
         <ContactUs />

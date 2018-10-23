@@ -7,6 +7,12 @@
   padding: 10px 20px;
   border: 1px solid #69c1ed;
   color: #69c1ed;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+.button:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 .pad {
   width: 380px;
@@ -38,5 +44,6 @@
   text-decoration: none !important;
   padding: 5px 5px;
   border: 1px solid #69c1ed;
+  border-radius: 3px;
   color: #69c1ed;
 }

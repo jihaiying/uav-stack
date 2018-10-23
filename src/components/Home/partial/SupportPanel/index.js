@@ -32,8 +32,7 @@ class SupportPanel extends Component {
             formatMessage({ id: "supportTab_2_tip_3" }),
             formatMessage({ id: "supportTab_2_tip_4" }),
             formatMessage({ id: "supportTab_2_tip_5" })
-          ],
-          width: 270
+          ]
         },
         {
           title: formatMessage({ id: "supportTab_3_title" }),
@@ -53,8 +52,7 @@ class SupportPanel extends Component {
             formatMessage({ id: "supportTab_4_tip_3" }),
             formatMessage({ id: "supportTab_4_tip_4" }),
             formatMessage({ id: "supportTab_4_tip_5" })
-          ],
-          width: 200
+          ]
         },
         {
           title: formatMessage({ id: "supportTab_5_title" }),

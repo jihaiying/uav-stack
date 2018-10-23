@@ -3,8 +3,6 @@ const zh_CN = {
   product: "产品",
   download: "下载",
   document: "文档",
-  productPage: "产品页",
-  downloadPage: "下载页",
 
   banner_1_title: "UAV.Monitor新能力开放：可动态切换的报警收敛模式",
   banner_1_word_1:
@@ -221,7 +219,7 @@ const zh_CN = {
   documentTab_download_line_1_tip: "提供应用画像，性能数据收集等功能",
   documentTab_download_line_1_link: "https://pan.baidu.com/s/1cg4J0q",
 
-  documentTab_download_line_2_title: "监控代理程序（MA)",
+  documentTab_download_line_2_title: "监控代理程序（MA）",
   documentTab_download_line_2_tip:
     "提供数据采集功能和节点容器控制功能的JSE应用。",
   documentTab_download_line_2_link: "https://pan.baidu.com/s/1ge5MJ9h",
@@ -293,7 +291,7 @@ const zh_CN = {
   popup_link:
     "https://uavorg.github.io/documents/uavdoc_deploydocs/healmanagerInstall/healmanagerInstall/microservice.html",
 
-  popup_windows: "windows 64位",
+  popup_windows: "Windows 64位",
   popup_windows_link: "https://pan.baidu.com/s/1jIF0wNs",
   popup_mac: "Mac",
   popup_mac_link: "https://pan.baidu.com/s/1mhCykp6#list/path=%2F",
@@ -366,22 +364,25 @@ const zh_CN = {
   document_1_title: "JAVA服务治理实践之无侵入的应用服务监控",
   document_1_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=2&sn=79ea1b9830df9d0bb713d9d3adf06b60&mpshare=1&scene=1&srcid=1010niyXsvUnT26D3ziFIsZQ#rd",
+  document_1_time: "09月08日",
 
   document_2_title: "微服务治理实战：服务流的自动化构建与应用",
   document_2_link:
     "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650759250&idx=2&sn=4599d2938cd6795c5f79f391e3ba7b15&chksm=f3f9d5c7c48e5cd17e697c04446e39c9284357a12a2669780265af1a321e1cec0609b8691df5&mpshare=1&scene=1&srcid=0116NrH9XDgruRORvPBsUFeJ#rd",
+  document_2_time: "01月16日",
 
   document_3_title: "微服务架构下，如何打造别具一格的服务治理体验？(上)",
   document_3_link:
     "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650757450&idx=1&sn=13a2bb60c41821a9f9d0ef7ef75f3720&chksm=f3f9ecdfc48e65c9535ecd601078a90b60481d4f22a79a4f0187cdaa0499fb3d6c7f3e68cb9e&mpshare=1&scene=1&srcid=1027vkuRK6yeafgKeHEATEq5#rd",
-
+  document_3_time: "10月27日",
   document_4_title: "微服务架构下，如何打造别具一格的服务治理体验？(下)",
   document_4_link:
     "http://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650758431&idx=2&sn=2f7e9877da720a5bee1d718bb0443436&chksm=f3f9e88ac48e619cf46edd9fbccedd00ea7f085fa49467401c6a86a06e58f3cb984d86422fb7&mpshare=1&scene=1&srcid=0908p8Wd2wGlrpihwF58lFXI#rd",
-
+  document_4_time: "11月29日",
   document_5_title: "调用链与日志关联的探索式查询",
   document_5_link:
     "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992942&idx=1&sn=3026cebc5e04ec5d9d97345ac469ec45&chksm=83037439b474fd2f5e0e3f5de905d29f72342ff2866b15ebafcf8b0f0cf6a84062d755ff406c&mpshare=1&scene=1&srcid=1218dAbH9ikMRUsGkCgEPhzh#rd",
+  document_5_time: "11月28日",
 
   document_6_title: "WOT2018议题分享：运维机器人之任务决策系统演进",
   document_6_link: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",

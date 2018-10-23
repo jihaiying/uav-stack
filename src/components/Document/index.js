@@ -97,7 +97,6 @@ class Document extends Component {
           </div>
         </div>
         <ContactUs />
-        <FormattedMessage id="downloadPage" />
       </div>
     );
   }

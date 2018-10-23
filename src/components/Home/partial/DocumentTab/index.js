@@ -43,23 +43,28 @@ class DocumentTab extends Component {
       document: [
         {
           title: formatMessage({ id: "document_1_title" }),
-          link: formatMessage({ id: "document_1_link" })
+          link: formatMessage({ id: "document_1_link" }),
+          time: formatMessage({ id: "document_1_time" })
         },
         {
           title: formatMessage({ id: "document_2_title" }),
-          link: formatMessage({ id: "document_2_link" })
+          link: formatMessage({ id: "document_2_link" }),
+          time: formatMessage({ id: "document_2_time" })
         },
         {
           title: formatMessage({ id: "document_3_title" }),
-          link: formatMessage({ id: "document_3_link" })
+          link: formatMessage({ id: "document_3_link" }),
+          time: formatMessage({ id: "document_3_time" })
         },
         {
           title: formatMessage({ id: "document_4_title" }),
-          link: formatMessage({ id: "document_4_link" })
+          link: formatMessage({ id: "document_4_link" }),
+          time: formatMessage({ id: "document_4_time" })
         },
         {
           title: formatMessage({ id: "document_5_title" }),
-          link: formatMessage({ id: "document_5_link" })
+          link: formatMessage({ id: "document_5_link" }),
+          time: formatMessage({ id: "document_5_time" })
         }
       ],
       paper: [
@@ -106,12 +111,19 @@ class DocumentTab extends Component {
           <FormattedMessage id="documentTab_download_title2" />
         </h2>
         {download.map((item, key) => (
-          <a key={key} link={item.link} className={css.download_line}>
-            <img src={downloadpic} alt="download" className={css.img} />
-            <div className={css.document_title}>{item.title}</div>
+          <div className={css.document_line} key={key}>
+            <a href={item.link} target="_blank">
+              <img
+                src={downloadpic}
+                alt="download"
+                className={css.img}
+                target="_blank"
+              />
+            </a>
+            <div className={css.download_title}>{item.title}</div>
             <div className={css.document_tip}>{item.tip}</div>
             <div className={css.document_tip}>{item.tip2}</div>
-          </a>
+          </div>
         ))}
       </div>
     );
@@ -132,7 +144,8 @@ class DocumentTab extends Component {
             href={item.link}
             className={css.paper_line}
           >
-            <div className={css.documentTab_title}>{item.title}</div>
+            <div className={css.time}>{item.time}</div>
+            <div className={css.document_title}>{item.title}</div>
           </a>
         ))}
       </div>
@@ -154,7 +167,7 @@ class DocumentTab extends Component {
             href={item.link}
             className={css.paper_line}
           >
-            <p className={css.documentTab_title}>{"● " + item.title}</p>
+            <p className={css.document_title}>{"● " + item.title}</p>
           </a>
         ))}
       </div>

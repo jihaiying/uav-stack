@@ -6,8 +6,13 @@
   text-align: center;
   padding: 20px;
   margin-left: 85px;
+  transition: background 0.5s;
   width: 280px;
   margin-bottom: 30px;
+}
+.container:hover {
+  background: #ffffff;
+  box-shadow: 2px 2px 5px #cccccc;
 }
 .img {
   width: 100px;

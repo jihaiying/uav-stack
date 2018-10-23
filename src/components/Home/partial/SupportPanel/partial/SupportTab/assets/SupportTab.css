@@ -1,15 +1,17 @@
 .container {
   position: relative;
   vertical-align: top;
-  height: 280px;
+  height: 350px;
+  width: 190px;
   display: inline-block;
   text-align: left;
   padding: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
   transition: background 0.3s;
 }
 .container:hover {
   background: #ffffff;
+  box-shadow: 2px 2px 5px #999999;
 }
 .divider {
   height: 30px;

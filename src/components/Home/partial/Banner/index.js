@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { injectIntl, intlShape } from "react-intl";
+import Header2 from "../../../shared/Header2";
 import Swiper from "swiper/dist/js/swiper.js";
 import "swiper/dist/css/swiper.min.css";
 import BannerTag from "./partial/BannerTag";
@@ -189,6 +190,7 @@ class Banner extends Component {
         style={{ height: "650px", minWidth: "1200px" }}
         ref={self => (this.swiperID = self)}
       >
+        <Header2 position="absolute" />
         <div className="swiper-wrapper">
           {data.map((item, key) => (
             <BannerTag key={key} data={item} />

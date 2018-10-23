@@ -20,7 +20,6 @@ class ScrollBar extends Component {
   scrollHandler(event) {
     let scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;
-    console.log("songjiayu", scrollTop);
     this.setState({
       top: scrollTop
     });
@@ -36,7 +35,7 @@ class ScrollBar extends Component {
 
   render() {
     const { formatMessage } = this.props.intl;
-    const fix = this.state.top > 400 ? "fixed" : "static";
+    const fix = this.state.top > 400 ? 0 : 400 - this.state.top;
     const data = [
       formatMessage({ id: "product_advangtage_title" }),
       formatMessage({ id: "product_introductPanel_title" }),
@@ -44,7 +43,7 @@ class ScrollBar extends Component {
       formatMessage({ id: "product_help_title" })
     ];
     return (
-      <div className={css.container} style={{ position: fix }}>
+      <div className={css.container} style={{ marginTop: fix }}>
         <div className={css.content}>
           {data.map((item, key) => (
             <a

@@ -32,6 +32,9 @@
   background-color: #ffffff;
   text-decoration: none !important;
 }
+.tab:hover {
+  color: #60beca;
+}
 .img {
   width: 20px;
   height: 20px;

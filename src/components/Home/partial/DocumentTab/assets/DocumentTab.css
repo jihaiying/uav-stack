@@ -13,7 +13,7 @@
 .tab {
   padding: 30px 10px;
   text-align: left;
-  width: 33%;
+  width: 390px;
   display: inline-block;
   tab-size: 14px;
   vertical-align: top;
@@ -51,22 +51,20 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.download_line {
-  line-height: 18px;
-  color: #4a4a4a;
-  display: block;
-  text-decoration: none !important;
-  margin-top: 15px;
+.document_line {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
 }
 .paper_line {
-  line-height: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;
-  margin-top: 15px;
-}
-.paper_line:hover {
-  color: #69c1ed;
 }
 .time {
   word-break: break-all;
@@ -79,18 +77,28 @@
   float: left;
   margin-right: 10px;
 }
+.download_title {
+  white-space: nowrap;
+  overflow: hidden;
+  color: #4a4a4a;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  margin-bottom: 1px;
+}
 .document_title {
   white-space: nowrap;
   overflow: hidden;
   color: #4a4a4a;
-  font-weight: 600;
   text-overflow: ellipsis;
-  font-size: 14px;
-  margin-bottom: 3px;
+  font-size: 12px;
+  margin-bottom: 1px;
 }
 .document_tip {
   color: #9b9b9b;
   font-size: 12px;
   line-height: 16px;
   margin-left: 24px;
+}
+.document_title:hover {
+  color: #69c1ed;
 }

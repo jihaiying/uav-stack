@@ -14,14 +14,14 @@
   color: #4a4a4a;
   background: #ffffff;
   margin: 20px auto 80px;
-  padding: 20px 20px 80px 80px;
+  padding: 40px 20px 80px 56px;
   text-align: left;
 }
 .line {
   display: block;
   color: #000000;
   text-decoration: none !important;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .line:hover {
   color: #69c1ed;
