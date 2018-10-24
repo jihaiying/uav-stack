@@ -65,6 +65,7 @@
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;
+  overflow-y: hidden;
 }
 .time {
   word-break: break-all;
@@ -72,7 +73,7 @@
   color: #9b9b9b;
   letter-spacing: 0;
   line-height: 12px;
-  width: 25px;
+  width: 30px;
   display: inline-block;
   float: left;
   margin-right: 10px;

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Header1 from "../shared/Header1";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Download.css";
-import { Button } from "antd";
+import Button from "antd/lib/button";
 
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 
