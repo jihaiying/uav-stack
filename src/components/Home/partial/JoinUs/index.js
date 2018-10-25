@@ -15,31 +15,32 @@ class JoinUs extends Component {
       title: formatMessage({ id: "JoinUs_title" }),
       tip: formatMessage({ id: "JoinUS_tip" }),
       manual: formatMessage({ id: "JoinUs_manual" }),
-      download: formatMessage({ id: "JoinUs_download" })
+      manual_link: formatMessage({ id: "JoinUs_manual_link" }),
+      download: formatMessage({ id: "JoinUs_download" }),
+      download_link: formatMessage({ id: "JoinUs_download_link" })
     });
   }
 
   render() {
-    const { title, tip, manual, download } = this.state;
+    const {
+      title,
+      tip,
+      manual,
+      manual_link,
+      download,
+      download_link
+    } = this.state;
     return (
       <div className={css.container}>
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <div className={css.line} />
           <p>{tip}</p>
-          <a
-            target="_blank"
-            href={"https://pan.baidu.com/s/1o81LNS2#list/path=%2F"}
-            className={css.tab}
-          >
+          <a target="_blank" href={manual_link} className={css.tab}>
             <img src={book} alt="book" className={css.img} />
             <span>{manual}</span>
           </a>
-          <a
-            target="_blank"
-            href={"https://pan.baidu.com/s/1o81LNS2#list/path=%2F"}
-            className={css.tab}
-          >
+          <a target="_blank" href={download_link} className={css.tab}>
             <img src={down} alt="download" className={css.img} />
             <span>{download}</span>
           </a>

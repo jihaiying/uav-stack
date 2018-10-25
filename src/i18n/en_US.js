@@ -243,7 +243,9 @@ const en_US = {
   JoinUS_tip:
     "UAVStack社区正式开放IDE以及IDE搭建手册，陆续还将开放更多开发文档，欢迎大家加入社区贡献力量！",
   JoinUs_manual: "UAVStackIDE搭建手册",
+  JoinUs_manual_link: "https://pan.baidu.com/s/1o81LNS2",
   JoinUs_download: "UAVStackIDE下载",
+  JoinUs_download_link: "https://pan.baidu.com/s/1o81LNS2",
 
   contributor_title: "开源贡献者",
 

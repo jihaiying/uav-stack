@@ -11,6 +11,7 @@ class Download extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      join: {},
       popup_os: [],
       download: []
     };
@@ -34,6 +35,15 @@ class Download extends Component {
           link: formatMessage({ id: "popup_linux_link" })
         }
       ],
+
+      join: {
+        title: formatMessage({ id: "JoinUs_title" }),
+        tip: formatMessage({ id: "JoinUS_tip" }),
+        manual: formatMessage({ id: "JoinUs_manual" }),
+        manual_link: formatMessage({ id: "JoinUs_manual_link" }),
+        download: formatMessage({ id: "JoinUs_download" }),
+        download_link: formatMessage({ id: "JoinUs_download_link" })
+      },
 
       download: [
         {
@@ -63,7 +73,7 @@ class Download extends Component {
   render() {
     window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
-    const { popup_href, popup_os, download } = this.state;
+    const { popup_href, join, popup_os, download } = this.state;
     return (
       <div>
         <Helmet>
@@ -93,7 +103,7 @@ class Download extends Component {
               </div>
               {popup_os.map((item, key) => (
                 <div key={key} className={css.pad}>
-                  <div className={css.head2}>{item.title}</div>
+                  <div className={css.head3}>{item.title}</div>
                   <Button
                     type="primary"
                     href={item.link}
@@ -105,12 +115,40 @@ class Download extends Component {
                 </div>
               ))}
             </div>
-            <h1 className={css.head}>
+
+            <div className={css.head}>{join.title}</div>
+            <div className={css.body}>
+              <div className={css.head2}>{join.tip}</div>
+              <div className={css.tip3} />
+              <div className={css.pad}>
+                <div className={css.head3}>{join.manual}</div>
+                <Button
+                  type="primary"
+                  href={join.manual_link}
+                  className={css.email}
+                  target="_blank"
+                >
+                  <FormattedMessage id="download" />
+                </Button>
+              </div>
+              <div className={css.pad}>
+                <div className={css.head3}>{join.download}</div>
+                <Button
+                  type="primary"
+                  href={join.download_link}
+                  className={css.email}
+                  target="_blank"
+                >
+                  <FormattedMessage id="download" />
+                </Button>
+              </div>
+            </div>
+            <div className={css.head}>
               <FormattedMessage id="documentTab_download_title2" />
-            </h1>
+            </div>
             {download.map((item, key) => (
               <div key={key} className={css.pad2}>
-                <div className={css.head2}>{item.title}</div>
+                <div className={css.head3}>{item.title}</div>
                 <div className={css.tip2}>
                   <div>{item.tip}</div>
                   <div>{item.tip2}</div>

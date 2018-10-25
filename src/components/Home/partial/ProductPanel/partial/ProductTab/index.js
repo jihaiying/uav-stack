@@ -6,7 +6,8 @@ class ProductTab extends Component {
   render() {
     const { data } = this.props;
     let site = null;
-    if (data.site != null) {
+    if (data.site === "default") {
+    } else if (data.site != null) {
       site = (
         <Link
           to={data.site}

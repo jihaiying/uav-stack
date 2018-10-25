@@ -26,6 +26,9 @@ class Banner extends Component {
         delay: 6000
       },
       loop: true,
+      pagination: {
+        el: ".swiper-pagination"
+      },
       autoplayDisableOnInteraction: false
     });
   };
