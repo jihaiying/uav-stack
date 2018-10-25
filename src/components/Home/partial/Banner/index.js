@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { injectIntl, intlShape } from "react-intl";
-import Header2 from "../../../shared/Header2";
+import Header2 from "../../../shared/Header4";
 import Swiper from "swiper/dist/js/swiper.js";
 import "swiper/dist/css/swiper.min.css";
 import BannerTag from "./partial/BannerTag";

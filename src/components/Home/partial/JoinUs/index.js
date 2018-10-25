@@ -33,6 +33,7 @@ class JoinUs extends Component {
     return (
       <div className={css.container}>
         <div className={css.content}>
+          <div id="JoinUs" className={css.anchor} />
           <div className={css.title}>{title}</div>
           <div className={css.line} />
           <p>{tip}</p>
