@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import Header1 from "../shared/Header1";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Download.css";
-import Button from "antd/lib/button";
 
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 
@@ -104,14 +103,14 @@ class Download extends Component {
               {popup_os.map((item, key) => (
                 <div key={key} className={css.pad}>
                   <div className={css.head3}>{item.title}</div>
-                  <Button
+                  <a
                     type="primary"
                     href={item.link}
                     className={css.email}
                     target="_blank"
                   >
                     <FormattedMessage id="download" />
-                  </Button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -122,25 +121,25 @@ class Download extends Component {
               <div className={css.tip3} />
               <div className={css.pad}>
                 <div className={css.head3}>{join.manual}</div>
-                <Button
+                <a
                   type="primary"
                   href={join.manual_link}
                   className={css.email}
                   target="_blank"
                 >
                   <FormattedMessage id="download" />
-                </Button>
+                </a>
               </div>
               <div className={css.pad}>
                 <div className={css.head3}>{join.download}</div>
-                <Button
+                <a
                   type="primary"
                   href={join.download_link}
                   className={css.email}
                   target="_blank"
                 >
                   <FormattedMessage id="download" />
-                </Button>
+                </a>
               </div>
             </div>
             <div className={css.head}>
@@ -153,14 +152,14 @@ class Download extends Component {
                   <div>{item.tip}</div>
                   <div>{item.tip2}</div>
                 </div>
-                <Button
+                <a
                   type="primary"
                   href={item.link}
                   className={css.email}
                   target="_blank"
                 >
                   <FormattedMessage id="download" />
-                </Button>
+                </a>
               </div>
             ))}
           </div>

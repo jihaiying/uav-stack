@@ -51,6 +51,9 @@
   background-color: #69c1ed;
   border-radius: 1px;
 }
+.email:hover {
+  color: #ffffff !important;
+}
 .pad2 {
   margin-top: 20px;
   background-color: #ffffff;

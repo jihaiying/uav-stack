@@ -3,7 +3,6 @@ import Header2 from "../../../shared/Header2";
 import css from "./assets/Head.css";
 import { Link } from "react-router-dom";
 import { injectIntl } from "react-intl";
-import Button from "antd/lib/button";
 
 class Head extends Component {
   constructor(props) {
@@ -29,9 +28,9 @@ class Head extends Component {
           <div className={css.title}>{title}</div>
           <p className={css.org}>{tip}</p>
           <Link to={"/download"}>
-            <Button type="primary" className={css.email}>
+            <a type="primary" className={css.email}>
               {use}
-            </Button>
+            </a>
           </Link>
         </div>
       </div>

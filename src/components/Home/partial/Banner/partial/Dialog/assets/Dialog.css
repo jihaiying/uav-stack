@@ -47,3 +47,6 @@
   border-radius: 3px;
   color: #69c1ed;
 }
+.email:hover {
+  color: #ffffff !important;
+}
