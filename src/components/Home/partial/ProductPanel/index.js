@@ -65,7 +65,6 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_3_tip_4" }),
             formatMessage({ id: "productTab_3_tip_5" })
           ],
-          site: "default",
           bg: servicegovern,
           width: 350
         },
@@ -75,7 +74,6 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_4_tip_1" }),
             formatMessage({ id: "productTab_4_tip_2" })
           ],
-          site: "default",
           bg: uem,
           width: 350
         },
@@ -85,7 +83,6 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_5_tip_1" }),
             formatMessage({ id: "productTab_5_tip_2" })
           ],
-          site: "default",
           bg: container,
           width: 350
         },

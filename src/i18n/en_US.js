@@ -108,7 +108,7 @@ const en_US = {
 
   updateTab_update_title: "UAVStack周更新",
   updateTab_update_href:
-    "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20180914",
+    "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20181019",
   updateTab_update_tip_1:
     "1. 新增 增加采集主机所有IP地址、子网掩码等网卡信息的功能。",
   updateTab_update_tip_2:

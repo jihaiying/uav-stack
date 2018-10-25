@@ -35,6 +35,7 @@
   width: 180px;
   margin: 0px 0px 30px 80px;
 }
+
 .email {
   margin: 20px auto;
   text-align: center;
@@ -46,7 +47,9 @@
   border: 1px solid #69c1ed;
   border-radius: 3px;
   color: #69c1ed;
+  transition: background-color 0.2s;
 }
 .email:hover {
+  background-color: #69c1ed;
   color: #ffffff !important;
 }

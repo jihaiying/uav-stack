@@ -115,33 +115,6 @@ class Download extends Component {
               ))}
             </div>
 
-            <div className={css.head}>{join.title}</div>
-            <div className={css.body}>
-              <div className={css.head2}>{join.tip}</div>
-              <div className={css.tip3} />
-              <div className={css.pad}>
-                <div className={css.head3}>{join.manual}</div>
-                <a
-                  type="primary"
-                  href={join.manual_link}
-                  className={css.email}
-                  target="_blank"
-                >
-                  <FormattedMessage id="download" />
-                </a>
-              </div>
-              <div className={css.pad}>
-                <div className={css.head3}>{join.download}</div>
-                <a
-                  type="primary"
-                  href={join.download_link}
-                  className={css.email}
-                  target="_blank"
-                >
-                  <FormattedMessage id="download" />
-                </a>
-              </div>
-            </div>
             <div className={css.head}>
               <FormattedMessage id="documentTab_download_title2" />
             </div>
@@ -162,6 +135,34 @@ class Download extends Component {
                 </a>
               </div>
             ))}
+          </div>
+          <div className={css.tip4} />
+          <div className={css.head}>{join.title}</div>
+          <div className={css.body}>
+            <div className={css.head2}>{join.tip}</div>
+            <div className={css.tip3} />
+            <div className={css.pad}>
+              <div className={css.head3}>{join.manual}</div>
+              <a
+                type="primary"
+                href={join.manual_link}
+                className={css.email}
+                target="_blank"
+              >
+                <FormattedMessage id="download" />
+              </a>
+            </div>
+            <div className={css.pad}>
+              <div className={css.head3}>{join.download}</div>
+              <a
+                type="primary"
+                href={join.download_link}
+                className={css.email}
+                target="_blank"
+              >
+                <FormattedMessage id="download" />
+              </a>
+            </div>
           </div>
         </div>
         <ContactUs />

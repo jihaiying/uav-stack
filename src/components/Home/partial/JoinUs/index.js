@@ -32,8 +32,8 @@ class JoinUs extends Component {
     } = this.state;
     return (
       <div className={css.container}>
+        <div id="JoinUs" className={css.anchor} />
         <div className={css.content}>
-          <div id="JoinUs" className={css.anchor} />
           <div className={css.title}>{title}</div>
           <div className={css.line} />
           <p>{tip}</p>
