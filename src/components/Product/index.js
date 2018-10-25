@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import ContactUs from "../shared/ContactUs";
+import DocumentTab from "./partial/DocumentTab";
 import Head from "./partial/Head";
 import ScrollBar from "./partial/ScrollBar";
 import AdvangtagePanel from "./partial/AdvantagePanel";
 import IntroductionPanel from "./partial/IntroductionPanel";
 import Outline from "./partial/Outline";
-import DocumentTab from "./partial/DocumentTab";
 import { injectIntl, intlShape } from "react-intl";
 
 class Product extends Component {

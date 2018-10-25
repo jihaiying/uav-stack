@@ -27,10 +27,8 @@ class Head extends Component {
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <p className={css.org}>{tip}</p>
-          <Link to={"/download"}>
-            <a type="primary" className={css.email}>
-              {use}
-            </a>
+          <Link to={"/download"} className={css.email}>
+            {use}
           </Link>
         </div>
       </div>

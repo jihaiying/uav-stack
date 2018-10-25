@@ -27,6 +27,9 @@
   display: block;
   text-decoration: none !important;
 }
+.title3 {
+  height: 15px;
+}
 .right {
   margin-top: 10px;
   margin-right: 5px;
@@ -57,6 +60,12 @@
   padding-left: 5px;
   margin-right: 5px;
 }
+.document_line:hover .download_title {
+  color: #69c1ed;
+}
+.document_line:hover .document_tip {
+  color: #69c1ed;
+}
 .paper_line {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -86,6 +95,18 @@
   font-size: 12px;
   margin-bottom: 1px;
 }
+.help_title {
+  white-space: nowrap;
+  overflow: hidden;
+  color: #4a4a4a;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 1px;
+}
+.help_title:hover {
+  color: #69c1ed;
+}
 .document_title {
   white-space: nowrap;
   overflow: hidden;
@@ -94,12 +115,12 @@
   font-size: 12px;
   margin-bottom: 1px;
 }
+.document_title:hover {
+  color: #69c1ed;
+}
 .document_tip {
   color: #9b9b9b;
   font-size: 12px;
   line-height: 16px;
   margin-left: 24px;
-}
-.document_title:hover {
-  color: #69c1ed;
 }

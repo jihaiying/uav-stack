@@ -6,13 +6,12 @@
   text-align: center;
   padding: 20px;
   margin-left: 85px;
-  transition: background 0.5s;
+  transition: box-shadow 0.1s;
   width: 280px;
   margin-bottom: 30px;
 }
 .container:hover {
-  background: #ffffff;
-  box-shadow: 2px 2px 5px #cccccc;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .img {
   width: 100px;

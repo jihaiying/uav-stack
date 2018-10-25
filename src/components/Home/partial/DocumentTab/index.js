@@ -9,7 +9,7 @@ class DocumentTab extends Component {
     super(props);
     this.state = {
       download: [],
-      document: [],
+      help: [],
       paper: []
     };
   }
@@ -40,63 +40,54 @@ class DocumentTab extends Component {
           link: formatMessage({ id: "documentTab_download_line_4_link" })
         }
       ],
-      document: [
+      help: [
         {
-          title: formatMessage({ id: "document_1_title" }),
-          link: formatMessage({ id: "document_1_link" }),
-          time: formatMessage({ id: "document_1_time" })
+          title: formatMessage({ id: "product_help_1_tip" }),
+          link: formatMessage({ id: "product_help_1_link" })
         },
         {
-          title: formatMessage({ id: "document_2_title" }),
-          link: formatMessage({ id: "document_2_link" }),
-          time: formatMessage({ id: "document_2_time" })
+          title: formatMessage({ id: "product_help_2_tip" }),
+          link: formatMessage({ id: "product_help_2_link" })
         },
         {
-          title: formatMessage({ id: "document_3_title" }),
-          link: formatMessage({ id: "document_3_link" }),
-          time: formatMessage({ id: "document_3_time" })
-        },
-        {
-          title: formatMessage({ id: "document_4_title" }),
-          link: formatMessage({ id: "document_4_link" }),
-          time: formatMessage({ id: "document_4_time" })
-        },
-        {
-          title: formatMessage({ id: "document_5_title" }),
-          link: formatMessage({ id: "document_5_link" }),
-          time: formatMessage({ id: "document_5_time" })
+          title: formatMessage({ id: "product_help_3_tip" }),
+          link: formatMessage({ id: "product_help_3_link" })
         }
       ],
       paper: [
         {
+          title: formatMessage({ id: "document_12_title" }),
+          href: formatMessage({ id: "document_12_link" })
+        },
+        {
+          title: formatMessage({ id: "document_1_title" }),
+          link: formatMessage({ id: "document_1_link" })
+        },
+        {
+          title: formatMessage({ id: "document_2_title" }),
+          link: formatMessage({ id: "document_2_link" })
+        },
+        {
+          title: formatMessage({ id: "document_3_title" }),
+          link: formatMessage({ id: "document_3_link" })
+        },
+        {
+          title: formatMessage({ id: "document_4_title" }),
+          link: formatMessage({ id: "document_4_link" })
+        },
+        {
+          title: formatMessage({ id: "document_5_title" }),
+          link: formatMessage({ id: "document_5_link" })
+        },
+        {
           title: formatMessage({ id: "document_6_title" }),
           link: formatMessage({ id: "document_6_link" })
-        },
-        {
-          title: formatMessage({ id: "document_7_title" }),
-          link: formatMessage({ id: "document_7_link" })
-        },
-        {
-          title: formatMessage({ id: "document_8_title" }),
-          link: formatMessage({ id: "document_8_link" })
-        },
-        {
-          title: formatMessage({ id: "document_9_title" }),
-          link: formatMessage({ id: "document_9_link" })
-        },
-        {
-          title: formatMessage({ id: "document_10_title" }),
-          link: formatMessage({ id: "document_10_link" })
-        },
-        {
-          title: formatMessage({ id: "document_11_title" }),
-          link: formatMessage({ id: "document_11_link" })
         }
       ]
     });
   }
   render() {
-    const { download, document, paper } = this.state;
+    const { download, help, paper } = this.state;
 
     var downloadhtml = (
       <div className={css.tab}>
@@ -119,33 +110,32 @@ class DocumentTab extends Component {
                 className={css.img}
                 target="_blank"
               />
+              <div className={css.download_title}>{item.title}</div>
+              <div className={css.document_tip}>{item.tip}</div>
+              <div className={css.document_tip}>{item.tip2}</div>
             </a>
-            <div className={css.download_title}>{item.title}</div>
-            <div className={css.document_tip}>{item.tip}</div>
-            <div className={css.document_tip}>{item.tip2}</div>
           </div>
         ))}
       </div>
     );
 
-    var documenthtml = (
+    var helphtml = (
       <div className={css.tab}>
         <h1 className={css.title}>
-          <FormattedMessage id="documentTab_document_title" />
+          <FormattedMessage id="documentTab_help_title" />
         </h1>
         <Link to={"/document"} className={css.right}>
           <FormattedMessage id="documentTab_more" /> >
         </Link>
         <div className={css.line} />
-        {document.map((item, key) => (
+        {help.map((item, key) => (
           <a
             key={key}
             target="_blank"
             href={item.link}
             className={css.paper_line}
           >
-            <div className={css.time}>{item.time}</div>
-            <div className={css.document_title}>{item.title}</div>
+            <div className={css.help_title}>{item.title}</div>
           </a>
         ))}
       </div>
@@ -177,7 +167,7 @@ class DocumentTab extends Component {
       <div className={css.container}>
         <div className={css.content}>
           {downloadhtml}
-          {documenthtml}
+          {helphtml}
           {paperhtml}
         </div>
       </div>

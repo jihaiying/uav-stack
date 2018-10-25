@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import css from "./assets/DocumentTab.css";
 import { injectIntl } from "react-intl";
-import { Link } from "react-router-dom";
 
 class DocumentTab extends Component {
   constructor(props) {
@@ -27,13 +26,12 @@ class DocumentTab extends Component {
           title: formatMessage({ id: "product_help_3_tip" }),
           link: formatMessage({ id: "product_help_3_link" })
         }
-      ],
-      document_title: formatMessage({ id: "documentTab_paper_title" })
+      ]
     });
   }
   render() {
     const { formatMessage } = this.props.intl;
-    const { document_title, data } = this.state;
+    const { data } = this.state;
     return (
       <div className={css.container}>
         <div
@@ -48,9 +46,6 @@ class DocumentTab extends Component {
             {item.title}
           </a>
         ))}
-        <Link to={"/document"} className={css.tab}>
-          {document_title}
-        </Link>
       </div>
     );
   }
