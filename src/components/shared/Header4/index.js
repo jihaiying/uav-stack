@@ -23,7 +23,7 @@ class Header4 extends Component {
         style={{ height: h, position: this.props.position }}
       >
         <a
-          href={"https://github.com/uavorg"}
+          href={"https://github.com/uavorg/uavstack"}
           className={css.git}
           target="_blank"
         >
@@ -86,11 +86,11 @@ class Header4 extends Component {
           </div>
           <div className={css.tag}>
             <a
-              href={"https://github.com/uavorg"}
+              onClick={() => this.scrollToAnchor("contactUs")}
               className={css.link}
               target="_blank"
             >
-              GitHub
+              <FormattedMessage id="contactUs_title" />
             </a>
           </div>
           <div className={css.language}>

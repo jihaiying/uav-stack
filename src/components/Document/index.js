@@ -34,71 +34,71 @@ class Document extends Component {
       document: [
         {
           title: formatMessage({ id: "document_0_title" }),
-          href: formatMessage({ id: "document_0_link" })
+          link: formatMessage({ id: "document_0_link" })
         },
         {
           title: formatMessage({ id: "document_12_title" }),
-          href: formatMessage({ id: "document_12_link" })
+          link: formatMessage({ id: "document_12_link" })
         },
         {
           title: formatMessage({ id: "document_1_title" }),
-          href: formatMessage({ id: "document_1_link" })
+          link: formatMessage({ id: "document_1_link" })
         },
         {
           title: formatMessage({ id: "document_2_title" }),
-          href: formatMessage({ id: "document_2_link" })
+          link: formatMessage({ id: "document_2_link" })
         },
         {
           title: formatMessage({ id: "document_3_title" }),
-          href: formatMessage({ id: "document_3_link" })
+          link: formatMessage({ id: "document_3_link" })
         },
         {
           title: formatMessage({ id: "document_4_title" }),
-          href: formatMessage({ id: "document_4_link" })
+          link: formatMessage({ id: "document_4_link" })
         },
         {
           title: formatMessage({ id: "document_5_title" }),
-          href: formatMessage({ id: "document_5_link" })
+          link: formatMessage({ id: "document_5_link" })
         },
         {
           title: formatMessage({ id: "document_14_title" }),
-          href: formatMessage({ id: "document_14_link" })
+          link: formatMessage({ id: "document_14_link" })
         },
         {
           title: formatMessage({ id: "document_15_title" }),
-          href: formatMessage({ id: "document_15_link" })
+          link: formatMessage({ id: "document_15_link" })
         },
         {
           title: formatMessage({ id: "document_16_title" }),
-          href: formatMessage({ id: "document_16_link" })
+          link: formatMessage({ id: "document_16_link" })
         },
         {
           title: formatMessage({ id: "document_13_title" }),
-          href: formatMessage({ id: "document_13_link" })
+          link: formatMessage({ id: "document_13_link" })
         },
         {
           title: formatMessage({ id: "document_6_title" }),
-          href: formatMessage({ id: "document_6_link" })
+          link: formatMessage({ id: "document_6_link" })
         },
         {
           title: formatMessage({ id: "document_7_title" }),
-          href: formatMessage({ id: "document_7_link" })
+          link: formatMessage({ id: "document_7_link" })
         },
         {
           title: formatMessage({ id: "document_8_title" }),
-          href: formatMessage({ id: "document_8_link" })
+          link: formatMessage({ id: "document_8_link" })
         },
         {
           title: formatMessage({ id: "document_9_title" }),
-          href: formatMessage({ id: "document_9_link" })
+          link: formatMessage({ id: "document_9_link" })
         },
         {
           title: formatMessage({ id: "document_10_title" }),
-          href: formatMessage({ id: "document_10_link" })
+          link: formatMessage({ id: "document_10_link" })
         },
         {
           title: formatMessage({ id: "document_11_title" }),
-          href: formatMessage({ id: "document_11_link" })
+          link: formatMessage({ id: "document_11_link" })
         }
       ]
     });
@@ -133,7 +133,7 @@ class Document extends Component {
             {document.map((item, key) => (
               <a
                 key={key}
-                href={item.href}
+                href={item.link}
                 data={item}
                 className={css.line}
                 target="_blank"

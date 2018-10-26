@@ -15,7 +15,7 @@ class Header2 extends Component {
         style={{ height: h, position: this.props.position }}
       >
         <a
-          href={"https://github.com/uavorg"}
+          href={" https://github.com/uavorg/uavstack"}
           className={css.git}
           target="_blank"
         >
@@ -66,15 +66,6 @@ class Header2 extends Component {
               <FormattedMessage id="document" />
               <div className={css.line} />
             </NavLink>
-          </div>
-          <div className={css.tag}>
-            <a
-              href={"https://github.com/uavorg"}
-              className={css.link}
-              target="_blank"
-            >
-              GitHub
-            </a>
           </div>
           <div className={css.language}>
             <LanguageSwitchBtn className={css.tag} />

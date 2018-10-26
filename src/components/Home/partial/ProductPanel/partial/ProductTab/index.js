@@ -39,7 +39,8 @@ class ProductTab extends Component {
         className={css.container}
         style={{
           width: data.width + "px",
-          backgroundImage: "url(" + data.bg + ")"
+          backgroundImage: "url(" + data.bg + ")",
+          backgroundSize: data.bgsize + "px"
         }}
       >
         <div className={css.title}>{data.title}</div>

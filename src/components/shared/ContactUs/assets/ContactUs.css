@@ -1,3 +1,6 @@
+.anchor {
+  margin-top: -70px;
+}
 .container {
   background-size: cover;
   background: url("./bcg.png") center center;
@@ -6,9 +9,10 @@
   text-align: center;
   color: #ffffff;
   min-width: 1200px;
+  margin-top: 70px;
 }
 .content {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -24,11 +28,28 @@
 }
 .tab {
   text-align: left;
-  width: 50%;
+  width: 320px;
   display: inline-block;
   vertical-align: top;
   line-height: 20px;
-  padding: 30px;
+  padding: 20px;
+}
+.tab1 {
+  text-align: left;
+  width: 320px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  padding: 20px;
+  margin-left: 50px;
+}
+.tab2 {
+  text-align: left;
+  width: 260px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  padding: 20px;
 }
 .img {
   width: 150px;

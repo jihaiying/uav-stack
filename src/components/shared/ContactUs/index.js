@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import css from "./assets/ContactUs.css";
 import qrcode from "./assets/qrcode.jpg";
+import qrcode2 from "./assets/helper.jpg";
 import { injectIntl } from "react-intl";
 class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      account: []
+      account: [],
+      helper: []
     };
   }
 
@@ -18,14 +20,19 @@ class ContactUs extends Component {
         formatMessage({ id: "contactUs_tip_1" }),
         formatMessage({ id: "contactUs_tip_2" })
       ],
+      helper: [
+        formatMessage({ id: "contactUs_tip_3" }),
+        formatMessage({ id: "contactUs_tip_4" })
+      ],
       mail: formatMessage({ id: "contactUs_mail" })
     });
   }
 
   render() {
-    const { title, account, mail } = this.state;
+    const { title, account, helper, mail } = this.state;
     return (
       <div>
+        <div id="contactUs" className={css.anchor} />
         <div className={css.container}>
           <div className={css.content}>
             <div className={css.title}>{title}</div>
@@ -36,7 +43,13 @@ class ContactUs extends Component {
               ))}
               <img src={qrcode} alt="download" className={css.img} />
             </div>
-            <div className={css.tab}>
+            <div className={css.tab1}>
+              {helper.map((item, key) => (
+                <div key={key}>{item}</div>
+              ))}
+              <img src={qrcode2} alt="download" className={css.img} />
+            </div>
+            <div className={css.tab2}>
               UAVStack Organization
               <br />
               Beijing China

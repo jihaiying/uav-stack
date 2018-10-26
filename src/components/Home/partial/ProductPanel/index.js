@@ -75,6 +75,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_4_tip_2" })
           ],
           bg: uem,
+          bgsize: 130,
           width: 350
         },
         {

@@ -31,7 +31,11 @@ class SupportPanel extends Component {
             formatMessage({ id: "supportTab_2_tip_2" }),
             formatMessage({ id: "supportTab_2_tip_3" }),
             formatMessage({ id: "supportTab_2_tip_4" }),
-            formatMessage({ id: "supportTab_2_tip_5" })
+            formatMessage({ id: "supportTab_2_tip_5" }),
+            formatMessage({ id: "supportTab_2_tip_6" }),
+            formatMessage({ id: "supportTab_2_tip_7" }),
+            formatMessage({ id: "supportTab_2_tip_8" }),
+            formatMessage({ id: "supportTab_2_tip_9" })
           ]
         },
         {
