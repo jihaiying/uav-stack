@@ -17,12 +17,11 @@ class UpdateTab extends Component {
       href: formatMessage({ id: "updateTab_update_href" }),
       update: [
         formatMessage({ id: "updateTab_update_tip_1" }),
-        formatMessage({ id: "updateTab_update_tip_2" })
+        formatMessage({ id: "updateTab_update_tip_2" }),
+        formatMessage({ id: "updateTab_update_tip_3" }),
+        formatMessage({ id: "updateTab_update_tip_4" })
       ],
-      fix: [
-        formatMessage({ id: "updateTab_fix_tip_1" }),
-        formatMessage({ id: "updateTab_fix_tip_2" })
-      ]
+      fix: [formatMessage({ id: "updateTab_fix_tip_1" })]
     });
   }
   render() {

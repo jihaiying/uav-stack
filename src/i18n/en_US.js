@@ -108,15 +108,16 @@ const en_US = {
 
   updateTab_update_title: "UAVStack周更新",
   updateTab_update_href:
-    "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20181019",
+    "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20181026",
   updateTab_update_tip_1:
-    "1. 新增 增加预警记录查询页面中各预警记录根据预警等级显示不同颜色的功能。",
-  updateTab_update_tip_2:
-    "2. 新增 增加SpringBoot2.0以上版本对context-path配置的支持。",
+    "1. 简化了预警触发策略中梯度收敛规则的相关配置，如需每次触发则直接填写-1。",
+  updateTab_update_tip_2: "2. 优化了预警记录在Redis中的存储结构。 ",
+  updateTab_update_tip_3:
+    '3. 新增了根据预警记录的"已处理"状态决定报警是否持续的功能。 ',
+  updateTab_update_tip_4:
+    "4. MOF支持了对HttpServletResponse的多层套壳（Wrapper）的处理能力。",
   updateTab_fix_title: "FIX同步:",
-  updateTab_fix_tip_1:
-    "1.  FIX  修正了由应用重复注册Filter或Servlet导致的NPE问题",
-  updateTab_fix_tip_2: "2.  FIX  修正了自定义指标在某些情况下不显示的问题。",
+  updateTab_fix_tip_1: "1.  修复了广播地址在某些场景下获取失败导致的NPE问题。",
 
   productPanel_title: "产品与服务",
   productPanel_tip_1:
