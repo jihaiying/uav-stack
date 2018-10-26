@@ -26,7 +26,10 @@ class Banner extends Component {
         delay: 6000
       },
       loop: true,
-      autoplayDisableOnInteraction: false
+      autoplayDisableOnInteraction: false,
+      pagination: {
+        el: this.paginationID
+      }
     });
   };
 
@@ -196,6 +199,10 @@ class Banner extends Component {
             <BannerTag key={key} data={item} />
           ))}
         </div>
+        <div
+          className="swiper-pagination"
+          ref={self => (this.paginationID = self)}
+        />
       </div>
     );
   }
