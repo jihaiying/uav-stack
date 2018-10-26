@@ -67,6 +67,15 @@ class Header2 extends Component {
               <div className={css.line} />
             </NavLink>
           </div>
+          <div className={css.tag}>
+            <a
+              href={" https://github.com/uavorg/uavstack"}
+              className={css.link}
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
           <div className={css.language}>
             <LanguageSwitchBtn className={css.tag} />
           </div>

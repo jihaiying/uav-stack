@@ -3,8 +3,12 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import * as languageActionCreator from "../../actions/language";
 import { LANGUAGES } from "../../config/enum";
-import { Menu, Dropdown, Icon } from "antd";
-
+import Menu from "antd/lib/menu";
+import "antd/lib/menu/style";
+import Dropdown from "antd/lib/dropdown";
+import "antd/lib/dropdown/style";
+import Icon from "antd/lib/icon";
+import "antd/lib/icon/style";
 function mapStateToProps(state) {
   return {
     lang: state.languageReducer.get("lang")
