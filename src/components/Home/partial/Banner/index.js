@@ -28,7 +28,15 @@ class Banner extends Component {
       loop: true,
       autoplayDisableOnInteraction: false,
       pagination: {
-        el: this.paginationID
+        el: this.paginationID,
+        clickable: true,
+        renderBullet: function(index, className) {
+          return (
+            '<span style ="background: #ffffff" class="' +
+            className +
+            '"></span>'
+          );
+        }
       }
     });
   };

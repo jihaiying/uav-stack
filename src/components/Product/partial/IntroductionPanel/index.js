@@ -9,7 +9,7 @@ import pic4 from "./assets/pic4.png";
 import pic5 from "./assets/pic5.png";
 import pic6 from "./assets/pic6.png";
 import pic7 from "./assets/pic7.png";
-import pic8 from "./assets/pic8.png";
+import pic8 from "./assets/pic8.jpg";
 
 class IntroductionPanel extends Component {
   constructor(props) {
