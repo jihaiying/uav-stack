@@ -2,7 +2,7 @@
   "name": "uav-stack",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jihaiying.github.io/uav-stack",
+  "homepage": ".",
   "dependencies": {
     "antd": "^3.10.1",
     "autoprefixer": "7.1.6",

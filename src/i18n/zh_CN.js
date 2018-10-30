@@ -257,29 +257,30 @@ const zh_CN = {
   contributorTab_1_tip_1: "Dev.Founder of UAVStack, ",
   contributorTab_1_tip_2:
     "Focus on AIOps, APM, MicroService, Service-  Governonce, Cloud Middleware.",
-  contributorTab_1_tip_3: " International Patent Inventor. Opensource Commitor",
+  contributorTab_1_tip_3:
+    " International Patent Inventor. Opensource Contributor",
 
   contributorTab_7_name: "谢知求",
   contributorTab_7_tip_1: "Architect, PM  & Product Service Owner",
 
   contributorTab_2_name: "杨宏壮",
-  contributorTab_2_tip_1: "UAV.Monitor/APM Domain Senior Commitor",
+  contributorTab_2_tip_1: "UAV.Monitor/APM Domain Senior Contributor",
   contributorTab_2_tip_2: "关注系统性能、高并发、高可用",
   contributorTab_2_tip_3: "座右铭：知其然更要知其所以然 ",
 
   contributorTab_3_name: "肖龙",
-  contributorTab_3_tip_1: "UAV.Container Domain Senior Commitor",
+  contributorTab_3_tip_1: "UAV.Container Domain Senior Contributor",
 
   contributorTab_4_name: "李崇",
-  contributorTab_4_tip_1: "UAV.ServiceGovern Domain Senior Commitor",
+  contributorTab_4_tip_1: "UAV.ServiceGovern Domain Senior Contributor",
   contributorTab_4_tip_2: "座右铭：做一个有追求的工程师",
 
   contributorTab_5_name: "刘波安野",
-  contributorTab_5_tip_1: "Staff Commitor",
+  contributorTab_5_tip_1: "Staff Contributor",
   contributorTab_5_tip_2: "全栈工程师",
 
   contributorTab_6_name: "周新宇",
-  contributorTab_6_tip_1: "Staff Commitor & Community Ops Owner",
+  contributorTab_6_tip_1: "Staff Contributor & Community Ops Owner",
 
   contactUs_title: "联系我们",
   contactUs_tip_1: "扫下方二维码进入UAVStack官方公众号",
