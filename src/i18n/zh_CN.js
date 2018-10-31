@@ -36,8 +36,6 @@ const zh_CN = {
     "UAV.Monitor新能力开放：多模式预警支持（流式预警、统计预警、混合预警",
   banner_4_word_1: "●  流式预警：基于流式窗口时序数据的预警",
   banner_4_word_2: "●  统计预警：基于时序指标历史统计值对标的预警",
-  banner_4_word_2_desc_1: "-  同比预警",
-  banner_4_word_2_desc_2: "-  环比预警",
   banner_4_word_3:
     "●  混合预警告：允许双模式（流式预警，统计预警）共存的预警策略定义",
 
@@ -94,10 +92,7 @@ const zh_CN = {
     "●  动态计算编排：根据计算资源自动协调合适的节点参与任务执行",
 
   banner_8_title:
-    "UAV.ServiceGovern：是UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持，特别是连接异构服务系统的利器。",
-  banner_8_title_2: "支持主流技术栈，与UAV.Monitor相同。",
-  banner_8_title_3:
-    "UAV.ServiceGovern和UAV.Monitor，UAV.APM实现天然的一站式微服务治理/运维方案。",
+    "UAV.ServiceGovern：是UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持，特别是连接异构服务系统的利器。支持主流技术栈，与UAV.Monitor相同。UAV.ServiceGovern和UAV.Monitor，UAV.APM实现天然的一站式微服务治理/运维方案。",
   banner_8_word_1:
     "●  服务生命周期管理：自动化实现同构或异构服务的注册，下线，集群管理等",
   banner_8_word_2:
@@ -108,17 +103,7 @@ const zh_CN = {
     "●  服务降级保护：对同构/异构服务实现统一的降级保护策略，支持客户端降级",
 
   updateTab_update_title: "UAVStack周更新",
-  updateTab_update_href:
-    "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20181026",
-  updateTab_update_tip_1:
-    "1. 简化了预警触发策略中梯度收敛规则的相关配置，如需每次触发则直接填写-1。",
-  updateTab_update_tip_2: "2. 优化了预警记录在Redis中的存储结构。 ",
-  updateTab_update_tip_3:
-    '3. 新增了根据预警记录的"已处理"状态决定报警是否持续的功能。 ',
-  updateTab_update_tip_4:
-    "4. MOF支持了对HttpServletResponse的多层套壳（Wrapper）的处理能力。",
   updateTab_fix_title: "FIX同步:",
-  updateTab_fix_tip_1: "1.  修复了广播地址在某些场景下获取失败导致的NPE问题。",
 
   productPanel_title: "产品与服务",
   productPanel_tip_1:
@@ -126,10 +111,10 @@ const zh_CN = {
   productPanel_tip_2:
     " UAV是无人机的缩写，寓意无人机翱翔蓝天，智能透明地完成任务。",
   productPanel_tip_3:
-    "它包括任务机器人（HIT），全维监控（UAV.Monitor），应用性能管理（UAV.APM），容器化支持（UAV.Container）",
-  productPanel_tip_4:
-    " 服务治理（UAV.ServiceGovern），微服务计算（UAV.MSCP），用户体验管理（UAV.UEM）等。",
+    "它包括任务机器人（HIT），全维监控（UAV.Monitor），应用性能管理（UAV.APM），容器化支持（UAV.Container） 服务治理（UAV.ServiceGovern），微服务计算（UAV.MSCP），用户体验管理（UAV.UEM）等。",
 
+  productTab_details: "查看详情",
+  productTab_none: "敬请期待",
   productTab_1_title: "（微）服务监控（Monitor）",
   productTab_1_tip_1: "以无侵入方式实现对Java程序的画像与监控",
   productTab_1_tip_2: "以心跳数据实现对应用容器的画像与监控",
@@ -254,11 +239,10 @@ const zh_CN = {
   contributor_title: "开源贡献者",
 
   contributorTab_1_name: "张真",
-  contributorTab_1_tip_1: "Dev.Founder of UAVStack, ",
+  contributorTab_1_tip_1:
+    "Dev.Founder of UAVStack, International Patent Inventor & Opensource Contributor",
   contributorTab_1_tip_2:
-    "Focus on AIOps, APM, MicroService, Service-  Governonce, Cloud Middleware.",
-  contributorTab_1_tip_3:
-    " International Patent Inventor. Opensource Contributor",
+    "Focus on AIOps, APM, Micro-Service, Service Governance and Cloud Middleware.",
 
   contributorTab_7_name: "谢知求",
   contributorTab_7_tip_1: "Architect, PM  & Product Service Owner",
@@ -339,14 +323,13 @@ const zh_CN = {
 
   product_introductTab_7_title: "调用链生成",
   product_introductTab_7_tip:
-    "无需添加额外代码，自动生成调用链，支持主流技术栈服务，客户端，方法级的全量/采样跟踪\n",
+    "无需添加额外代码，自动生成调用链，支持主流技术栈服务，客户端，方法级的全量/采样跟踪",
   product_introductTab_7_tip_2:
-    "两种粒度动态调节：轻调用链，全量采集近乎无损；重调用链，包含所有请求/响应，方法入参/出参的内容\n",
-  product_introductTab_7_tip_3: "支持调用链与日志关联，便捷查看相关日志",
+    "两种粒度动态调节：轻调用链，全量采集近乎无损；重调用链，包含所有请求/响应，方法入参/出参的内容,支持调用链与日志关联，便捷查看相关日志",
 
   product_introductTab_8_title: "一键式线程分析",
-  product_introductTab_8_tip: "一键收集目标JVM的线程Dump和线程性能数据",
-  product_introductTab_8_tip_2: "线程深度分析，线程竞态可视化与死锁检测",
+  product_introductTab_8_tip:
+    "一键收集目标JVM的线程Dump和线程性能数据,线程深度分析，线程竞态可视化与死锁检测",
 
   product_advangtage_title: "产品特色",
   product_advangtage_tip_1: "代码无侵入，全面支持java主流技术栈",

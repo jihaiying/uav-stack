@@ -98,11 +98,7 @@ class Banner extends Component {
             title: formatMessage({ id: "banner_4_word_1" })
           },
           {
-            title: formatMessage({ id: "banner_4_word_2" }),
-            desc: [
-              formatMessage({ id: "banner_4_word_2_desc_1" }),
-              formatMessage({ id: "banner_4_word_2_desc_2" })
-            ]
+            title: formatMessage({ id: "banner_4_word_2" })
           },
           {
             title: formatMessage({ id: "banner_4_word_3" })
@@ -197,11 +193,7 @@ class Banner extends Component {
       },
       {
         bg: bg8,
-        title: [
-          formatMessage({ id: "banner_8_title" }),
-          formatMessage({ id: "banner_8_title_2" }),
-          formatMessage({ id: "banner_8_title_3" })
-        ],
+        title: [formatMessage({ id: "banner_8_title" })],
         word: [
           {
             title: formatMessage({ id: "banner_8_word_1" })
@@ -221,7 +213,7 @@ class Banner extends Component {
     return (
       <div
         className="swiper-container"
-        style={{ height: "650px", minWidth: "1200px" }}
+        style={{ height: "680px", minWidth: "1200px" }}
         ref={self => (this.swiperID = self)}
       >
         <Header2 position="absolute" />

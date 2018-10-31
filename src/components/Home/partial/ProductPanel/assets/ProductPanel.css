@@ -23,6 +23,8 @@
   color: #333333;
 }
 .tip {
+  margin: 0 auto;
+  width: 950px;
   font-size: 14px;
   color: #9b9b9b;
 }

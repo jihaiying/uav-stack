@@ -11,26 +11,15 @@ import servicegovern from "./assets/ServiceGovern.png";
 import { injectIntl } from "react-intl";
 
 class ProductPanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: {
-        tips: []
-      },
-      data: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { title, data } = {
       title: {
         title: formatMessage({ id: "productPanel_title" }),
         tips: [
           formatMessage({ id: "productPanel_tip_1" }),
           formatMessage({ id: "productPanel_tip_2" }),
-          formatMessage({ id: "productPanel_tip_3" }),
-          formatMessage({ id: "productPanel_tip_4" })
+          formatMessage({ id: "productPanel_tip_3" })
         ]
       },
       data: [
@@ -110,11 +99,7 @@ class ProductPanel extends Component {
           width: 1110
         }
       ]
-    });
-  }
-
-  render() {
-    const { title, data } = this.state;
+    };
     return (
       <div className={css.container}>
         <div className={css.content}>
@@ -125,7 +110,6 @@ class ProductPanel extends Component {
               {item}
             </div>
           ))}
-          <div className={css.divider} />
           {data.map((item, key) => (
             <ProductTab key={key} data={item} />
           ))}

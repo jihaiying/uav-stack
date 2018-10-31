@@ -6,17 +6,10 @@ import css from "./assets/Document.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 
 class Document extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      help: [],
-      document: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
+    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { help, document } = {
       help: [
         {
           title: formatMessage({ id: "product_help_1_tip" }),
@@ -101,12 +94,7 @@ class Document extends Component {
           link: formatMessage({ id: "document_11_link" })
         }
       ]
-    });
-  }
-  render() {
-    window.scroll(0, 0);
-    const { formatMessage } = this.props.intl;
-    const { help, document } = this.state;
+    };
     return (
       <div>
         <Helmet>

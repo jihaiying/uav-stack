@@ -7,18 +7,10 @@ import css from "./assets/Download.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 
 class Download extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      join: {},
-      popup_os: [],
-      download: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
+    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { popup_href, join, popup_os, download } = {
       popup_href: formatMessage({ id: "popup_link" }),
       popup_os: [
         {
@@ -67,12 +59,8 @@ class Download extends Component {
           link: formatMessage({ id: "documentTab_download_line_4_link" })
         }
       ]
-    });
-  }
-  render() {
-    window.scroll(0, 0);
-    const { formatMessage } = this.props.intl;
-    const { popup_href, join, popup_os, download } = this.state;
+    };
+
     return (
       <div>
         <Helmet>

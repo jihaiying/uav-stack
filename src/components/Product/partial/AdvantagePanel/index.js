@@ -9,16 +9,9 @@ import transfer from "./assets/transfer.png";
 import view from "./assets/view.png";
 
 class AdvangtagePanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { title, data } = {
       title: formatMessage({ id: "product_advangtage_title" }),
       data: [
         {
@@ -42,11 +35,7 @@ class AdvangtagePanel extends Component {
           bg: view
         }
       ]
-    });
-  }
-
-  render() {
-    const { title, data } = this.state;
+    };
     return (
       <div className={css.container}>
         <div id={title} className={css.anchor} />

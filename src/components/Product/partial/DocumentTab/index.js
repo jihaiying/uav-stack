@@ -3,16 +3,9 @@ import css from "./assets/DocumentTab.css";
 import { injectIntl } from "react-intl";
 
 class DocumentTab extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { data } = {
       data: [
         {
           title: formatMessage({ id: "product_help_1_tip" }),
@@ -27,11 +20,7 @@ class DocumentTab extends Component {
           link: formatMessage({ id: "product_help_3_link" })
         }
       ]
-    });
-  }
-  render() {
-    const { formatMessage } = this.props.intl;
-    const { data } = this.state;
+    };
     return (
       <div className={css.container}>
         <div

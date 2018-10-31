@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import css from "./assets/ProductTab.css";
 import { Link } from "react-router-dom";
+import { injectIntl } from "react-intl";
 
 class ProductTab extends Component {
   render() {
+    const { formatMessage } = this.props.intl;
     const { data } = this.props;
     let site = null;
     if (data.site === "default") {
@@ -17,7 +19,10 @@ class ProductTab extends Component {
             backgroundColor: "#69C1ED"
           }}
         >
-          <span className={css.link}>查看详情</span>
+          <span className={css.link}>
+            {" "}
+            {formatMessage({ id: "productTab_details" })}
+          </span>
         </Link>
       );
     } else {
@@ -29,7 +34,10 @@ class ProductTab extends Component {
             backgroundColor: "#808492"
           }}
         >
-          <span className={css.next}>敬请期待...</span>
+          <span className={css.next}>
+            {formatMessage({ id: "productTab_none" })}
+            ...
+          </span>
         </div>
       );
     }
@@ -55,4 +63,4 @@ class ProductTab extends Component {
   }
 }
 
-export default ProductTab;
+export default injectIntl(ProductTab);

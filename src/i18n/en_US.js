@@ -1,300 +1,306 @@
-const en_US = {
-  home: "Home",
-  product: "Product",
-  document: "Document",
+﻿const zh_CN = {
+  home: "Homepage",
+  product: "Products & Solutions",
   download: "Download",
+  document: "Documentation",
 
-  banner_1_title: "UAV.Monitor新能力开放：可动态切换的报警收敛模式",
+  banner_1_title:
+    "UAV.Monitor Update: Support dynamic switch between alarm convergence modes",
   banner_1_word_1:
-    "●基于事件自动压制的收敛：默认收敛模式，无需任何配置，自动识别同一事件，在一定时间内只发生约定次数的报警",
+    "●  Convergence based on event automatic suppression: Default convergence mode that requires no further configuration, identifies the same event automatically and send a preset amount of alarms within a specified time range",
   banner_1_word_2:
-    "●基于事件次数梯度的收敛：可自定义若干级次数梯度，自动识别同一事件，根据事件发生次数，每次梯度跃升发出报警",
-  banner_1_word_3: "●可随时切换收敛模式，配置即生效",
-  banner_1_word_4: "●细粒度配置支持：收敛模式可配置到单个报警表达式",
+    "●  Convergence based on event frequency gradient: Customized convergence mode that supports to set multiple frequency gradient, identify the same event automatically and send alarms on each gradient escalation based on event frequency",
+  banner_1_word_3: "●  Support instant switch of convergence modes",
+  banner_1_word_4:
+    "●  Support fine granurality configuration of single alarm expressions",
   banner_1_word_5:
-    "●自动优先级判断：同策略包含多个报警表达式，按梯度优先，以及最长梯度优先",
+    "●  Automatic priority decision: The priorities of alarm expressions in one rule are decided by the gradient",
 
-  banner_2_title: "UAV.APM新能力开放：深度线程分析",
-  banner_2_word_1: "●单次线程Dump文件深度分析：",
-  banner_2_word_1_desc_1: "-自动发现死锁，跟踪死锁关系",
-  banner_2_word_1_desc_2: "-基于锁依赖的等待链路查询，发现系统阻塞点",
+  banner_2_title: "UAV.APM Update: Deep thread dump analysis",
+  banner_2_word_1: "●  Deep analysis of single-thread dump:",
+  banner_2_word_1_desc_1:
+    "-  Detect dead locks automatically and track the causes",
+  banner_2_word_1_desc_2:
+    "-  Spot chokepoints in the system by querying the lock-dependent waiting link",
   banner_2_word_2:
-    "●多次线程Dump文件关联分析：基于时序的线程状态变迁，线程等待链路时序根因关系",
-  banner_2_word_3: "●线程Dump可视化展示：",
-  banner_2_word_3_desc_1: "-单次线程Dump可视化（锁依赖）",
-  banner_2_word_3_desc_2: "-多次线程Dump可视化（含时序状态，锁依赖）",
+    "●  Association analysis of multi-thread dump: Thread status changes based on time series and time series causality of the thread waiting link",
+  banner_2_word_3: "●  Thread dump visualization:",
+  banner_2_word_3_desc_1:
+    "-  Single-thread dump visualization(lock dependence)",
+  banner_2_word_3_desc_2:
+    "-  Multi-thread dump visualization(lock dependence with time series status)",
 
-  banner_3_title: "UAV.APM新能力开放：调用链与日志关联的探索式查询",
+  banner_3_title:
+    "UAV.APM Update: Exploratory query based on the correlation of logs and invocation chains",
   banner_3_word_1:
-    "●调用链为入口模式：从应用的调用链直观追踪每个环节的应用日志",
+    "●  Query beginning with invocation chains: Trace application logs of each link",
   banner_3_word_2:
-    "●日志为入口模式：从应用日志搜索，直观关联每条日志对应的调用链",
+    "●  Query beginning with logs: Correlate the invocation chains corresponding to each log",
   banner_3_word_3:
-    "●切换模式：调用链和日志两种模式可随时互相切换，实现闭环探索式查询",
+    "●  Query mode switch: Free switch between two query modes for closed-loop exploratory query",
 
   banner_4_title:
-    "UAV.Monitor新能力开放：多模式预警支持（流式预警、统计预警、混合预警",
-  banner_4_word_1: "●流式预警：基于流式窗口时序数据的预警",
-  banner_4_word_2: "●统计预警：基于时序指标历史统计值对标的预警",
-  banner_4_word_2_desc_1: "-同比预警",
-  banner_4_word_2_desc_2: "-环比预警",
+    "UAV.Monitor Update: Support stream alarm, statistical alarm and hybrid alarms",
+  banner_4_word_1: "●  Stream alarm: Alarms based on stream time series data",
+  banner_4_word_2:
+    "●  Statistical alarm: Alarms with history statistics of time series metrics as benchmarks",
   banner_4_word_3:
-    "●混合预警告：允许双模式（流式预警，统计预警）共存的预警策略定义",
+    "●  Hybrid alarms: Support co-existence of stream alarms and statistical alarms in alarm rules",
 
   banner_5_title:
-    "UAV.Monitor：是业务，应用/服务，基础三维一体的监控平台，同时支持单体架构，SOA架构，微服务架构。",
+    "UAV.Monitor: An integrated platform that monitors businesses, applications / services and run-time environment and adapts to monolithic architecture, SOA architecture and micro-service architecture.",
   banner_5_title_2:
-    "只需部署1个Agent即可采集全维度数据，支持物理机，虚拟机，Docker。",
+    "UAV.Monitor collects all metrics after the agent is deployed in physical machines, virtual machines and Docker.",
   banner_5_word_1:
-    "●基础监控：操作系统以及进程级性能指标（CPU，内存，连接数，网络流量，磁盘IO等）",
+    "●  Run-time environment monitoring: Collect performance metrics of the operating system and processes, including CPU, memory, connection count, network traffic and disk IO",
   banner_5_word_2:
-    "●应用/服务性能监控：Java应用无需修改代码，即可采集应用/服务实例，应用服务器，JVM，客户端(http/dubbo/SQL/MQ/redis/mongoDB等)，数据库连接池等的性能指标",
-  banner_5_word_3: "●日志监控：系统/应用日志自动归集和搜索，支持动态开关策略",
-  banner_5_word_4: "●业务监控：支持自定义指标归集",
+    "●  Application & Service performance monitoring: Collect performance metrics of Application & Service instances, application servers, JVM, clients (Http / Dubbo / SQL / MQ / Redis / MongoDB) without rewriting the codes of Java applications",
+  banner_5_word_3:
+    "●  Log monitoring: Collect and query logs of systems / applications automatically and support dynamic feature enabling and disabling",
+  banner_5_word_4:
+    "●  Business monitoring: Support customized metric collection",
   banner_5_word_5:
-    "●多技术栈支持：Java系列Tomcat/Jetty/SpringBoot/JSE/MSCP,其他JVM语言Scala，Groovy等",
+    "●  Multi-stack support: Support Tomcat / Jetty / SpringBoot / JSE / MSCP / Scala / Groovy",
   banner_5_word_6:
-    "●全维报警：支持基础/应用/服务的性能指标，业务指标以及日志报警，报警条件支持多维表达式",
+    "●  Full-dimensional alarm: Support performance metric, business metric and log alarm of the runtime environment, applications and services with hybrid alarm expressions",
 
   banner_6_title:
-    "UAV.APM：是UAV.Monitor的增强扩展，实现对应用/服务性能全方位的管理。",
-  banner_6_title_2: "支持主流技术栈，与UAV.Monitor相同。",
-  banner_6_word_1: "●代码无侵入性，JVM语言支持Java，Scala，Groovy等。",
+    "UAV.APM: Enhancement of UAV.Monitor that manages Application & Service performance.",
+  banner_6_title_2:
+    "UAV.APM supports the same technology stacks as UAV.Monitor.",
+  banner_6_word_1:
+    "●  No invasion to codes with Java, Scala and Groovy support",
   banner_6_word_2:
-    "●应用/服务画像：自动化提取应用的技术栈和实例元数据，包括服务接口，客户端使用，实例URL，日志配置，类库等。",
+    "●  Application & Service profiling: Collect technology stacks of applications and metadata of instances automatically, including service interfaces, clients, instance URLs, log configuration and class libraries, etc.",
   banner_6_word_3:
-    "●服务图谱：自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。之所以称为服务“流”，是强调更加动态，涵盖应用拓扑的内容，比应用拓扑提供更深入的抽象粒度，也提供更丰富的运行时状态",
+    "●  Service graph: Map the visualized presentation of call relations among applications / services automatically, support proxy penetration, and depict the static typology among services as well as the runtime properties",
   banner_6_word_4:
-    "●全量无侵入式调用链跟踪：支持主流技术栈服务，客户端，方法级的全量/采样跟踪；两种粒度动态调节：轻调用链，全量采集近乎无损；重调用链，包含所有请求/响应，方法入参/出参的内容",
+    "●  Non-invasive whole invocation chain tracing: Support whole / partial tracing of services, clients and methods in main technology stacks and dynamic switch between light invocation chains and heavy invocation chains. The light invocation chains collect all invocation chains with almost no impact on performance and the heavy ones collect all requests / responses and input / out parameters of methods",
   banner_6_word_5:
-    "●一键式线程分析：一键收集目标JVM的线程Dump和线程性能数据，支持代码关联",
+    "●  One-click thread dump analysis: Collect thread dump and thread performance data of targeted JVM and support code correlation",
   banner_6_word_6:
-    "●浏览器访问跟踪：自动追踪来自浏览器的访问来源，访问目标，访问时间。",
+    "●  Browser access tracing: Trace the referer, target and time of browser access automatically",
   banner_6_word_7:
-    "●多维可视化看板：同视图多维度（业务指标，性能指标，日志，调用链等）数据对标分析",
-  banner_6_word_8: "●历史追踪：任意时间范围的不同指标组合的性能指标展示",
+    "●  Multi-dimensional dashboard: Offer comparative analysis of the same dashboard from multiple dimensions, such as business metrics, performance metrics and invocation chains",
+  banner_6_word_8:
+    "●  Record tracing: Support to trace performance metrics in different combinations within any time range",
 
   banner_7_title:
-    "UAV.MSCP（Micro-Service Computing Platform）提供了一套基于微服务架构的计算平台。",
+    "UAV.MSCP: A computing platform based on micro-service architecture.",
   banner_7_title_2:
-    "UAV系列软件包括任务机器人，全维监控，APM，服务治理等都是基于MSCP构建的。",
+    "HIT, Monitor, APM and ServiceGovern are all built on MSCP.",
   banner_7_title_3:
-    "它使用Java语言，并提供了一系列特性来简化计算任务的开发工作。",
+    "With the programming language of Java, UAV.MSCP provides a series of features to simplify the development of computing tasks.",
   banner_7_word_1:
-    "●开发框架/组件支持：Http/RPC通信，定时调度任务，并行处理，异步化响应，资源限制器，配置管理中心，共享资源管理，流程处理等",
+    "●  Development framework / component support: Support Http / RPC communication, timed scheduling tasks, concurrent processing, asynchronous response, resource limiter, shared resource management and flow processing, etc.",
   banner_7_word_2:
-    "●功能即服务：每个功能被定义为Feature，每个进程被定义为计算节点，计算节点支持多Feature运行，支持Feature热启停，热配置更新，Class/配置隔离，资源限制.",
+    "●  Feature as a Service: Each process is defined as a computing node that supports multiple features, runtime enabling / disabling of features, runtime configuration update, class / configuration isolation and resource limitation",
   banner_7_word_3:
-    "●服务化支持：服务注册与发现，负载均衡，自动切换/重试，熔断隔离",
+    "●  Service support: Support service registration and discovery, load balancing, automatic switch / retry and fuse isolation",
   banner_7_word_4:
-    "●组件图谱：可自动生成组件图谱，清晰了解代码静态结构与动态关联关系",
+    "●  Component graph: Generate component graph automatically to present the static structure and dynamic correlation among codes",
   banner_7_word_5:
-    "●动态服务编排：根据Feature语义自动协调具备符合业务能力的节点参与任务执行",
-  banner_7_word_6: "●动态计算编排：根据计算资源自动协调合适的节点参与任务执行",
+    "●  Dynamic service orchestration: Assign applicable nodes to perform tasks based on the semantics of features automatically",
+  banner_7_word_6:
+    "●  Dynamic computing orchestration: Assign applicable nodes to perform tasks based on the computing resources automatically",
 
   banner_8_title:
-    "UAV.ServiceGovern：是UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持，特别是连接异构服务系统的利器。",
-  banner_8_title_2: "支持主流技术栈，与UAV.Monitor相同。",
-  banner_8_title_3:
-    "UAV.ServiceGovern和UAV.Monitor，UAV.APM实现天然的一站式微服务治理/运维方案。",
+    "UAV.ServiceGovern: Enhancement of UAV.Monitor that supports isomorphic and non-isomorphic technology stacks with micro-service architecture. UAV.ServiceGovern is an excellent tool that connects non-isomorphic service systems. It supports the same technology stacks as UAV.Monitor and functions as a one-stop micro-service governance / operation & maintenance solution together with UAV.Monitor and UAV.APM.",
   banner_8_word_1:
-    "●服务生命周期管理：自动化实现同构或异构服务的注册，下线，集群管理等。",
+    "●  Service life cycle management: Support automatic registration, cancel and cluster management of isomorphic and non-isomorphic services",
   banner_8_word_2:
-    "●统一服务发现机制：对同构/异构服务统一发现机制，支持负载均衡，自动切换，自动重试，自动隔离。",
+    "●  Unified isomorphic and non-isomorphic service discovery mechanism: Support load balancing, automatic switch, automatic switch and automatic isolation",
   banner_8_word_3:
-    "●服务授权管理：实现外部对服务集群，服务集群之间的权限与安全管控",
+    "●  Service authorization management: Manage access to and security of service clusters",
   banner_8_word_4:
-    "●服务降级保护：对同构/异构服务实现统一的降级保护策略，支持客户端降级",
+    "●  Service degradation protection: Support unified degradation protection strategies for isomorphic and non-isomorphic services and client degradation",
 
   updateTab_update_title: "UAVStack周更新",
-  updateTab_update_href:
-    "https://github.com/uavorg/uavstack/releases/tag/UAVStack_1.2_20181026",
-  updateTab_update_tip_1:
-    "1. 简化了预警触发策略中梯度收敛规则的相关配置，如需每次触发则直接填写-1。",
-  updateTab_update_tip_2: "2. 优化了预警记录在Redis中的存储结构。 ",
-  updateTab_update_tip_3:
-    '3. 新增了根据预警记录的"已处理"状态决定报警是否持续的功能。 ',
-  updateTab_update_tip_4:
-    "4. MOF支持了对HttpServletResponse的多层套壳（Wrapper）的处理能力。",
   updateTab_fix_title: "FIX同步:",
-  updateTab_fix_tip_1: "1.  修复了广播地址在某些场景下获取失败导致的NPE问题。",
 
-  productPanel_title: "产品与服务",
+  productPanel_title: "Products & Solutions",
   productPanel_tip_1:
-    "UAVStack是一套智能化服务技术栈，是研发运维一体化的解决方案。",
+    "UAVStack as an intelligent service technology stack is missioned to work out integrated solutions to research, operation and maintenance.",
   productPanel_tip_2:
-    " UAV是无人机的缩写，寓意无人机翱翔蓝天，智能的，透明的完成任务。",
+    " UAV, acronym of unmanned aerial vehicle, suggests that this stack finishes tasks in an intelligent and transparent manner like an unmanned aerial vehicle.",
   productPanel_tip_3:
-    "它包括任务机器人（HIT），全维监控（UAV.Monitor），应用性能管理（UAV.APM），容器化支持（UAV.Container）",
-  productPanel_tip_4:
-    " 服务治理（UAV.ServiceGovern），微服务计算（UAV.MSCP），用户体验管理（UAV.UEM）等。",
+    "UAVStack is composed of HIT, UAV.Monitor, UAV.APM, UAV.Container, UAV.ServiceGovern, UAV.MSCP and UAV.UEM.",
 
-  productTab_1_title: "（微）服务监控（Monitor）",
-  productTab_1_tip_1: "以无侵入方式实现对Java程序的画像与监控",
-  productTab_1_tip_2: "以心跳数据实现对应用容器的画像与监控",
-  productTab_1_tip_3: "提供预警策略实现自动报警",
-  productTab_1_tip_4: "提供应用/服务流图谱",
+  productTab_details: "see details",
+  productTab_none: "to be continued",
 
-  productTab_2_title: "应用性能管理（APM）",
-  productTab_2_tip_1: "提供应用性能诊断工具箱",
-  productTab_2_tip_2: "提供调用链支持",
+  productTab_1_title: "(Micro-) Service Monitor (Monitor)",
+  productTab_1_tip_1: "Profile and monitor Java programs with no invasion",
+  productTab_1_tip_2:
+    "Profile and monitor application containers with heartbeat data",
+  productTab_1_tip_3: "Support automatic alarm by configuring alarm rules",
+  productTab_1_tip_4: "Generate Application & Service graph",
 
-  productTab_3_title: "(微）服务治理（ServiceGovern）",
-  productTab_3_tip_1: "以服务画像实现服务注册",
-  productTab_3_tip_2: "提供服务发现接口",
-  productTab_3_tip_3: "无侵入实现服务调用干预",
-  productTab_3_tip_4: "提供服务授权访问机制",
-  productTab_3_tip_5: "提供服务降级与保护机制",
+  productTab_2_title: "Application Performance Management (APM)",
+  productTab_2_tip_1: "Offer application performance diagnosis toolkit",
+  productTab_2_tip_2: "Support invocation chain tracing",
 
-  productTab_4_title: "客户端体验（UEM）",
-  productTab_4_tip_1: "追踪Web浏览器端用户访问状况",
-  productTab_4_tip_2: "端到端跟踪联通",
+  productTab_3_title: "(Micro-) Service Governance (ServiceGovern)",
+  productTab_3_tip_1: "Register services by service profiling",
+  productTab_3_tip_2: "Provide service discovery interface",
+  productTab_3_tip_3: "Support non-invasive service invocation interference",
+  productTab_3_tip_4: "Offer authorized access mechanism to services",
+  productTab_3_tip_5: "Support service degradation and protection mechanism",
 
-  productTab_5_title: "容器生态支持（Container）",
-  productTab_5_tip_1: "对容器生态的支持，包括Monitor+APM所有能力",
-  productTab_5_tip_2: "为容器生态提供智能容量规划与决策支持",
+  productTab_4_title: "User Experience Management (UEM)",
+  productTab_4_tip_1: "Trace user accesses to Web browsers",
+  productTab_4_tip_2: "End-to-end tracing connection",
 
-  productTab_6_title: "任务机器人平台（HIT）",
+  productTab_5_title: "Container",
+  productTab_5_tip_1: "Support all Monitor+APM features",
+  productTab_5_tip_2:
+    "Provide intelligent capacity planning and decision-making support to containers",
+
+  productTab_6_title: "Handson & Interaction & Think (HIT)",
   productTab_6_tip_1: "AI+ChatOps",
-  productTab_6_tip_2: "智能报警",
-  productTab_6_tip_3: "智能巡检",
+  productTab_6_tip_2: "Intelligent alarm",
+  productTab_6_tip_3: "Intelligent detection",
 
-  productTab_7_title: "微服务计算平台（MSCP）",
+  productTab_7_title: "Micro-Service Computing Platform (MSCP)",
   productTab_7_tip_1:
-    "提供微服务计算的编程框架和运行时，框架是以抽象组件为基础；提供通信，工作流，定时任务，处理模型（多线程，异步等），IO处理等组件",
+    "Provide abstract component-based programming framework, runtime properties as well as components such as communication, workflow, timed tasks, processing models (multi-thread and asynchronous) and IO processing",
   productTab_7_tip_2:
-    "提供以组件编程构建业务功能的能力，即Feature；提供单binary多配置实现差异化运行的部署方式，即Profile",
+    "Provide the feature that builds business functions with component programming and the deployment that realizes differentiated operations with multi-configuration of single binary",
   productTab_7_tip_3:
-    "基于共识数据，实现多个运行实例的协作能力，即动态计算编排；以动态计算编排为基础，实现跨实例多个Feature的协作能力，即动态服务编排",
-  productTab_7_tip_4: "端到端跟踪联通",
+    "Support dynamic computing orchestration based on shared data and cross-instance feature collaboration, i.e. dynamic service orchestration",
+  productTab_7_tip_4: "End-to-end tracing connection",
 
-  outline_title: "全维度监控+应用运维解决方案",
+  outline_title: "UAV.Monitor+APM Solution",
 
-  supportPanel_title: "JAVA探针支持",
+  supportPanel_title: "Java Agent Supported",
 
-  supportTab_1_title: "JDK版本",
+  supportTab_1_title: "JDK Versions",
   supportTab_1_tip_1: "JDK6",
   supportTab_1_tip_2: "JDK7",
   supportTab_1_tip_3: "JDK8",
   supportTab_1_tip_4: "JDK9",
 
-  supportTab_2_title: "应用框架",
-  supportTab_2_tip_1: "Dubbo | DubboX | CXF | AXIS2",
-  supportTab_2_tip_2: "XFIRE | SUN JAXWS | Jersey",
-  supportTab_2_tip_3: "SpringMVC | SpringRESTService | Servlet（2.5/3.x）",
-  supportTab_2_tip_4: "Struts 2.x | Wink | Apache HttpClient（同步/异步）",
-  supportTab_2_tip_5: "Web Filter（2.5/3.x | Log4j | LogBack",
-  supportTab_2_tip_6: "Java Logging",
+  supportTab_2_title: "Application Framework",
+  supportTab_2_tip_1: "Dubbo | DubboX | CXF",
+  supportTab_2_tip_2: "AXIS2 | XFIRE | SUN JAXWS",
+  supportTab_2_tip_3: "Jersey | SpringMVC ",
+  supportTab_2_tip_4: "SpringRESTService | Wink  ",
+  supportTab_2_tip_5: "Servlet (2.5 / 3.x) | Struts 2.x",
+  supportTab_2_tip_6: "Apache HttpClient (synchronous / asynchronous)",
+  supportTab_2_tip_7: "Web Filter（2.5 / 3.x）",
+  supportTab_2_tip_8: "Log4j | log4j2 | LogBack ",
+  supportTab_2_tip_9: "Java Logging",
 
-  supportTab_3_title: "应用服务器",
-  supportTab_3_tip_1: "Tomcat（6+）",
+  supportTab_3_title: "Application servers",
+  supportTab_3_tip_1: "Tomcat (6+)",
   supportTab_3_tip_2: "SpringBoot",
-  supportTab_3_tip_3: "Jetty（7+）",
+  supportTab_3_tip_3: "Jetty (7+)",
   supportTab_3_tip_4: "MSCP",
-  supportTab_3_tip_5: "任意JSE",
+  supportTab_3_tip_5: "Any JSE",
 
-  supportTab_4_title: "数据源",
+  supportTab_4_title: "Data Sources",
   supportTab_4_tip_1: "MySQL",
-  supportTab_4_tip_2: "Oracle等JDBC数据源",
-  supportTab_4_tip_3: "MongoDB（MongoClient）",
-  supportTab_4_tip_4: "Redis（JEDIS，LETTUCE，ARedis）",
-  supportTab_4_tip_5: "ESClient（Transport）",
+  supportTab_4_tip_2: "JDBC data sources such as Oracle",
+  supportTab_4_tip_3: "MongoDB (MongoClient)",
+  supportTab_4_tip_4: "Redis (JEDIS, LETTUCE and ARedis)",
+  supportTab_4_tip_5: " ESClient (Transport and RESTful)",
 
-  supportTab_5_title: "消息中间件",
-  supportTab_5_tip_1: "RabbitMQ（消费/生产）",
-  supportTab_5_tip_2: "RocketMQ（消费/生产）",
-  supportTab_5_tip_3: "Kafka（消费/生产）",
+  supportTab_5_title: "Message Middleware",
+  supportTab_5_tip_1: "RabbitMQ (Consumption / Production)",
+  supportTab_5_tip_2: "RocketMQ (Consumption / Production)",
+  supportTab_5_tip_3: "Kafka (Consumption / Production)",
 
-  supportTab_6_title: "数据库连接池",
+  supportTab_6_title: "Database Connection Pools",
   supportTab_6_tip_1: "DBCP/2 | c3p0",
   supportTab_6_tip_2: "Druid | Proxool",
   supportTab_6_tip_3: "Hikari | MyBatis CP",
-  supportTab_6_tip_4: "Tomcat DBCP/2",
+  supportTab_6_tip_4: "Tomcat DBCP/2 | Tomcat JDBC Pool",
 
-  documentTab_more: "更多",
+  documentTab_more: "More",
 
-  documentTab_download_title: "开发演示版",
+  documentTab_download_title: "AllInOne",
   documentTab_download_title2: "UAV.Monitor+APM",
 
-  documentTab_download_line_1_title: "中间件增强框架（MOF探针）",
-  documentTab_download_line_1_tip: "提供应用画像，性能数据收集等功能",
+  documentTab_download_line_1_title: "Monitor Framework (MOF)",
+  documentTab_download_line_1_tip:
+    "Application profiling and performance metric collection",
   documentTab_download_line_1_link: "https://pan.baidu.com/s/1cg4J0q",
 
-  documentTab_download_line_2_title: "监控代理程序（MA）",
-  documentTab_download_line_2_tip:
-    "提供数据采集功能和节点容器控制功能的JSE应用。",
+  documentTab_download_line_2_title: "Monitor Agent (MA)",
+  documentTab_download_line_2_tip: "Data collection and node container control",
   documentTab_download_line_2_link: "https://pan.baidu.com/s/1ge5MJ9h",
 
-  documentTab_download_line_3_title: "健康管理服务（HM）",
-  documentTab_download_line_3_tip:
-    "提供数据处理程序的JSE应用：数据分析、存储、查询等功能。",
+  documentTab_download_line_3_title: "Health Manager (HM)",
+  documentTab_download_line_3_tip: "Data analysis, storage and query",
   documentTab_download_line_3_link: "https://pan.baidu.com/s/1i4HnV85",
 
-  documentTab_download_line_4_title: "AppHub（war包）",
-  documentTab_download_line_4_tip: "提供数据展示及控制管理功能的JEE应用",
-  documentTab_download_line_4_tip2: "以war包的形式部署在JEE服务器中",
-  documentTab_download_line_4_link:
-    "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
+  documentTab_download_line_4_title: "AppHub (war package)",
+  documentTab_download_line_4_tip: "Data display and control management",
+  documentTab_download_line_4_tip2: "Deplopyed on JEE servers as war package",
+  documentTab_download_line_4_link: "https://pan.baidu.com/s/1dFxtDZV",
 
-  documentTab_help_title: "帮助文档",
+  documentTab_help_title: "Documentation",
 
-  documentTab_paper_title: "相关文献",
+  documentTab_paper_title: "Blogs",
 
-  JoinUs_title: "加入项目",
+  JoinUs_title: "Get Involved",
   JoinUS_tip:
-    "UAVStack社区正式开放IDE以及IDE搭建手册，陆续还将开放更多开发文档，欢迎大家加入社区贡献力量！",
-  JoinUs_manual: "UAVStackIDE搭建手册",
+    "UAVStack has released the IDE and its building guide. More development documentation will be relseased later. Welcome to join us!",
+  JoinUs_manual: "UAVStack IDE Building Guide",
   JoinUs_manual_link: "https://pan.baidu.com/s/1o81LNS2",
-  JoinUs_download: "UAVStackIDE下载",
+  JoinUs_download: "UAVStack IDE Download",
   JoinUs_download_link: "https://pan.baidu.com/s/1o81LNS2",
 
-  contributor_title: "开源贡献者",
+  contributor_title: "Contributors",
 
-  contributorTab_1_name: "张真",
-  contributorTab_1_tip_1: "Dev.Founder of UAVStack, ",
+  contributorTab_1_name: "Zhang Zhen",
+  contributorTab_1_tip_1:
+    "Dev.Founder of UAVStack, International Patent Inventor & Opensource Contributor",
   contributorTab_1_tip_2:
-    "Focus on AIOps, APM, MicroService, Service-Governonce, Cloud Middleware.",
-  contributorTab_1_tip_3: " International Patent Inventor. Opensource Commitor",
+    "Focus on AIOps, APM, Micro-Service, Service Governance and Cloud Middleware.",
 
-  contributorTab_7_name: "谢知求",
-  contributorTab_7_tip_1: "Architect, PM  && Product Service Owner",
+  contributorTab_7_name: "Xie Zhiqiu",
+  contributorTab_7_tip_1: "Architect, Project Manager & Product Service Owner",
 
-  contributorTab_2_name: "杨宏壮",
-  contributorTab_2_tip_1: "UAV.Monitor/APM Domain Senior Commitor",
-  contributorTab_2_tip_2: "关注系统性能、高并发、高可用",
-  contributorTab_2_tip_3: "座右铭：知其然更要知其所以然 ",
+  contributorTab_2_name: "Yang Hongzhuang",
+  contributorTab_2_tip_1: "UAV.Monitor/APM Domain Senior Contributor",
+  contributorTab_2_tip_2:
+    "Focus on system performance, high concurrence and high availability",
+  contributorTab_2_tip_3: "Motto: Know how and why ",
 
-  contributorTab_3_name: "肖龙",
-  contributorTab_3_tip_1: "UAV.Monitor/APM Domain Senior Commitor",
+  contributorTab_3_name: "Xiao Long",
+  contributorTab_3_tip_1: "UAV.Container Domain Senior Contributor",
 
-  contributorTab_4_name: "李崇",
-  contributorTab_4_tip_1: "UAV.ServiceGovern Domain Senior Commitor",
-  contributorTab_4_tip_2: "座右铭：做一个有追求的工程师",
+  contributorTab_4_name: "Li Chong",
+  contributorTab_4_tip_1: "UAV.ServiceGovern Domain Senior Contributor",
+  contributorTab_4_tip_2: "Motto: Always aim high",
 
-  contributorTab_5_name: "刘波安野",
-  contributorTab_5_tip_1: "Staff Commitor",
-  contributorTab_5_tip_2: "全栈工程师",
+  contributorTab_5_name: "Liu Bo Anye",
+  contributorTab_5_tip_1: "Staff Contributor &  ",
+  contributorTab_5_tip_2: "Full-stack Engineer",
 
-  contributorTab_6_name: "周新宇",
+  contributorTab_6_name: "Zhou Xinyu",
   contributorTab_6_tip_1: "Staff Commitor & Community Ops Owner",
 
-  contactUs_title: "联系我们",
-  contactUs_tip_1: "扫下方二维码进入UAVStack官方公众号",
-  contactUs_tip_2: "获取更多UAVStack的相关信息",
-  contactUs_mail: "发送邮件",
+  contactUs_title: "Contact Us",
+  contactUs_tip_1: "Scan the QR code below to follow UAVStack on WeChat",
+  contactUs_tip_2: "Learn more about UAVStack",
+  contactUs_tip_3: "Scan the QR code below ",
+  contactUs_tip_4: "to join the user community",
+  contactUs_mail: "Email",
 
-  popup_title: "开发演示",
+  popup_title: "AllInOne",
   popup_title2:
-    "AllInOne安装是用于开发环境以及演示的安装包，开箱即用，一键启动。",
-  popup_tip: "注：",
+    "AllInOne is the out of the box installation package for the development and demonstration environments.",
+  popup_tip: "Note:",
   popup_tip2:
-    "开发演示版的健康管理服务(HM)仅适合开发环境，演示环境，小规模测试环境。",
-  popup_tip3: "生产环境推荐使用",
-  popup_tip_link: "分布式部署",
+    "Health Manager in AllInOne is applicable in the development, demonstration and small-scale testing environments only.",
+  popup_tip_link: "Distributed deployment",
   popup_link:
     "https://uavorg.github.io/documents/uavdoc_deploydocs/healmanagerInstall/healmanagerInstall/microservice.html",
+  popup_tip3: "is recommended in the production environment.",
 
-  popup_windows: "Windows 64位",
+  popup_windows: "Windows 64",
   popup_windows_link: "https://pan.baidu.com/s/1jIF0wNs",
   popup_mac: "Mac",
   popup_mac_link: "https://pan.baidu.com/s/1mhCykp6#list/path=%2F",
@@ -302,67 +308,69 @@ const en_US = {
   popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
 
   product_banner_tip:
-    "UAV.Monitor+APM是业务，应用/服务，基础三维一体的监控与管理平台，只需部署1个Agent即可采集全维度数据，并实现对应用/服务性能全方位的管理。同时支持单体架构，SOA架构，微服务架构。",
-  product_banner_use: "立即使用",
+    "UAV.Monitor+APM UAV.Monitor: An integrated platform that monitors businesses, applications / services and run-time environment and adapts to monolithic architecture, SOA architecture and micro-service architecture. UAV.Monitor collects all metrics after the agent is deployed and manages performance of all applications / services.",
+  product_banner_use: "Try now",
 
-  product_introductPanel_title: "功能介绍",
+  product_introductPanel_title: "Features",
 
-  product_introductTab_1_title: "基础环境监控",
+  product_introductTab_1_title: "Run-time Environment Monitoring",
   product_introductTab_1_tip:
-    "操作系统以及进程级性能指标（CPU，内存，连接数，网络流量，磁盘IO等）",
+    "Collect performance metrics of the operating system and processes, including CPU, memory, connection count, network traffic and disk IO",
 
-  product_introductTab_2_title: "应用/服务监控",
+  product_introductTab_2_title: "Application & Service Monitoring",
   product_introductTab_2_tip:
-    " Java应用无需修改代码，即可采集应用/服务实例、应用服务器、JVM、客户端(http/dubbo/SQL/MQ/redis/mongoDB等)、数据库连接池等的性能指标。",
+    "Collect performance metrics of Application & Service instances, application servers, JVM, clients (Http / Dubbo / SQL / MQ / Redis / MongoDB) without rewriting the codes of Java applications",
 
-  product_introductTab_3_title: "应用/服务画像",
+  product_introductTab_3_title: "Application & Service Profiling",
   product_introductTab_3_tip:
-    "自动化提取应用的技术栈和实例元数据，包括服务接口，客户端使用，实例URL，日志配置，类库等。",
+    "Collect technology stacks of applications and metadata of instances automatically, including service interfaces, clients, instance URLs, log configuration and class libraries, etc.",
 
-  product_introductTab_4_title: "应用/服务关联",
+  product_introductTab_4_title: "Service Graph",
   product_introductTab_4_tip:
-    "自动绘制应用/服务之间的调用关联关系的可视化展示，支持代理穿透。描述服务与服务的静态拓扑和运行时特性的图谱。",
+    "Map the visualized presentation of call relations among applications / services automatically, support proxy penetration, and depict the static typology among services as well as the runtime properties",
 
-  product_introductTab_5_title: "应用日志采集",
-  product_introductTab_5_tip: "系统/应用日志自动归集和搜索，支持动态开关策略\n",
+  product_introductTab_5_title: "Log Collection",
+  product_introductTab_5_tip:
+    "Collect and query logs of systems / applications automatically and support dynamic feature enabling and disabling\n",
 
-  product_introductTab_6_title: "全维预警",
+  product_introductTab_6_title: "Full-dimensional Alarm",
   product_introductTab_6_tip:
-    "支持基础/应用/服务的性能指标，业务指标以及日志报警",
-  product_introductTab_6_tip_2: "报警条件支持多维表达式",
+    "Support performance metric, business metric and log alarm of the runtime environment,",
+  product_introductTab_6_tip_2:
+    "applications and services with hybrid alarm expressions",
 
-  product_introductTab_7_title: "调用链生成",
+  product_introductTab_7_title: "Invocation Chain Tracing",
   product_introductTab_7_tip:
-    "无需添加额外代码，自动生成调用链，支持主流技术栈服务，客户端，方法级的全量/采样跟踪\n",
+    "Support whole / partial tracing of services, clients and methods in main technology stacks and dynamic switch between light invocation chains and heavy invocation chains. ",
   product_introductTab_7_tip_2:
-    "两种粒度动态调节：轻调用链，全量采集近乎无损；重调用链，包含所有请求/响应，方法入参/出参的内容\n",
-  product_introductTab_7_tip_3: "支持调用链与日志关联，便捷查看相关日志",
+    "The light invocation chains collect all invocation chains with almost no impact on performance and the heavy ones collect all requests / responses and input / out parameters of methods",
+  product_introductTab_8_title: "One-click Thread Dump Analysis",
+  product_introductTab_8_tip:
+    "Collect thread dump and thread performance data of targeted JVM and visualize thread resources and dead locks with deep thread dump analysis",
 
-  product_introductTab_8_title: "一键式线程分析",
-  product_introductTab_8_tip: "一键收集目标JVM的线程Dump和线程性能数据",
-  product_introductTab_8_tip_2: "线程深度分析，线程竞态可视化与死锁检测",
+  product_advangtage_title: "Highlights",
+  product_advangtage_tip_1:
+    "Mainstream Java technology stack support with no code rewriting",
+  product_advangtage_tip_2: "Friendly operation and maintenance support",
+  product_advangtage_tip_3: "One-stop inclusive monitoring and correlation",
+  product_advangtage_tip_4:
+    "Fully automatic service profiling to visualize the invocation routes among services",
+  product_advangtage_tip_5: "Alarm support for all metrics",
 
-  product_advangtage_title: "产品特色",
-  product_advangtage_tip_1: "代码无侵入，全面支持java主流技术栈",
-  product_advangtage_tip_2: "随时随地的运维体验",
-  product_advangtage_tip_3: "一站式全维监控，全维关联。",
-  product_advangtage_tip_4: "全自动服务画像，可视化服务间调用关联",
-  product_advangtage_tip_5: "全维预警，所有指标均可配置预警",
+  product_outline_title: "Architecture",
+  product_help_title: "Documentation",
 
-  product_outline_title: "产品架构",
-  product_help_title: "帮助文档",
-
-  product_help_1_tip: "安装部署",
+  product_help_1_tip: "Deployment",
   product_help_1_link:
     "https://uavorg.github.io/documents/uavdoc_deploydocs/index.html",
-  product_help_2_tip: "架构说明",
+  product_help_2_tip: "Architecture",
   product_help_2_link:
     "https://uavorg.github.io/documents/uavdoc_architecture/index.html",
-  product_help_3_tip: "用户指南",
+  product_help_3_tip: "User Guide",
   product_help_3_link:
     "https://uavorg.github.io/documents/uavdoc_useroperation/index.html",
 
-  document_head: "文档资料",
+  document_head: "Blogs",
   document_0_title: "初识UAVStack",
   document_0_link:
     "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483669&idx=1&sn=900e2f0d561c84c1d5f7a97755bd7110&chksm=fa07ac6fcd702579d21ad9ec6f296b19c53c6669a5ee616e886581410715e996adb1e4a94b84&mpshare=1&scene=1&srcid=1026PkGIBOGGTHT1H1nChsdG#rd",
@@ -405,7 +413,7 @@ const en_US = {
 
   document_11_title: "到底该如何理解AIOps？又如何落地AIOps？",
   document_11_link:
-    "http://mp.weixin.qq.com/s?__biz=MzIwMzg1ODcwMw==&mid=2247486714&idx=1&sn=be87de43465c09a05a67a9dfdecca0ed&chksm=96c9ba9aa1be338c4f00af86f1b535c56dfa53138eca9fb583509e757a4acda82100252552c3&mpshare=1&scene=1&srcid=0729gVcJHnLi12B0NRwmwf6Q#rd",
+    "https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489330&amp;idx=1&amp;sn=05b1932a110ec835a0c52434bec221e8&source=41#wechat_redirect",
 
   document_12_title: "先悟透这三个理念，再来谈如何扩展你的架构",
   document_12_link:
@@ -427,6 +435,7 @@ const en_US = {
   document_16_link:
     "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483733&idx=2&sn=a2357a6c0b40ad9e171cc797e4fba187&chksm=fa07ac2fcd702539a0a0ce0e75d827c43ea441691b74157bf6a3f80f021b3e7783735a4d5795&scene=0#rd",
 
-  download_head: "开发演示版"
+  download_head: "AllInOne"
 };
-export default en_US;
+
+export default zh_CN;

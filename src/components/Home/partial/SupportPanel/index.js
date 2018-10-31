@@ -3,16 +3,9 @@ import css from "./assets/SupportPanel.css";
 import SupportTab from "./partial/SupportTab";
 import { injectIntl } from "react-intl";
 class SupportPanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { title, data } = {
       title: formatMessage({ id: "supportPanel_title" }),
       data: [
         {
@@ -76,11 +69,7 @@ class SupportPanel extends Component {
           ]
         }
       ]
-    });
-  }
-
-  render() {
-    const { title, data } = this.state;
+    };
     return (
       <div className={css.container}>
         <div className={css.content}>

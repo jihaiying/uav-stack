@@ -15,81 +15,10 @@ import left from "./assets/left.png";
 import right from "./assets/right.png";
 
 class Contributor extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
-
   componentDidMount() {
-    const { formatMessage } = this.props.intl;
-    this.setState(
-      {
-        title: formatMessage({ id: "contributor_title" }),
-        data: [
-          {
-            pic: zhangzhen,
-            name: formatMessage({ id: "contributorTab_1_name" }),
-            gitid: "zxzxzczz",
-            tips: [
-              formatMessage({ id: "contributorTab_1_tip_1" }),
-              formatMessage({ id: "contributorTab_1_tip_2" }),
-              formatMessage({ id: "contributorTab_1_tip_3" })
-            ]
-          },
-          {
-            pic: zhiqiu,
-            name: formatMessage({ id: "contributorTab_7_name" }),
-            gitid: "zhiqiuxie",
-            tips: [formatMessage({ id: "contributorTab_7_tip_1" })]
-          },
-          {
-            pic: yanghongzhuang,
-            name: formatMessage({ id: "contributorTab_2_name" }),
-            gitid: "yanghongzhuang",
-            tips: [
-              formatMessage({ id: "contributorTab_2_tip_1" }),
-              formatMessage({ id: "contributorTab_2_tip_2" }),
-              formatMessage({ id: "contributorTab_2_tip_3" })
-            ]
-          },
-          {
-            pic: xiaolong,
-            name: formatMessage({ id: "contributorTab_3_name" }),
-            gitid: "xxxllluuu",
-            tips: [formatMessage({ id: "contributorTab_3_tip_1" })]
-          },
-          {
-            pic: lichong,
-            name: formatMessage({ id: "contributorTab_4_name" }),
-            gitid: "ieven",
-            tips: [
-              formatMessage({ id: "contributorTab_4_tip_1" }),
-              formatMessage({ id: "contributorTab_4_tip_2" })
-            ]
-          },
-          {
-            pic: lbay,
-            name: formatMessage({ id: "contributorTab_5_name" }),
-            gitid: "lbay2015",
-            tips: [
-              formatMessage({ id: "contributorTab_5_tip_1" }),
-              formatMessage({ id: "contributorTab_5_tip_2" })
-            ]
-          },
-          {
-            pic: zhouxinyu,
-            name: formatMessage({ id: "contributorTab_6_name" }),
-            gitid: "zxy0728",
-            tips: [formatMessage({ id: "contributorTab_6_tip_1" })]
-          }
-        ]
-      },
-      () => {
-        this.updateSwiper();
-      }
-    );
+    this.setState(() => {
+      this.updateSwiper();
+    });
   }
 
   updateSwiper = () => {
@@ -105,7 +34,67 @@ class Contributor extends Component {
   };
 
   render() {
-    const { title, data } = this.state;
+    const { formatMessage } = this.props.intl;
+    const { title, data } = {
+      title: formatMessage({ id: "contributor_title" }),
+      data: [
+        {
+          pic: zhangzhen,
+          name: formatMessage({ id: "contributorTab_1_name" }),
+          gitid: "zxzxzczz",
+          tips: [
+            formatMessage({ id: "contributorTab_1_tip_1" }),
+            formatMessage({ id: "contributorTab_1_tip_2" })
+          ]
+        },
+        {
+          pic: zhiqiu,
+          name: formatMessage({ id: "contributorTab_7_name" }),
+          gitid: "zhiqiuxie",
+          tips: [formatMessage({ id: "contributorTab_7_tip_1" })]
+        },
+        {
+          pic: yanghongzhuang,
+          name: formatMessage({ id: "contributorTab_2_name" }),
+          gitid: "yanghongzhuang",
+          tips: [
+            formatMessage({ id: "contributorTab_2_tip_1" }),
+            formatMessage({ id: "contributorTab_2_tip_2" }),
+            formatMessage({ id: "contributorTab_2_tip_3" })
+          ]
+        },
+        {
+          pic: xiaolong,
+          name: formatMessage({ id: "contributorTab_3_name" }),
+          gitid: "xxxllluuu",
+          tips: [formatMessage({ id: "contributorTab_3_tip_1" })]
+        },
+        {
+          pic: lichong,
+          name: formatMessage({ id: "contributorTab_4_name" }),
+          gitid: "ieven",
+          tips: [
+            formatMessage({ id: "contributorTab_4_tip_1" }),
+            formatMessage({ id: "contributorTab_4_tip_2" })
+          ]
+        },
+        {
+          pic: lbay,
+          name: formatMessage({ id: "contributorTab_5_name" }),
+          gitid: "lbay2015",
+          tips: [
+            formatMessage({ id: "contributorTab_5_tip_1" }),
+            formatMessage({ id: "contributorTab_5_tip_2" })
+          ]
+        },
+        {
+          pic: zhouxinyu,
+          name: formatMessage({ id: "contributorTab_6_name" }),
+          gitid: "zxy0728",
+          tips: [formatMessage({ id: "contributorTab_6_tip_1" })]
+        }
+      ]
+    };
     return (
       <div className={css.container}>
         <div className={css.content}>

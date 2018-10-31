@@ -11,16 +11,16 @@ class Head extends Component {
   }
 
   componentDidMount() {
-    const { formatMessage } = this.props.intl;
-    this.setState({
-      title: formatMessage({ id: "documentTab_download_title2" }),
-      tip: formatMessage({ id: "product_banner_tip" }),
-      use: formatMessage({ id: "product_banner_use" })
-    });
+    this.setState();
   }
 
   render() {
-    const { title, tip, use } = this.state;
+    const { formatMessage } = this.props.intl;
+    const { title, tip, use } = {
+      title: formatMessage({ id: "documentTab_download_title2" }),
+      tip: formatMessage({ id: "product_banner_tip" }),
+      use: formatMessage({ id: "product_banner_use" })
+    };
     return (
       <div className={css.container}>
         <Header2 position="static" />

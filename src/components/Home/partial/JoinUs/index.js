@@ -5,31 +5,16 @@ import book from "./assets/book.png";
 import down from "./assets/down.png";
 
 class JoinUs extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { title, tip, manual, manual_link, download, download_link } = {
       title: formatMessage({ id: "JoinUs_title" }),
       tip: formatMessage({ id: "JoinUS_tip" }),
       manual: formatMessage({ id: "JoinUs_manual" }),
       manual_link: formatMessage({ id: "JoinUs_manual_link" }),
       download: formatMessage({ id: "JoinUs_download" }),
       download_link: formatMessage({ id: "JoinUs_download_link" })
-    });
-  }
-
-  render() {
-    const {
-      title,
-      tip,
-      manual,
-      manual_link,
-      download,
-      download_link
-    } = this.state;
+    };
     return (
       <div className={css.container}>
         <div id="JoinUs" className={css.anchor} />

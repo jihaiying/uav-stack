@@ -3,29 +3,8 @@ import css from "./assets/UpdateTab.css";
 import { FormattedMessage, injectIntl } from "react-intl";
 
 class UpdateTab extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      update: [],
-      fix: []
-    };
-  }
-
-  componentDidMount() {
-    const { formatMessage } = this.props.intl;
-    this.setState({
-      href: formatMessage({ id: "updateTab_update_href" }),
-      update: [
-        formatMessage({ id: "updateTab_update_tip_1" }),
-        formatMessage({ id: "updateTab_update_tip_2" }),
-        formatMessage({ id: "updateTab_update_tip_3" }),
-        formatMessage({ id: "updateTab_update_tip_4" })
-      ],
-      fix: [formatMessage({ id: "updateTab_fix_tip_1" })]
-    });
-  }
   render() {
-    const { href, update, fix } = this.state;
+    const updateData = window.updateData;
     return (
       <div className={css.container}>
         <div className={css.content}>
@@ -33,10 +12,10 @@ class UpdateTab extends Component {
             <div>
               <FormattedMessage id="updateTab_update_title" />
             </div>
-            <a href={href} target="_blank">
-              {href}
+            <a href={updateData.href} target="_blank">
+              {updateData.href}
             </a>
-            {update.map((item, key) => (
+            {updateData.update.map((item, key) => (
               <div key={key}>{item}</div>
             ))}
           </div>
@@ -44,7 +23,7 @@ class UpdateTab extends Component {
             <div>
               <FormattedMessage id="updateTab_fix_title" />
             </div>
-            {fix.map((item, key) => (
+            {updateData.fix.map((item, key) => (
               <div key={key}>{item}</div>
             ))}
           </div>

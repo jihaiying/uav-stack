@@ -5,18 +5,9 @@ import downloadpic from "./assets/download.png";
 import { FormattedMessage, injectIntl } from "react-intl";
 
 class DocumentTab extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      download: [],
-      help: [],
-      paper: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { download, help, paper } = {
       download: [
         {
           title: formatMessage({ id: "documentTab_download_line_1_title" }),
@@ -84,10 +75,7 @@ class DocumentTab extends Component {
           link: formatMessage({ id: "document_6_link" })
         }
       ]
-    });
-  }
-  render() {
-    const { download, help, paper } = this.state;
+    };
 
     var downloadhtml = (
       <div className={css.tab}>

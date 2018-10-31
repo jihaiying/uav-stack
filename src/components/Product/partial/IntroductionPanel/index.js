@@ -33,17 +33,20 @@ class IntroductionPanel extends Component {
       {
         title: formatMessage({ id: "product_introductTab_1_title" }),
         tips: [formatMessage({ id: "product_introductTab_1_tip" })],
-        pic: pic1
+        pic: pic1,
+        width: 170
       },
       {
         title: formatMessage({ id: "product_introductTab_2_title" }),
         tips: [formatMessage({ id: "product_introductTab_2_tip" })],
-        pic: pic2
+        pic: pic2,
+        width: 160
       },
       {
         title: formatMessage({ id: "product_introductTab_3_title" }),
         tips: [formatMessage({ id: "product_introductTab_3_tip" })],
-        pic: pic3
+        pic: pic3,
+        width: 160
       },
       {
         title: formatMessage({ id: "product_introductTab_4_title" }),
@@ -67,17 +70,13 @@ class IntroductionPanel extends Component {
         title: formatMessage({ id: "product_introductTab_7_title" }),
         tips: [
           formatMessage({ id: "product_introductTab_7_tip" }),
-          formatMessage({ id: "product_introductTab_7_tip_2" }),
-          formatMessage({ id: "product_introductTab_7_tip_3" })
+          formatMessage({ id: "product_introductTab_7_tip_2" })
         ],
         pic: pic7
       },
       {
         title: formatMessage({ id: "product_introductTab_8_title" }),
-        tips: [
-          formatMessage({ id: "product_introductTab_8_tip" }),
-          formatMessage({ id: "product_introductTab_8_tip_2" })
-        ],
+        tips: [formatMessage({ id: "product_introductTab_8_tip" })],
         pic: pic8
       }
     ];
@@ -91,9 +90,9 @@ class IntroductionPanel extends Component {
               className={key === count ? css.selected : css.tab}
               key={key}
               onClick={this.setCount.bind(this, key)}
+              style={{ width: item.width + "px" }}
             >
-              {item.title}
-              <div className={css.line} />
+              <div className={css.title2}>{item.title}</div>
             </div>
           ))}
           {data.map((item, key) => (
