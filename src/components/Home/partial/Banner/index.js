@@ -11,6 +11,7 @@ import bg4 from "./assets/bg4.jpg";
 import bg5 from "./assets/bg5.jpg";
 import bg6 from "./assets/bg6.jpg";
 import bg7 from "./assets/bg7.jpg";
+import bg8 from "./assets/bg8.jpg";
 
 class Banner extends Component {
   componentDidMount() {
@@ -191,6 +192,28 @@ class Banner extends Component {
           },
           {
             title: formatMessage({ id: "banner_7_word_6" })
+          }
+        ]
+      },
+      {
+        bg: bg8,
+        title: [
+          formatMessage({ id: "banner_8_title" }),
+          formatMessage({ id: "banner_8_title_2" }),
+          formatMessage({ id: "banner_8_title_3" })
+        ],
+        word: [
+          {
+            title: formatMessage({ id: "banner_8_word_1" })
+          },
+          {
+            title: formatMessage({ id: "banner_8_word_2" })
+          },
+          {
+            title: formatMessage({ id: "banner_8_word_3" })
+          },
+          {
+            title: formatMessage({ id: "banner_8_word_4" })
           }
         ]
       }
