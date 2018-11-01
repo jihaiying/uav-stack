@@ -3,13 +3,29 @@ import css from "./assets/IntroductionPannel.css";
 import IntroductionTab from "./partial/IntroductionTab";
 import { injectIntl } from "react-intl";
 import pic1 from "./assets/pic1.png";
+import pic1_en from "./assets/pic1_en.jpg";
 import pic2 from "./assets/pic2.png";
+import pic2_en from "./assets/pic2_en.jpg";
 import pic3 from "./assets/pic3.png";
+import pic3_en from "./assets/pic3_en.jpg";
 import pic4 from "./assets/pic4.png";
 import pic5 from "./assets/pic5.png";
+import pic5_en from "./assets/pic5_en.jpg";
 import pic6 from "./assets/pic6.png";
+import pic6_en from "./assets/pic6_en.jpg";
 import pic7 from "./assets/pic7.png";
+import pic7_en from "./assets/pic7_en.jpg";
 import pic8 from "./assets/pic8.jpg";
+import pic8_en from "./assets/pic8_en.jpg";
+
+import { LANGUAGES } from "../../../../config/enum";
+import { connect } from "react-redux";
+
+function mapStateToProps(state) {
+  return {
+    lang: state.languageReducer.get("lang")
+  };
+}
 
 class IntroductionPanel extends Component {
   constructor(props) {
@@ -27,25 +43,26 @@ class IntroductionPanel extends Component {
 
   render() {
     const { count } = this.state;
+    const { lang } = this.props;
     const { formatMessage } = this.props.intl;
     const title = formatMessage({ id: "product_introductPanel_title" });
     const data = [
       {
         title: formatMessage({ id: "product_introductTab_1_title" }),
         tips: [formatMessage({ id: "product_introductTab_1_tip" })],
-        pic: pic1,
+        pic: lang === LANGUAGES.cn ? pic1 : pic1_en,
         width: 170
       },
       {
         title: formatMessage({ id: "product_introductTab_2_title" }),
         tips: [formatMessage({ id: "product_introductTab_2_tip" })],
-        pic: pic2,
+        pic: lang === LANGUAGES.cn ? pic2 : pic2_en,
         width: 160
       },
       {
         title: formatMessage({ id: "product_introductTab_3_title" }),
         tips: [formatMessage({ id: "product_introductTab_3_tip" })],
-        pic: pic3,
+        pic: lang === LANGUAGES.cn ? pic3 : pic3_en,
         width: 160
       },
       {
@@ -56,7 +73,7 @@ class IntroductionPanel extends Component {
       {
         title: formatMessage({ id: "product_introductTab_5_title" }),
         tips: [formatMessage({ id: "product_introductTab_5_tip" })],
-        pic: pic5
+        pic: lang === LANGUAGES.cn ? pic5 : pic5_en
       },
       {
         title: formatMessage({ id: "product_introductTab_6_title" }),
@@ -64,7 +81,7 @@ class IntroductionPanel extends Component {
           formatMessage({ id: "product_introductTab_6_tip" }),
           formatMessage({ id: "product_introductTab_6_tip_2" })
         ],
-        pic: pic6
+        pic: lang === LANGUAGES.cn ? pic6 : pic6_en
       },
       {
         title: formatMessage({ id: "product_introductTab_7_title" }),
@@ -72,12 +89,12 @@ class IntroductionPanel extends Component {
           formatMessage({ id: "product_introductTab_7_tip" }),
           formatMessage({ id: "product_introductTab_7_tip_2" })
         ],
-        pic: pic7
+        pic: lang === LANGUAGES.cn ? pic7 : pic7_en
       },
       {
         title: formatMessage({ id: "product_introductTab_8_title" }),
         tips: [formatMessage({ id: "product_introductTab_8_tip" })],
-        pic: pic8
+        pic: lang === LANGUAGES.cn ? pic8 : pic8_en
       }
     ];
     return (
@@ -104,4 +121,4 @@ class IntroductionPanel extends Component {
   }
 }
 
-export default injectIntl(IntroductionPanel);
+export default connect(mapStateToProps)(injectIntl(IntroductionPanel));

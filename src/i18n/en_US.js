@@ -202,7 +202,7 @@
   supportTab_4_tip_1: "MySQL",
   supportTab_4_tip_2: "JDBC data sources such as Oracle",
   supportTab_4_tip_3: "MongoDB (MongoClient)",
-  supportTab_4_tip_4: "Redis (JEDIS, LETTUCE and ARedis)",
+  supportTab_4_tip_4: "Redis (JEDIS, LETTUCE, ARedis )",
   supportTab_4_tip_5: " ESClient (Transport and RESTful)",
 
   supportTab_5_title: "Message Middleware",

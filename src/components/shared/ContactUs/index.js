@@ -4,17 +4,9 @@ import qrcode from "./assets/qrcode.jpg";
 import qrcode2 from "./assets/helper.jpg";
 import { injectIntl } from "react-intl";
 class ContactUs extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      account: [],
-      helper: []
-    };
-  }
-
-  componentDidMount() {
+  render() {
     const { formatMessage } = this.props.intl;
-    this.setState({
+    const { title, account, helper, mail } = {
       title: formatMessage({ id: "contactUs_title" }),
       account: [
         formatMessage({ id: "contactUs_tip_1" }),
@@ -25,11 +17,7 @@ class ContactUs extends Component {
         formatMessage({ id: "contactUs_tip_4" })
       ],
       mail: formatMessage({ id: "contactUs_mail" })
-    });
-  }
-
-  render() {
-    const { title, account, helper, mail } = this.state;
+    };
     return (
       <div>
         <div id="contactUs" className={css.anchor} />
