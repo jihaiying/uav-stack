@@ -73,11 +73,7 @@ const zh_CN = {
   banner_6_word_8: "●  历史追踪：任意时间范围的不同指标组合的性能指标展示",
 
   banner_7_title:
-    "UAV.MSCP（Micro-  Service Computing Platform）提供了一套基于微服务架构的计算平台。",
-  banner_7_title_2:
-    "UAV系列软件包括任务机器人，全维监控，APM，服务治理等都是基于MSCP构建的。",
-  banner_7_title_3:
-    "它使用Java语言，并提供了一系列特性来简化计算任务的开发工作。",
+    "UAV.MSCP（Micro-  Service Computing Platform）提供了一套基于微服务架构的计算平台。UAV系列软件包括任务机器人，全维监控，APM，服务治理等都是基于MSCP构建的。它使用Java语言，并提供了一系列特性来简化计算任务的开发工作。",
   banner_7_word_1:
     "●  开发框架/组件支持：Http/RPC通信，定时调度任务，并行处理，异步化响应，资源限制器，配置管理中心，共享资源管理，流程处理等",
   banner_7_word_2:
@@ -221,7 +217,6 @@ const zh_CN = {
 
   documentTab_download_line_4_title: "AppHub（war包）",
   documentTab_download_line_4_tip: "提供数据展示及控制管理功能的JEE应用",
-  documentTab_download_line_4_tip2: "以war包的形式部署在JEE服务器中",
   documentTab_download_line_4_link: "https://pan.baidu.com/s/1dFxtDZV",
 
   documentTab_help_title: "帮助文档",

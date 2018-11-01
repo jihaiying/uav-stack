@@ -165,11 +165,7 @@ class Banner extends Component {
       },
       {
         bg: bg7,
-        title: [
-          formatMessage({ id: "banner_7_title" }),
-          formatMessage({ id: "banner_7_title_2" }),
-          formatMessage({ id: "banner_7_title_3" })
-        ],
+        title: [formatMessage({ id: "banner_7_title" })],
         word: [
           {
             title: formatMessage({ id: "banner_7_word_1" })

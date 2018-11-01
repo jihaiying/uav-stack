@@ -27,7 +27,6 @@ class DocumentTab extends Component {
         {
           title: formatMessage({ id: "documentTab_download_line_4_title" }),
           tip: formatMessage({ id: "documentTab_download_line_4_tip" }),
-          tip2: formatMessage({ id: "documentTab_download_line_4_tip2" }),
           link: formatMessage({ id: "documentTab_download_line_4_link" })
         }
       ],
@@ -100,7 +99,6 @@ class DocumentTab extends Component {
               />
               <div className={css.download_title}>{item.title}</div>
               <div className={css.document_tip}>{item.tip}</div>
-              <div className={css.document_tip}>{item.tip2}</div>
             </a>
           </div>
         ))}
