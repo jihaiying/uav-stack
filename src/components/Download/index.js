@@ -129,7 +129,7 @@ class Download extends Component {
           <div className={css.body}>
             <div className={css.head2}>{join.tip}</div>
             <div className={css.tip3} />
-            <div className={css.pad}>
+            <div className={css.pad3}>
               <div className={css.head3}>{join.manual}</div>
               <a
                 type="primary"
@@ -140,7 +140,7 @@ class Download extends Component {
                 <FormattedMessage id="download" />
               </a>
             </div>
-            <div className={css.pad}>
+            <div className={css.pad3}>
               <div className={css.head3}>{join.download}</div>
               <a
                 type="primary"

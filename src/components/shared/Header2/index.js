@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import LanguageSwitchBtn from "../LanguageSwitchBtn";
+import { Link, NavLink } from "react-router-dom";
+import LanguageSwitchBtn from "../LanguageSwitchBtn.js";
 import { FormattedMessage } from "react-intl";
 import css from "../Header/assets/Header.css";
 import logo from "../Header/assets/logo.png";
@@ -22,10 +22,10 @@ class Header2 extends Component {
           <img src={git} alt="git" />
         </a>
         <div className={css.content}>
-          <div className={css.title}>
+          <Link to={"/"} className={css.title}>
             <img src={logo} alt="download" />
             <span>UAVStack</span>
-          </div>
+          </Link>
           <div className={css.tag}>
             <NavLink
               exact

@@ -1,6 +1,6 @@
 ﻿const zh_CN = {
-  home: "Homepage",
-  product: "Products & Solutions",
+  home: "Home",
+  product: "Products ",
   download: "Download",
   document: "Documentation",
 
@@ -191,14 +191,14 @@
   supportTab_2_tip_8: "Log4j | log4j2 | LogBack ",
   supportTab_2_tip_9: "Java Logging",
 
-  supportTab_3_title: "Application servers",
+  supportTab_3_title: "Application Servers",
   supportTab_3_tip_1: "Tomcat (6+)",
   supportTab_3_tip_2: "SpringBoot",
   supportTab_3_tip_3: "Jetty (7+)",
   supportTab_3_tip_4: "MSCP",
   supportTab_3_tip_5: "Any JSE",
 
-  supportTab_4_title: "Data Sources",
+  supportTab_4_title: "Data           Sources",
   supportTab_4_tip_1: "MySQL",
   supportTab_4_tip_2: "JDBC data sources such as Oracle",
   supportTab_4_tip_3: "MongoDB (MongoClient)",
@@ -236,7 +236,7 @@
 
   documentTab_download_line_4_title: "AppHub (war package)",
   documentTab_download_line_4_tip: "Data display and control management",
-  documentTab_download_line_4_tip2: "Deplopyed on JEE servers as war package",
+  documentTab_download_line_4_tip2: "on JEE servers as war package",
   documentTab_download_line_4_link: "https://pan.baidu.com/s/1dFxtDZV",
 
   documentTab_help_title: "Documentation",
@@ -304,12 +304,12 @@
   popup_windows_link: "https://pan.baidu.com/s/1jIF0wNs",
   popup_mac: "Mac",
   popup_mac_link: "https://pan.baidu.com/s/1mhCykp6#list/path=%2F",
-  popup_linux: "Linux(CentOS)",
+  popup_linux: "Linux (CentOS)",
   popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
 
   product_banner_tip:
     "UAV.Monitor+APM UAV.Monitor: An integrated platform that monitors businesses, applications / services and run-time environment and adapts to monolithic architecture, SOA architecture and micro-service architecture. UAV.Monitor collects all metrics after the agent is deployed and manages performance of all applications / services.",
-  product_banner_use: "Try now",
+  product_banner_use: "Try Now",
 
   product_introductPanel_title: "Features",
 

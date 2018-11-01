@@ -12,7 +12,7 @@
   top: 0;
 }
 .container2 {
-  min-width: 1500px;
+  min-width: 1400px;
   width: 100%;
   overflow-y: hidden;
   transition: height 1s;
@@ -29,13 +29,15 @@
 }
 @media   (max-width:  1450px) {
       .content   {
-            width: 980px;
+            width: 1200px;
   }
 }
 .title {
   display: inline-flex;
   float: left;
   margin-right: 10px;
+  text-decoration: none !important;
+  color: #ffffff !important;
 }
 .title img {
   margin-top: 10px;
@@ -49,7 +51,7 @@
   display: inline-block;
 }
 .tag {
-  margin-left: 20px;
+  margin-left: 25px;
   padding-top: 23px;
   float: left;
   text-align: center;
@@ -66,6 +68,9 @@
   padding-top: 25px;
   margin-right: 50px;
   float: right;
+}
+.language:hover {
+  cursor: pointer;
 }
 .selected {
   color: #69c1ed;

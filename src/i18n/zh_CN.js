@@ -288,7 +288,7 @@ const zh_CN = {
   popup_windows_link: "https://pan.baidu.com/s/1jIF0wNs",
   popup_mac: "Mac",
   popup_mac_link: "https://pan.baidu.com/s/1mhCykp6#list/path=%2F",
-  popup_linux: "Linux(CentOS)",
+  popup_linux: "Linux (CentOS)",
   popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
 
   product_banner_tip:

@@ -1,6 +1,6 @@
 .container {
-  height: 320px;
-  width: 160px;
+  height: 340px;
+  width: 180px;
   background: rgba(212, 234, 246, 0.23);
   padding: 10px;
 }
@@ -26,6 +26,7 @@
   font-size: 18px;
   color: #000000;
   display: inline;
+  line-height: 22px;
 }
 .descCon {
   margin-top: 10px;
