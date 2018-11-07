@@ -5,8 +5,16 @@ import Document from "../Document";
 import NoMatch from "../NoMatch";
 import Home from "../Home";
 import Product from "../Product";
+import { runFitPage } from "../../lib/fitPage";
+import * as globalActions from "../../actions/global";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
 
 class App extends Component {
+  componentDidMount() {
+    const { actions } = this.props;
+    runFitPage(width => actions.updateDimension({ width }));
+  }
   render() {
     return (
       <div>
@@ -22,4 +30,21 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {};
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(
+      {
+        updateDimension: globalActions.updateDimension
+      },
+      dispatch
+    )
+  };
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
