@@ -26,7 +26,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-class Index extends Component {
+class LanguageSwitchBtn extends Component {
   render() {
     const { lang, actions } = this.props;
     const menu = (
@@ -49,4 +49,4 @@ class Index extends Component {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Index);
+)(LanguageSwitchBtn);

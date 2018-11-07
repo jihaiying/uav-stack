@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Header1 from "../shared/Header1";
+import Header1 from "../shared/Header1.js";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Download.css";
 

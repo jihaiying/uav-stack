@@ -5,8 +5,12 @@ import Document from "../Document";
 import NoMatch from "../NoMatch";
 import Home from "../Home";
 import Product from "../Product";
+import { runFitPage } from "../../lib/fitPage";
 
 class App extends Component {
+  componentDidMount() {
+    runFitPage();
+  }
   render() {
     return (
       <div>

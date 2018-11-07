@@ -46,8 +46,8 @@ class DocumentTab extends Component {
       ],
       paper: [
         {
-          title: formatMessage({ id: "document_12_title" }),
-          link: formatMessage({ id: "document_12_link" })
+          title: formatMessage({ id: "document_7_title" }),
+          link: formatMessage({ id: "document_7_link" })
         },
         {
           title: formatMessage({ id: "document_1_title" }),
