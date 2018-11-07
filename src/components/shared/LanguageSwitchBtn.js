@@ -9,22 +9,6 @@ import Dropdown from "antd/lib/dropdown";
 import "antd/lib/dropdown/style";
 import Icon from "antd/lib/icon";
 import "antd/lib/icon/style";
-function mapStateToProps(state) {
-  return {
-    lang: state.languageReducer.get("lang")
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(
-      {
-        switchLanguage: languageActionCreator.switchLanguage
-      },
-      dispatch
-    )
-  };
-}
 
 class LanguageSwitchBtn extends Component {
   render() {
@@ -44,6 +28,25 @@ class LanguageSwitchBtn extends Component {
       </Dropdown>
     );
   }
+}
+
+function mapStateToProps(state) {
+  return {
+    lang: state.languageReducer.get("lang"),
+    winWidth: state.globalReducer.get("winWidth"),
+    isMobile: state.globalReducer.get("isMobile")
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(
+      {
+        switchLanguage: languageActionCreator.switchLanguage
+      },
+      dispatch
+    )
+  };
 }
 
 export default connect(
