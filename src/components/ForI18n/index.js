@@ -6,8 +6,15 @@ import en_US from "../../i18n/en_US";
 import { LANGUAGES } from "../../config/enum";
 import { connect } from "react-redux";
 import { HashRouter } from "react-router-dom";
+import { bindActionCreators } from "redux";
+import * as globalActions from "../../actions/global";
+import { runFitPage } from "../../lib/fitPage";
 
 class ForI18n extends Component {
+  componentDidMount() {
+    const { actions } = this.props;
+    runFitPage(width => actions.updateDimension({ width }));
+  }
   render() {
     const { lang } = this.props;
     const message = lang === LANGUAGES.en ? en_US : zh_CN;
@@ -27,4 +34,18 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ForI18n);
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(
+      {
+        updateDimension: globalActions.updateDimension
+      },
+      dispatch
+    )
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ForI18n);
