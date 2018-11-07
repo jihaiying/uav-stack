@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import Header1 from "../shared/Header1";
+import Header1 from "../shared/Header1.js";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Download.css";
 
@@ -55,7 +55,6 @@ class Download extends Component {
         {
           title: formatMessage({ id: "documentTab_download_line_4_title" }),
           tip: formatMessage({ id: "documentTab_download_line_4_tip" }),
-          tip2: formatMessage({ id: "documentTab_download_line_4_tip2" }),
           link: formatMessage({ id: "documentTab_download_line_4_link" })
         }
       ]
@@ -111,7 +110,6 @@ class Download extends Component {
                 <div className={css.head3}>{item.title}</div>
                 <div className={css.tip2}>
                   <div>{item.tip}</div>
-                  <div>{item.tip2}</div>
                 </div>
                 <a
                   type="primary"

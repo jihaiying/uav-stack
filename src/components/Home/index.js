@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { injectIntl, intlShape } from "react-intl";
 import Banner from "./partial/Banner";
-import Header from "../shared/Header";
+import Head from "./partial/Head";
 import UpdateTab from "./partial/UpdateTab";
 import ProductPanel from "./partial/ProductPanel";
 import Outline from "./partial/Outline";
@@ -23,7 +23,7 @@ class Home extends Component {
             id: "home"
           })}
         />
-        <Header />
+        <Head />
         <Banner />
         <UpdateTab />
         <ProductPanel />

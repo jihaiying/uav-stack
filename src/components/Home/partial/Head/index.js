@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header3 from "../Header3";
+import Header1 from "../../../shared/Header1.js";
 
 class Header extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class Header extends Component {
     const top = this.state.top;
     return (
       <div>
-        <Header3 hide={top <= 150} />
+        <Header1 scroll={true} hide={top <= 150} />
       </div>
     );
   }

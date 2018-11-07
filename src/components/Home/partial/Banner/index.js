@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { injectIntl, intlShape } from "react-intl";
-import Header2 from "../../../shared/Header4";
+import Header2 from "../../../shared/Header2.js";
 import Swiper from "swiper/dist/js/swiper.js";
 import "swiper/dist/css/swiper.min.css";
 import BannerTag from "./partial/BannerTag";
@@ -165,11 +165,7 @@ class Banner extends Component {
       },
       {
         bg: bg7,
-        title: [
-          formatMessage({ id: "banner_7_title" }),
-          formatMessage({ id: "banner_7_title_2" }),
-          formatMessage({ id: "banner_7_title_3" })
-        ],
+        title: [formatMessage({ id: "banner_7_title" })],
         word: [
           {
             title: formatMessage({ id: "banner_7_word_1" })
@@ -216,7 +212,7 @@ class Banner extends Component {
         style={{ height: "680px", minWidth: "1200px" }}
         ref={self => (this.swiperID = self)}
       >
-        <Header2 position="absolute" />
+        <Header2 scroll={true} />
         <div className="swiper-wrapper">
           {data.map((item, key) => (
             <BannerTag key={key} data={item} />

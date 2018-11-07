@@ -1,15 +1,15 @@
 ﻿const zh_CN = {
   home: "Home",
-  product: "Products ",
+  product: "Products",
   download: "Download",
   document: "Documentation",
 
   banner_1_title:
     "UAV.Monitor Update: Support dynamic switch between alarm convergence modes",
   banner_1_word_1:
-    "●  Convergence based on event automatic suppression: Default convergence mode that requires no further configuration, identifies the same event automatically and send a preset amount of alarms within a specified time range",
+    "●  Convergence based on event automatic suppression: Default mode that identifies the same event automatically and send a preset amount of alarms within a specified time range",
   banner_1_word_2:
-    "●  Convergence based on event frequency gradient: Customized convergence mode that supports to set multiple frequency gradient, identify the same event automatically and send alarms on each gradient escalation based on event frequency",
+    "●  Convergence based on event frequency gradient: Customized mode that supports to set multiple frequency gradients, identify the same event and send alarms for each gradient escalation",
   banner_1_word_3: "●  Support instant switch of convergence modes",
   banner_1_word_4:
     "●  Support fine granurality configuration of single alarm expressions",
@@ -23,7 +23,7 @@
   banner_2_word_1_desc_2:
     "-  Spot chokepoints in the system by querying the lock-dependent waiting link",
   banner_2_word_2:
-    "●  Association analysis of multi-thread dump: Thread status changes based on time series and time series causality of the thread waiting link",
+    "●  Association analysis of multi-thread dump: Analyze thread status changes based on time series and time series causality of the thread waiting link",
   banner_2_word_3: "●  Thread dump visualization:",
   banner_2_word_3_desc_1:
     "-  Single-thread dump visualization(lock dependence)",
@@ -48,21 +48,21 @@
     "●  Hybrid alarms: Support co-existence of stream alarms and statistical alarms in alarm rules",
 
   banner_5_title:
-    "UAV.Monitor: An integrated platform that monitors businesses, applications / services and run-time environment and adapts to monolithic architecture, SOA architecture and micro-service architecture.",
+    "UAV.Monitor: An integrated platform that monitors businesses, applications / services and runtime environment and adapts to monolithic, SOA and micro-service architectures.",
   banner_5_title_2:
-    "UAV.Monitor collects all metrics after the agent is deployed in physical machines, virtual machines and Docker.",
+    " UAV.Monitor collects all metrics after the agent is deployed in physical or virtual machines or Docker.",
   banner_5_word_1:
-    "●  Run-time environment monitoring: Collect performance metrics of the operating system and processes, including CPU, memory, connection count, network traffic and disk IO",
+    "●  Runtime environment monitoring: Collect performance metrics of the operating system and processes, including CPU, memory, connection count, network traffic and disk IO",
   banner_5_word_2:
-    "●  Application & Service performance monitoring: Collect performance metrics of Application & Service instances, application servers, JVM, clients (Http / Dubbo / SQL / MQ / Redis / MongoDB) without rewriting the codes of Java applications",
+    "●  Application and service performance monitoring: Collect performance metrics of application and service instances, application servers, JVM and clients without rewriting the codes of Java applications",
   banner_5_word_3:
-    "●  Log monitoring: Collect and query logs of systems / applications automatically and support dynamic feature enabling and disabling",
+    "●  Log monitoring: Collect and query logs of systems and applications",
   banner_5_word_4:
     "●  Business monitoring: Support customized metric collection",
   banner_5_word_5:
     "●  Multi-stack support: Support Tomcat / Jetty / SpringBoot / JSE / MSCP / Scala / Groovy",
   banner_5_word_6:
-    "●  Full-dimensional alarm: Support performance metric, business metric and log alarm of the runtime environment, applications and services with hybrid alarm expressions",
+    "●  Full-dimensional alarm: Support alarms for performance metric and business metrics and logs of the runtime environment, applications and services with hybrid alarm expressions",
 
   banner_6_title:
     "UAV.APM: Enhancement of UAV.Monitor that manages Application & Service performance.",
@@ -71,30 +71,26 @@
   banner_6_word_1:
     "●  No invasion to codes with Java, Scala and Groovy support",
   banner_6_word_2:
-    "●  Application & Service profiling: Collect technology stacks of applications and metadata of instances automatically, including service interfaces, clients, instance URLs, log configuration and class libraries, etc.",
+    "●  Application and service profiling: Collect technology stacks of applications and metadata of instances, including service interfaces, clients, instance URLs, log configuration and class libraries, etc.",
   banner_6_word_3:
-    "●  Service graph: Map the visualized presentation of call relations among applications / services automatically, support proxy penetration, and depict the static typology among services as well as the runtime properties",
+    "●  Service graph: Visualize call relations among applications and services, support proxy penetration, and depict the static typology among services and runtime properties",
   banner_6_word_4:
-    "●  Non-invasive whole invocation chain tracing: Support whole / partial tracing of services, clients and methods in main technology stacks and dynamic switch between light invocation chains and heavy invocation chains. The light invocation chains collect all invocation chains with almost no impact on performance and the heavy ones collect all requests / responses and input / out parameters of methods",
+    "●  Non-invasive whole invocation chain tracing: Support whole or partial tracing of services, clients and methods in main technology stacks and dynamic switch between light invocation chains and heavy invocation chains",
   banner_6_word_5:
     "●  One-click thread dump analysis: Collect thread dump and thread performance data of targeted JVM and support code correlation",
   banner_6_word_6:
-    "●  Browser access tracing: Trace the referer, target and time of browser access automatically",
+    "●  Browser access tracing: Trace the referer, target and time of browser access",
   banner_6_word_7:
-    "●  Multi-dimensional dashboard: Offer comparative analysis of the same dashboard from multiple dimensions, such as business metrics, performance metrics and invocation chains",
+    "●  Multi-dimensional dashboard: Analyze a dashboard from multiple dimensions, such as business metrics, performance metrics and invocation chains",
   banner_6_word_8:
     "●  Record tracing: Support to trace performance metrics in different combinations within any time range",
 
   banner_7_title:
-    "UAV.MSCP: A computing platform based on micro-service architecture.",
-  banner_7_title_2:
-    "HIT, Monitor, APM and ServiceGovern are all built on MSCP.",
-  banner_7_title_3:
-    "With the programming language of Java, UAV.MSCP provides a series of features to simplify the development of computing tasks.",
+    "UAV.MSCP: A micro-service architecture computing platform that provides a series of features to simplify the development of computing tasks.",
   banner_7_word_1:
-    "●  Development framework / component support: Support Http / RPC communication, timed scheduling tasks, concurrent processing, asynchronous response, resource limiter, shared resource management and flow processing, etc.",
+    "●  Development framework and component support: Support Http / RPC communication, timed scheduling tasks, concurrent processing and asynchronous response, etc.",
   banner_7_word_2:
-    "●  Feature as a Service: Each process is defined as a computing node that supports multiple features, runtime enabling / disabling of features, runtime configuration update, class / configuration isolation and resource limitation",
+    "●  Feature as a Service: Each process is defined as a computing node that supports runtime enabling / disabling of features, runtime configuration update, class / configuration isolation and resource limitation",
   banner_7_word_3:
     "●  Service support: Support service registration and discovery, load balancing, automatic switch / retry and fuse isolation",
   banner_7_word_4:
@@ -105,7 +101,7 @@
     "●  Dynamic computing orchestration: Assign applicable nodes to perform tasks based on the computing resources automatically",
 
   banner_8_title:
-    "UAV.ServiceGovern: Enhancement of UAV.Monitor that supports isomorphic and non-isomorphic technology stacks with micro-service architecture. UAV.ServiceGovern is an excellent tool that connects non-isomorphic service systems. It supports the same technology stacks as UAV.Monitor and functions as a one-stop micro-service governance / operation & maintenance solution together with UAV.Monitor and UAV.APM.",
+    "UAV.ServiceGovern: Enhancement of UAV.Monitor that supports isomorphic and non-isomorphic technology stacks with micro-service architecture. It constitutes a one-stop micro-service governance / operation & maintenance solution together with UAV.Monitor and UAV.APM.",
   banner_8_word_1:
     "●  Service life cycle management: Support automatic registration, cancel and cluster management of isomorphic and non-isomorphic services",
   banner_8_word_2:
@@ -236,7 +232,6 @@
 
   documentTab_download_line_4_title: "AppHub (war package)",
   documentTab_download_line_4_tip: "Data display and control management",
-  documentTab_download_line_4_tip2: "on JEE servers as war package",
   documentTab_download_line_4_link: "https://pan.baidu.com/s/1dFxtDZV",
 
   documentTab_help_title: "Documentation",
@@ -308,12 +303,12 @@
   popup_linux_link: "https://pan.baidu.com/s/1nvj6jW1#list/path=%2F",
 
   product_banner_tip:
-    "UAV.Monitor+APM UAV.Monitor: An integrated platform that monitors businesses, applications / services and run-time environment and adapts to monolithic architecture, SOA architecture and micro-service architecture. UAV.Monitor collects all metrics after the agent is deployed and manages performance of all applications / services.",
+    "UAV.Monitor+APM UAV.Monitor: An integrated platform that monitors businesses, applications / services and runtime environment and adapts to monolithic architecture, SOA architecture and micro-service architecture. UAV.Monitor collects all metrics after the agent is deployed and manages performance of all applications / services.",
   product_banner_use: "Try Now",
 
   product_introductPanel_title: "Features",
 
-  product_introductTab_1_title: "Run-time Environment Monitoring",
+  product_introductTab_1_title: "Runtime Environment Monitoring",
   product_introductTab_1_tip:
     "Collect performance metrics of the operating system and processes, including CPU, memory, connection count, network traffic and disk IO",
 
@@ -371,10 +366,6 @@
     "https://uavorg.github.io/documents/uavdoc_useroperation/index.html",
 
   document_head: "Blogs",
-  document_0_title: "初识UAVStack",
-  document_0_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483669&idx=1&sn=900e2f0d561c84c1d5f7a97755bd7110&chksm=fa07ac6fcd702579d21ad9ec6f296b19c53c6669a5ee616e886581410715e996adb1e4a94b84&mpshare=1&scene=1&srcid=1026PkGIBOGGTHT1H1nChsdG#rd",
-
   document_1_title: "JAVA服务治理实践之无侵入的应用服务监控",
   document_1_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=2&sn=79ea1b9830df9d0bb713d9d3adf06b60&mpshare=1&scene=1&srcid=1010niyXsvUnT26D3ziFIsZQ#rd",
@@ -397,43 +388,9 @@
   document_6_title: "WOT2018议题分享：运维机器人之任务决策系统演进",
   document_6_link: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
 
-  document_7_title: "洞察架构细节：如何设计AIOps平台架构",
-  document_7_link: "https://pan.baidu.com/s/1PoqaUfepBfDMJreOSWk9iw",
-
-  document_8_title: "基于统计的预警：同环比预警实现深度剖析",
-  document_8_link:
-    "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992937&idx=1&sn=3a63bff00b0ec443e0ce8bb31189dd29&chksm=8303743eb474fd28e7800665b46843c12b0e4097567d10422c2da13a3b31fc981b657bcd53e2&mpshare=1&scene=1&srcid=1212QtHzvVQiIjYwT58D8tsh#rd",
-
-  document_9_title:
-    "CNUTcon全球运维技术大会分享视频：AIOps的核心技术之任务机器人",
-  document_9_link: "http://pan.baidu.com/s/1hrLWsvU",
-
-  document_10_title: "CNUTcon全球运维技术大会ppt：AIOps的核心技术之任务机器人",
-  document_10_link: "http://pan.baidu.com/s/1bpD9nQn",
-
-  document_11_title: "到底该如何理解AIOps？又如何落地AIOps？",
-  document_11_link:
-    "https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489330&amp;idx=1&amp;sn=05b1932a110ec835a0c52434bec221e8&source=41#wechat_redirect",
-
-  document_12_title: "先悟透这三个理念，再来谈如何扩展你的架构",
-  document_12_link:
+  document_7_title: "先悟透这三个理念，再来谈如何扩展你的架构",
+  document_7_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=4&sn=33956aee393137dc0c6e870610d0a9d5&mpshare=1&scene=1&srcid=1010ZVGISQYwg6phHFpEP86f#rd",
-
-  document_13_title: "Container内部进程监控",
-  document_13_link:
-    "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647993111&idx=3&sn=9f73fb4a8cb597818abeae8f54c74e31&chksm=83037540b474fc56eee0265f0c0b40566fdaedbe52282fee68b86376b75453ee5cfe4904455f&mpshare=1&scene=1&srcid=1024tD7YedprOzTJtE72MQU8#rd",
-
-  document_14_title: "调用链系列一：解读UAVStack中的调用链技术",
-  document_14_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483717&idx=1&sn=f892bd8d42891e4ea6ea963ad602e160&chksm=fa07ac3fcd7025298e538a51911fe19a03272aef9fe7b80f794a4841274fac1ade9a5421cf36&scene=0#rd",
-
-  document_15_title: "调用链系列二：解读UAVStack中的调用链技术",
-  document_15_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483733&idx=1&sn=f9bae9629af8f841a9166cba7be3f384&chksm=fa07ac2fcd702539b6ca973e1cea41f0f06e312915a83b2a6270804ed180bfeb1e6840a64435&scene=0#rd",
-
-  document_16_title: "调用链系列三：解读UAVStack中的调用链技术",
-  document_16_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483733&idx=2&sn=a2357a6c0b40ad9e171cc797e4fba187&chksm=fa07ac2fcd702539a0a0ce0e75d827c43ea441691b74157bf6a3f80f021b3e7783735a4d5795&scene=0#rd",
 
   download_head: "AllInOne"
 };

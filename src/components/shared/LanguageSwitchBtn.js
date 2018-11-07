@@ -10,7 +10,7 @@ import "antd/lib/dropdown/style";
 import Icon from "antd/lib/icon";
 import "antd/lib/icon/style";
 
-class Index extends Component {
+class LanguageSwitchBtn extends Component {
   render() {
     const { lang, actions } = this.props;
     const menu = (
@@ -52,4 +52,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Index);
+)(LanguageSwitchBtn);

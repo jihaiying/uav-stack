@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header2 from "../../../shared/Header2";
+import Header2 from "../../../shared/Header2.js";
 import css from "./assets/Head.css";
 import { Link } from "react-router-dom";
 import { injectIntl } from "react-intl";

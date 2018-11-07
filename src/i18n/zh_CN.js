@@ -73,11 +73,7 @@ const zh_CN = {
   banner_6_word_8: "●  历史追踪：任意时间范围的不同指标组合的性能指标展示",
 
   banner_7_title:
-    "UAV.MSCP（Micro-  Service Computing Platform）提供了一套基于微服务架构的计算平台。",
-  banner_7_title_2:
-    "UAV系列软件包括任务机器人，全维监控，APM，服务治理等都是基于MSCP构建的。",
-  banner_7_title_3:
-    "它使用Java语言，并提供了一系列特性来简化计算任务的开发工作。",
+    "UAV.MSCP（Micro-  Service Computing Platform）提供了一套基于微服务架构的计算平台。UAV系列软件包括任务机器人，全维监控，APM，服务治理等都是基于MSCP构建的。它使用Java语言，并提供了一系列特性来简化计算任务的开发工作。",
   banner_7_word_1:
     "●  开发框架/组件支持：Http/RPC通信，定时调度任务，并行处理，异步化响应，资源限制器，配置管理中心，共享资源管理，流程处理等",
   banner_7_word_2:
@@ -221,7 +217,6 @@ const zh_CN = {
 
   documentTab_download_line_4_title: "AppHub（war包）",
   documentTab_download_line_4_tip: "提供数据展示及控制管理功能的JEE应用",
-  documentTab_download_line_4_tip2: "以war包的形式部署在JEE服务器中",
   documentTab_download_line_4_link: "https://pan.baidu.com/s/1dFxtDZV",
 
   documentTab_help_title: "帮助文档",
@@ -352,10 +347,6 @@ const zh_CN = {
     "https://uavorg.github.io/documents/uavdoc_useroperation/index.html",
 
   document_head: "文档资料",
-  document_0_title: "初识UAVStack",
-  document_0_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483669&idx=1&sn=900e2f0d561c84c1d5f7a97755bd7110&chksm=fa07ac6fcd702579d21ad9ec6f296b19c53c6669a5ee616e886581410715e996adb1e4a94b84&mpshare=1&scene=1&srcid=1026PkGIBOGGTHT1H1nChsdG#rd",
-
   document_1_title: "JAVA服务治理实践之无侵入的应用服务监控",
   document_1_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=2&sn=79ea1b9830df9d0bb713d9d3adf06b60&mpshare=1&scene=1&srcid=1010niyXsvUnT26D3ziFIsZQ#rd",
@@ -378,43 +369,9 @@ const zh_CN = {
   document_6_title: "WOT2018议题分享：运维机器人之任务决策系统演进",
   document_6_link: "https://pan.baidu.com/s/1gSjJZIXswOPoeQzZ6cJT1g",
 
-  document_7_title: "洞察架构细节：如何设计AIOps平台架构",
-  document_7_link: "https://pan.baidu.com/s/1PoqaUfepBfDMJreOSWk9iw",
-
-  document_8_title: "基于统计的预警：同环比预警实现深度剖析",
-  document_8_link:
-    "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647992937&idx=1&sn=3a63bff00b0ec443e0ce8bb31189dd29&chksm=8303743eb474fd28e7800665b46843c12b0e4097567d10422c2da13a3b31fc981b657bcd53e2&mpshare=1&scene=1&srcid=1212QtHzvVQiIjYwT58D8tsh#rd",
-
-  document_9_title:
-    "CNUTcon全球运维技术大会分享视频：AIOps的核心技术之任务机器人",
-  document_9_link: "http://pan.baidu.com/s/1hrLWsvU",
-
-  document_10_title: "CNUTcon全球运维技术大会ppt：AIOps的核心技术之任务机器人",
-  document_10_link: "http://pan.baidu.com/s/1bpD9nQn",
-
-  document_11_title: "到底该如何理解AIOps？又如何落地AIOps？",
-  document_11_link:
-    "https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247489330&amp;idx=1&amp;sn=05b1932a110ec835a0c52434bec221e8&source=41#wechat_redirect",
-
-  document_12_title: "先悟透这三个理念，再来谈如何扩展你的架构",
-  document_12_link:
+  document_7_title: "先悟透这三个理念，再来谈如何扩展你的架构",
+  document_7_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=4&sn=33956aee393137dc0c6e870610d0a9d5&mpshare=1&scene=1&srcid=1010ZVGISQYwg6phHFpEP86f#rd",
-
-  document_13_title: "Container内部进程监控",
-  document_13_link:
-    "https://mp.weixin.qq.com/s?__biz=MzAwNTAyNDU2OA==&mid=2647993111&idx=3&sn=9f73fb4a8cb597818abeae8f54c74e31&chksm=83037540b474fc56eee0265f0c0b40566fdaedbe52282fee68b86376b75453ee5cfe4904455f&mpshare=1&scene=1&srcid=1024tD7YedprOzTJtE72MQU8#rd",
-
-  document_14_title: "调用链系列一：解读UAVStack中的调用链技术",
-  document_14_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483717&idx=1&sn=f892bd8d42891e4ea6ea963ad602e160&chksm=fa07ac3fcd7025298e538a51911fe19a03272aef9fe7b80f794a4841274fac1ade9a5421cf36&scene=0#rd",
-
-  document_15_title: "调用链系列二：解读UAVStack中的调用链技术",
-  document_15_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483733&idx=1&sn=f9bae9629af8f841a9166cba7be3f384&chksm=fa07ac2fcd702539b6ca973e1cea41f0f06e312915a83b2a6270804ed180bfeb1e6840a64435&scene=0#rd",
-
-  document_16_title: "调用链系列三：解读UAVStack中的调用链技术",
-  document_16_link:
-    "https://mp.weixin.qq.com/s?__biz=MzUyNjk1NzU4OQ==&mid=2247483733&idx=2&sn=a2357a6c0b40ad9e171cc797e4fba187&chksm=fa07ac2fcd702539a0a0ce0e75d827c43ea441691b74157bf6a3f80f021b3e7783735a4d5795&scene=0#rd",
 
   download_head: "开发演示版"
 };

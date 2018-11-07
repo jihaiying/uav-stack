@@ -1,15 +1,27 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
-import LanguageSwitchBtn from "../LanguageSwitchBtn.js";
+import LanguageSwitchBtn from "./LanguageSwitchBtn.js";
 import { FormattedMessage } from "react-intl";
-import css from "../Header/assets/Header.css";
-import logo from "../Header/assets/logo.png";
-
-class Header1 extends Component {
+import css from "./assets/Header.css";
+import logo from "./assets/logo.png";
+class Header2 extends Component {
   render() {
-    var h = this.props.hide ? "0" : "70px";
+    var git =
+      "https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67";
+    var h = this.props.hide ? "0" : "150px";
+    var s = this.props.scroll ? "block" : "none";
     return (
-      <div className={css.container} style={{ height: h }}>
+      <div
+        className={css.container2}
+        style={{ height: h, position: this.props.position }}
+      >
+        <a
+          href={" https://github.com/uavorg/uavstack"}
+          className={css.git}
+          target="_blank"
+        >
+          <img src={git} alt="git" />
+        </a>
         <div className={css.content}>
           <Link to={"/"} className={css.title}>
             <img src={logo} alt="download" />
@@ -56,6 +68,24 @@ class Header1 extends Component {
               <div className={css.line} />
             </NavLink>
           </div>
+          <div className={css.tag} style={{ display: s }}>
+            <a
+              onClick={() => this.scrollToAnchor("JoinUs")}
+              className={css.link}
+              target="_blank"
+            >
+              <FormattedMessage id="JoinUs_title" />
+            </a>
+          </div>
+          <div className={css.tag} style={{ display: s }}>
+            <a
+              onClick={() => this.scrollToAnchor("contactUs")}
+              className={css.link}
+              target="_blank"
+            >
+              <FormattedMessage id="contactUs_title" />
+            </a>
+          </div>
           <div className={css.tag}>
             <a
               href={" https://github.com/uavorg/uavstack"}
@@ -74,4 +104,4 @@ class Header1 extends Component {
   }
 }
 
-export default Header1;
+export default Header2;
