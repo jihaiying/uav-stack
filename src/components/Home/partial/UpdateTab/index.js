@@ -27,9 +27,21 @@ class UpdateTab extends Component {
             <a href={updateData.href} target="_blank">
               {updateData.href}
             </a>
-            {updateData.update.map((item, key) => (
-              <div key={key}>{item}</div>
-            ))}
+            {updateData.update.map(function(item, key) {
+              if (typeof item === "string") return <div key={key}>{item} </div>;
+              else {
+                return (
+                  <div key={key}>
+                    {item.title}
+                    {item.tips.map((tip, key) => (
+                      <div key={key} className={css.tip}>
+                        {tip}
+                      </div>
+                    ))}
+                  </div>
+                );
+              }
+            })}
           </div>
           {fix}
         </div>

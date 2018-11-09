@@ -5,6 +5,7 @@
   color: #323232;
   line-height: 26px;
   text-align: center;
+  min-height: 150px;
 }
 .content {
   background: #e8e9eb;
@@ -20,4 +21,7 @@
   display: inline-block;
   tab-size: 14px;
   vertical-align: top;
+}
+.tip {
+  margin-left: 16px;
 }
