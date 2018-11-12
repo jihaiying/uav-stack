@@ -126,45 +126,44 @@
   productTab_none: "to be continued",
 
   productTab_1_title: "(Micro-) Service Monitor (Monitor)",
-  productTab_1_tip_1: "Profile and monitor Java programs with no invasion",
+  productTab_1_tip_1: "●  Profile and monitor Java programs with no invasion",
   productTab_1_tip_2:
-    "Profile and monitor application containers with heartbeat data",
-  productTab_1_tip_3: "Support automatic alarm by configuring alarm rules",
-  productTab_1_tip_4: "Generate Application & Service graph",
+    "●  Profile and monitor application containers with heartbeat data",
+  productTab_1_tip_3: "●  Support automatic alarm by configuring alarm rules",
+  productTab_1_tip_4: "●  Generate Application & Service graph",
 
   productTab_2_title: "Application Performance Management (APM)",
-  productTab_2_tip_1: "Offer application performance diagnosis toolkit",
-  productTab_2_tip_2: "Support invocation chain tracing",
+  productTab_2_tip_1: "●  Offer application performance diagnosis toolkit",
+  productTab_2_tip_2: "●  Support invocation chain tracing",
 
   productTab_3_title: "(Micro-) Service Governance (ServiceGovern)",
-  productTab_3_tip_1: "Register services by service profiling",
-  productTab_3_tip_2: "Provide service discovery interface",
-  productTab_3_tip_3: "Support non-invasive service invocation interference",
-  productTab_3_tip_4: "Offer authorized access mechanism to services",
-  productTab_3_tip_5: "Support service degradation and protection mechanism",
+  productTab_3_tip_1: "●  Register services by service profiling",
+  productTab_3_tip_2: "●  Provide service discovery interface",
+  productTab_3_tip_3: "●  Support non-invasive service invocation interference",
+  productTab_3_tip_4: "●  Offer authorized access mechanism to services",
+  productTab_3_tip_5: "●  Support service degradation and protection mechanism",
 
   productTab_4_title: "User Experience Management (UEM)",
-  productTab_4_tip_1: "Trace user accesses to Web browsers",
-  productTab_4_tip_2: "End-to-end tracing connection",
+  productTab_4_tip_1: "●  Trace user accesses to Web browsers",
+  productTab_4_tip_2: "●  End-to-end tracing connection",
 
   productTab_5_title: "Container",
-  productTab_5_tip_1: "Support all Monitor+APM features",
+  productTab_5_tip_1: "●  Support all Monitor+APM features",
   productTab_5_tip_2:
-    "Provide intelligent capacity planning and decision-making support to containers",
+    "●  Provide intelligent capacity planning and decision-making support to containers",
 
   productTab_6_title: "Handson & Interaction & Think (HIT)",
-  productTab_6_tip_1: "AI+ChatOps",
-  productTab_6_tip_2: "Intelligent alarm",
-  productTab_6_tip_3: "Intelligent detection",
+  productTab_6_tip_1: "●  AI+ChatOps",
+  productTab_6_tip_2: "●  Intelligent alarm",
+  productTab_6_tip_3: "●  Intelligent detection",
 
   productTab_7_title: "Micro-Service Computing Platform (MSCP)",
   productTab_7_tip_1:
-    "Provide abstract component-based programming framework, runtime properties as well as components such as communication, workflow, timed tasks, processing models (multi-thread and asynchronous) and IO processing",
+    "●  Provide abstract component-based programming framework, runtime properties as well as components such as communication, workflow, timed tasks, processing models (multi-thread and asynchronous) and IO processing",
   productTab_7_tip_2:
-    "Provide the feature that builds business functions with component programming and the deployment that realizes differentiated operations with multi-configuration of single binary",
+    "●  Provide the feature that builds business functions with component programming and the deployment that realizes differentiated operations with multi-configuration of single binary",
   productTab_7_tip_3:
-    "Support dynamic computing orchestration based on shared data and cross-instance feature collaboration, i.e. dynamic service orchestration",
-  productTab_7_tip_4: "End-to-end tracing connection",
+    "●  Support dynamic computing orchestration based on shared data and cross-instance feature collaboration, i.e. dynamic service orchestration",
 
   outline_title: "UAV.Monitor+APM Solution",
 

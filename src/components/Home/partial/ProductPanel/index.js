@@ -91,8 +91,7 @@ class ProductPanel extends Component {
           tips: [
             formatMessage({ id: "productTab_7_tip_1" }),
             formatMessage({ id: "productTab_7_tip_2" }),
-            formatMessage({ id: "productTab_7_tip_3" }),
-            formatMessage({ id: "productTab_7_tip_4" })
+            formatMessage({ id: "productTab_7_tip_3" })
           ],
           site: "default",
           bg: mscp,
