@@ -6,6 +6,14 @@ import css from "./assets/Header.css";
 import logo from "./assets/logo.png";
 
 class Header1 extends Component {
+  scrollToAnchor = anchorName => {
+    if (anchorName) {
+      let anchorElement = document.getElementById(anchorName);
+      if (anchorElement) {
+        anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    }
+  };
   render() {
     var h = this.props.hide ? "0" : "70px";
     var s = this.props.scroll ? "block" : "none";

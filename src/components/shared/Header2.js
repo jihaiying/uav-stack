@@ -5,6 +5,14 @@ import { FormattedMessage } from "react-intl";
 import css from "./assets/Header.css";
 import logo from "./assets/logo.png";
 class Header2 extends Component {
+  scrollToAnchor = anchorName => {
+    if (anchorName) {
+      let anchorElement = document.getElementById(anchorName);
+      if (anchorElement) {
+        anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    }
+  };
   render() {
     var git =
       "https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67";
