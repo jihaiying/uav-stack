@@ -21,7 +21,7 @@ class JoinUs extends Component {
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <div className={css.line} />
-          <p>{tip}</p>
+          <p className={css.tip}>{tip}</p>
           <a target="_blank" href={manual_link} className={css.tab}>
             <img src={book} alt="book" className={css.img} />
             <span>{manual}</span>

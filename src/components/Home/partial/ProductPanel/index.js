@@ -18,9 +18,9 @@ class ProductPanel extends Component {
         title: formatMessage({ id: "productPanel_title" }),
         tips: [
           formatMessage({ id: "productPanel_tip_1" }),
-          formatMessage({ id: "productPanel_tip_2" }),
-          formatMessage({ id: "productPanel_tip_3" })
-        ]
+          formatMessage({ id: "productPanel_tip_2" })
+        ],
+        tip: formatMessage({ id: "productPanel_tip_3" })
       },
       data: [
         {
@@ -32,6 +32,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_1_tip_4" })
           ],
           bg: monitor,
+          bgsize: 90,
           site: "/product",
           width: 350
         },
@@ -42,6 +43,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_2_tip_2" })
           ],
           bg: apm,
+          bgsize: 90,
           width: 350,
           site: "/product"
         },
@@ -55,6 +57,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_3_tip_5" })
           ],
           bg: servicegovern,
+          bgsize: 90,
           width: 350
         },
         {
@@ -74,6 +77,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_5_tip_2" })
           ],
           bg: container,
+          bgsize: 90,
           width: 350
         },
         {
@@ -84,6 +88,7 @@ class ProductPanel extends Component {
             formatMessage({ id: "productTab_6_tip_3" })
           ],
           bg: hit,
+          bgsize: 90,
           width: 350
         },
         {
@@ -91,11 +96,11 @@ class ProductPanel extends Component {
           tips: [
             formatMessage({ id: "productTab_7_tip_1" }),
             formatMessage({ id: "productTab_7_tip_2" }),
-            formatMessage({ id: "productTab_7_tip_3" }),
-            formatMessage({ id: "productTab_7_tip_4" })
+            formatMessage({ id: "productTab_7_tip_3" })
           ],
           site: "default",
           bg: mscp,
+          bgsize: 90,
           width: 1110
         }
       ]
@@ -110,6 +115,7 @@ class ProductPanel extends Component {
               {item}
             </div>
           ))}
+          <div className={css.tip2}>{title.tip}</div>
           {data.map((item, key) => (
             <ProductTab key={key} data={item} />
           ))}
@@ -118,5 +124,4 @@ class ProductPanel extends Component {
     );
   }
 }
-
 export default injectIntl(ProductPanel);

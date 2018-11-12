@@ -3,6 +3,7 @@ const zh_CN = {
   product: "产品",
   download: "下载",
   document: "文档",
+  top: "顶部",
 
   banner_1_title: "UAV.Monitor新能力开放：可动态切换的报警收敛模式",
   banner_1_word_1:
@@ -33,7 +34,7 @@ const zh_CN = {
     "●  切换模式：调用链和日志两种模式可随时互相切换，实现闭环探索式查询",
 
   banner_4_title:
-    "UAV.Monitor新能力开放：多模式预警支持（流式预警、统计预警、混合预警",
+    "UAV.Monitor新能力开放：多模式预警支持（流式预警、统计预警、混合预警)",
   banner_4_word_1: "●  流式预警：基于流式窗口时序数据的预警",
   banner_4_word_2: "●  统计预警：基于时序指标历史统计值对标的预警",
   banner_4_word_3:
@@ -148,7 +149,6 @@ const zh_CN = {
     "提供以组件编程构建业务功能的能力，即Feature；提供单binary多配置实现差异化运行的部署方式，即Profile",
   productTab_7_tip_3:
     "基于共识数据，实现多个运行实例的协作能力，即动态计算编排；以动态计算编排为基础，实现跨实例多个Feature的协作能力，即动态服务编排",
-  productTab_7_tip_4: "端到端跟踪联通",
 
   outline_title: "全维度监控+应用运维解决方案",
 
@@ -373,7 +373,61 @@ const zh_CN = {
   document_7_link:
     "http://mp.weixin.qq.com/s?__biz=MzI5NzE2NTE4Nw==&mid=2650278060&idx=4&sn=33956aee393137dc0c6e870610d0a9d5&mpshare=1&scene=1&srcid=1010ZVGISQYwg6phHFpEP86f#rd",
 
-  download_head: "开发演示版"
+  download_head: "开发演示版",
+
+  more: "查看更多",
+
+  mbanner_1_title: "UAV.Monitor新能力：支持动态切换报警收敛模式",
+  mbanner_1_word_1:
+    "●  默认模式：自动识别同一事件，在一定时间内只发生约定次数的报警",
+  mbanner_1_word_2: "●  自定义模式：根据同一事件发生次数，在出现梯度跃升时报警",
+  mbanner_1_word_3:
+    "●  两种模式可自由切换，即时生效；可细粒度配置至单个报警表达式",
+
+  mbanner_2_title: "UAV.APM新能力：深度线程分析",
+  mbanner_2_word_1: "●  单次线程Dump文件深度分析：自动发现死锁，跟踪死锁关系",
+  mbanner_2_word_2: "●  基于锁依赖的等待链路查询，发现系统阻塞点",
+  mbanner_2_word_3:
+    "●  多次线程Dump文件关联分析：基于时序的线程状态变迁，查找线程等待链路时序根因关系线程Dump可视化",
+
+  mbanner_3_title: "UAV.APM新能力：调用链与日志关联的探索式查询",
+  mbanner_3_word_1:
+    "●  调用链为入口模式：从应用的调用链直观追踪每个环节的应用日志",
+  mbanner_3_word_2:
+    "●  日志为入口模式：从应用日志搜索直观关联每条日志对应的调用链",
+  mbanner_3_word_3:
+    "●  切换模式：调用链和日志两种模式可随时互相切换，实现闭环探索式查询",
+
+  mbanner_4_title: "UAV.Monitor新能力：多模式预警支持",
+  mbanner_4_word_1: "●  流式预警：基于流式窗口时序数据的预警",
+  mbanner_4_word_2: "●  统计预警：基于时序指标历史统计值对标的预警",
+  mbanner_4_word_3: "●  混合预警告：允许流式预警与统计预警共存的预警策略定义",
+
+  mbanner_5_title: "UAV.Monitor：业务、应用/服务、基础三维一体的监控平台",
+  mbanner_5_word_1: "● 支持单体、SOA、微服务架构",
+  mbanner_5_word_2: "● 只需部署1个Agent即可采集全维度数据",
+  mbanner_5_word_3: "● 支持物理机、虚拟机、Docker",
+  mbanner_5_word_4:
+    "● 支持基础环境与应用/服务性能指标、业务自定义指标及日志监控及报警",
+  mbanner_5_word_5: "● 	报警条件支持多维表达式",
+
+  mbanner_6_title:
+    "UAV.APM：UAV.Monitor的增强扩展，实现对应用/服务性能全方位的管理",
+  mbanner_6_word_1: "● 支持应用/服务画像/自动绘制服务图谱",
+  mbanner_6_word_2: "● 支持无侵入式调用链跟踪",
+  mbanner_6_word_3: "● 一键收集目标JVM的线程Dump和线程性能数据",
+  mbanner_6_word_4:
+    "● 自动追踪来自浏览器的访问来源、目标、时间 ,支持同视图多维度数据对标分析",
+  mbanner_6_word_5: "● 展示任意时间范围内不同指标组合的数据",
+
+  mbanner_7_title: "UAV.MSCP：基于微服务架构的计算平台",
+  mbanner_7_word_1:
+    "●	使用Java语言提供了开发框架/组件支持、功能即服务、服务化支持、组件图谱、动态服务编排、动态计算编排等一系列特性来简化计算任务的开发工作",
+
+  mbanner_8_title:
+    "UAV.ServiceGovern：UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持。",
+  mbanner_8_word_1:
+    "●	提供服务生命周期管理、统一服务发现机制、服务授权管及服务降级保护等能力，与UAV.Monitor、UAV.APM实现天然的一站式微服务治理/运维方案"
 };
 
 export default zh_CN;

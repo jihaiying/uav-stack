@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import LanguageSwitchBtn from "./LanguageSwitchBtn.js";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, injectIntl } from "react-intl";
 import css from "./assets/Header.css";
 import logo from "./assets/logo.png";
+import logom from "./assets/logom.png";
+import { connect } from "react-redux";
 
 class Header1 extends Component {
   scrollToAnchor = anchorName => {
@@ -15,8 +17,22 @@ class Header1 extends Component {
     }
   };
   render() {
-    var h = this.props.hide ? "0" : "70px";
-    var s = this.props.scroll ? "block" : "none";
+    const { isMobile } = this.props;
+    if (isMobile) {
+      return (
+        <div className={css.container}>
+          <Link to={"/"} className={css.title}>
+            <img src={logom} alt="download" />
+            <span>UAVStack</span>
+          </Link>
+          <div className={css.language}>
+            <LanguageSwitchBtn className={css.tag} />
+          </div>
+        </div>
+      );
+    }
+    let h = this.props.hide ? "0" : "70px";
+    let s = this.props.scroll ? "block" : "none";
     return (
       <div className={css.container} style={{ height: h }}>
         <div className={css.content}>
@@ -100,5 +116,10 @@ class Header1 extends Component {
     );
   }
 }
+function mapStateToProps(state) {
+  return {
+    isMobile: state.globalReducer.get("isMobile")
+  };
+}
 
-export default Header1;
+export default connect(mapStateToProps)(injectIntl(Header1));

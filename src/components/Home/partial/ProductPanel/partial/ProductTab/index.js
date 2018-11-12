@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import css from "./assets/ProductTab.css";
 import { Link } from "react-router-dom";
 import { injectIntl } from "react-intl";
+import { connect } from "react-redux";
 
 class ProductTab extends Component {
   render() {
     const { formatMessage } = this.props.intl;
-    const { data } = this.props;
+    const { data, isMobile } = this.props;
     let site = null;
     if (data.site === "default") {
     } else if (data.site != null) {
@@ -15,7 +16,7 @@ class ProductTab extends Component {
           to={data.site}
           className={css.cover}
           style={{
-            width: data.width + "px",
+            width: isMobile ? "100%" : data.width + "px",
             backgroundColor: "#69C1ED"
           }}
         >
@@ -30,7 +31,7 @@ class ProductTab extends Component {
         <div
           className={css.cover}
           style={{
-            width: data.width + "px",
+            width: isMobile ? "100%" : data.width + "px",
             backgroundColor: "#808492"
           }}
         >
@@ -46,9 +47,9 @@ class ProductTab extends Component {
       <div
         className={css.container}
         style={{
-          width: data.width + "px",
+          width: isMobile ? "100%" : data.width + "px",
           backgroundImage: "url(" + data.bg + ")",
-          backgroundSize: data.bgsize + "px"
+          backgroundSize: isMobile ? "1.25rem" : data.bgsize + "px"
         }}
       >
         <div className={css.title}>{data.title}</div>
@@ -63,4 +64,9 @@ class ProductTab extends Component {
   }
 }
 
-export default injectIntl(ProductTab);
+function mapStateToProps(state) {
+  return {
+    isMobile: state.globalReducer.get("isMobile")
+  };
+}
+export default connect(mapStateToProps)(injectIntl(ProductTab));

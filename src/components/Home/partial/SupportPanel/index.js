@@ -75,7 +75,6 @@ class SupportPanel extends Component {
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <div className={css.line} />
-          <div className={css.divider} />
           {data.map((item, key) => (
             <SupportTab key={key} data={item} />
           ))}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header1 from "../../../shared/Header1.js";
 
-class Header extends Component {
+class Head extends Component {
   constructor(props) {
     super(props);
     this.scrollHandler = this.scrollHandler.bind(this);
@@ -34,4 +34,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Head;

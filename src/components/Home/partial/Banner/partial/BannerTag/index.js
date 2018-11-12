@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import css from "./assets/BannerTag.css";
 import Dialog from "../Dialog";
 import cx from "classnames";
+import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 class BannerTag extends Component {
   render() {
@@ -25,6 +27,9 @@ class BannerTag extends Component {
             </ul>
           </div>
           <Dialog />
+          <Link to={"/download"} className={css.button}>
+            <FormattedMessage id="popup_title" />
+          </Link>
         </div>
       </div>
     );

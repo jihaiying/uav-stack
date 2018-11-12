@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { injectIntl, intlShape } from "react-intl";
 import Header2 from "../../../shared/Header2.js";
 import Swiper from "swiper/dist/js/swiper.js";
+import css from "./assets/Banner.css";
 import "swiper/dist/css/swiper.min.css";
 import BannerTag from "./partial/BannerTag";
 import bg1 from "./assets/bg1.jpg";
@@ -12,6 +13,8 @@ import bg5 from "./assets/bg5.jpg";
 import bg6 from "./assets/bg6.jpg";
 import bg7 from "./assets/bg7.jpg";
 import bg8 from "./assets/bg8.jpg";
+import cx from "classnames";
+import { connect } from "react-redux";
 
 class Banner extends Component {
   componentDidMount() {
@@ -44,172 +47,282 @@ class Banner extends Component {
 
   render() {
     const { formatMessage } = this.props.intl;
-    const data = [
-      {
-        bg: bg1,
-        title: [formatMessage({ id: "banner_1_title" })],
-        word: [
-          { title: formatMessage({ id: "banner_1_word_1" }) },
-          { title: formatMessage({ id: "banner_1_word_2" }) },
-          { title: formatMessage({ id: "banner_1_word_3" }) },
-          { title: formatMessage({ id: "banner_1_word_4" }) },
-          { title: formatMessage({ id: "banner_1_word_5" }) }
-        ]
-      },
-      {
-        bg: bg2,
-        title: [formatMessage({ id: "banner_2_title" })],
-        word: [
+    const data = this.props.isMobile
+      ? [
           {
-            title: formatMessage({ id: "banner_2_word_1" }),
-            desc: [
-              formatMessage({ id: "banner_2_word_1_desc_1" }),
-              formatMessage({ id: "banner_2_word_1_desc_2" })
+            bg: bg1,
+            title: [formatMessage({ id: "mbanner_1_title" })],
+            word: [
+              { title: formatMessage({ id: "mbanner_1_word_1" }) },
+              { title: formatMessage({ id: "mbanner_1_word_2" }) },
+              { title: formatMessage({ id: "mbanner_1_word_3" }) }
             ]
           },
-          { title: formatMessage({ id: "banner_2_word_2" }) },
           {
-            title: formatMessage({ id: "banner_2_word_3" }),
-            desc: [
-              formatMessage({ id: "banner_2_word_3_desc_1" }),
-              formatMessage({ id: "banner_2_word_3_desc_2" })
+            bg: bg2,
+            title: [formatMessage({ id: "mbanner_2_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_2_word_1" })
+              },
+              { title: formatMessage({ id: "mbanner_2_word_2" }) },
+              {
+                title: formatMessage({ id: "mbanner_2_word_3" })
+              }
+            ]
+          },
+          {
+            bg: bg3,
+            title: [formatMessage({ id: "mbanner_3_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_3_word_1" })
+              },
+              { title: formatMessage({ id: "mbanner_3_word_2" }) },
+              {
+                title: formatMessage({ id: "mbanner_3_word_3" })
+              }
+            ]
+          },
+          {
+            bg: bg4,
+            title: [formatMessage({ id: "mbanner_4_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_4_word_1" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_4_word_2" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_4_word_3" })
+              }
+            ]
+          },
+          {
+            bg: bg5,
+            title: [formatMessage({ id: "mbanner_5_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_5_word_1" })
+              },
+              { title: formatMessage({ id: "mbanner_5_word_2" }) },
+              {
+                title: formatMessage({ id: "mbanner_5_word_3" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_5_word_4" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_5_word_5" })
+              }
+            ]
+          },
+          {
+            bg: bg6,
+            title: [formatMessage({ id: "mbanner_6_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_6_word_1" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_6_word_2" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_6_word_3" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_6_word_4" })
+              },
+              {
+                title: formatMessage({ id: "mbanner_6_word_5" })
+              }
+            ]
+          },
+          {
+            bg: bg7,
+            title: [formatMessage({ id: "mbanner_7_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_7_word_1" })
+              }
+            ]
+          },
+          {
+            bg: bg8,
+            title: [formatMessage({ id: "mbanner_8_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "mbanner_8_word_1" })
+              }
             ]
           }
         ]
-      },
-      {
-        bg: bg3,
-        title: [formatMessage({ id: "banner_3_title" })],
-        word: [
+      : [
           {
-            title: formatMessage({ id: "banner_3_word_1" })
+            bg: bg1,
+            title: [formatMessage({ id: "banner_1_title" })],
+            word: [
+              { title: formatMessage({ id: "banner_1_word_1" }) },
+              { title: formatMessage({ id: "banner_1_word_2" }) },
+              { title: formatMessage({ id: "banner_1_word_3" }) },
+              { title: formatMessage({ id: "banner_1_word_4" }) },
+              { title: formatMessage({ id: "banner_1_word_5" }) }
+            ]
           },
-          { title: formatMessage({ id: "banner_3_word_2" }) },
           {
-            title: formatMessage({ id: "banner_3_word_3" })
+            bg: bg2,
+            title: [formatMessage({ id: "banner_2_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "banner_2_word_1" }),
+                desc: [
+                  formatMessage({ id: "banner_2_word_1_desc_1" }),
+                  formatMessage({ id: "banner_2_word_1_desc_2" })
+                ]
+              },
+              { title: formatMessage({ id: "banner_2_word_2" }) },
+              {
+                title: formatMessage({ id: "banner_2_word_3" }),
+                desc: [
+                  formatMessage({ id: "banner_2_word_3_desc_1" }),
+                  formatMessage({ id: "banner_2_word_3_desc_2" })
+                ]
+              }
+            ]
+          },
+          {
+            bg: bg3,
+            title: [formatMessage({ id: "banner_3_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "banner_3_word_1" })
+              },
+              { title: formatMessage({ id: "banner_3_word_2" }) },
+              {
+                title: formatMessage({ id: "banner_3_word_3" })
+              }
+            ]
+          },
+          {
+            bg: bg4,
+            title: [formatMessage({ id: "banner_4_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "banner_4_word_1" })
+              },
+              {
+                title: formatMessage({ id: "banner_4_word_2" })
+              },
+              {
+                title: formatMessage({ id: "banner_4_word_3" })
+              }
+            ]
+          },
+          {
+            bg: bg5,
+            title: [
+              formatMessage({ id: "banner_5_title" }),
+              formatMessage({ id: "banner_5_title_2" })
+            ],
+            word: [
+              {
+                title: formatMessage({ id: "banner_5_word_1" })
+              },
+              { title: formatMessage({ id: "banner_5_word_2" }) },
+              {
+                title: formatMessage({ id: "banner_5_word_3" })
+              },
+              {
+                title: formatMessage({ id: "banner_5_word_4" })
+              },
+              {
+                title: formatMessage({ id: "banner_5_word_5" })
+              },
+              {
+                title: formatMessage({ id: "banner_5_word_6" })
+              }
+            ]
+          },
+          {
+            bg: bg6,
+            title: [
+              formatMessage({ id: "banner_6_title" }),
+              formatMessage({ id: "banner_6_title_2" })
+            ],
+            word: [
+              {
+                title: formatMessage({ id: "banner_6_word_1" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_2" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_3" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_4" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_5" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_6" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_7" })
+              },
+              {
+                title: formatMessage({ id: "banner_6_word_8" })
+              }
+            ]
+          },
+          {
+            bg: bg7,
+            title: [formatMessage({ id: "banner_7_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "banner_7_word_1" })
+              },
+              {
+                title: formatMessage({ id: "banner_7_word_2" })
+              },
+              {
+                title: formatMessage({ id: "banner_7_word_3" })
+              },
+              {
+                title: formatMessage({ id: "banner_7_word_4" })
+              },
+              {
+                title: formatMessage({ id: "banner_7_word_5" })
+              },
+              {
+                title: formatMessage({ id: "banner_7_word_6" })
+              }
+            ]
+          },
+          {
+            bg: bg8,
+            title: [formatMessage({ id: "banner_8_title" })],
+            word: [
+              {
+                title: formatMessage({ id: "banner_8_word_1" })
+              },
+              {
+                title: formatMessage({ id: "banner_8_word_2" })
+              },
+              {
+                title: formatMessage({ id: "banner_8_word_3" })
+              },
+              {
+                title: formatMessage({ id: "banner_8_word_4" })
+              }
+            ]
           }
-        ]
-      },
-      {
-        bg: bg4,
-        title: [formatMessage({ id: "banner_4_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "banner_4_word_1" })
-          },
-          {
-            title: formatMessage({ id: "banner_4_word_2" })
-          },
-          {
-            title: formatMessage({ id: "banner_4_word_3" })
-          }
-        ]
-      },
-      {
-        bg: bg5,
-        title: [
-          formatMessage({ id: "banner_5_title" }),
-          formatMessage({ id: "banner_5_title_2" })
-        ],
-        word: [
-          {
-            title: formatMessage({ id: "banner_5_word_1" })
-          },
-          { title: formatMessage({ id: "banner_5_word_2" }) },
-          {
-            title: formatMessage({ id: "banner_5_word_3" })
-          },
-          {
-            title: formatMessage({ id: "banner_5_word_4" })
-          },
-          {
-            title: formatMessage({ id: "banner_5_word_5" })
-          },
-          {
-            title: formatMessage({ id: "banner_5_word_6" })
-          }
-        ]
-      },
-      {
-        bg: bg6,
-        title: [
-          formatMessage({ id: "banner_6_title" }),
-          formatMessage({ id: "banner_6_title_2" })
-        ],
-        word: [
-          {
-            title: formatMessage({ id: "banner_6_word_1" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_2" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_3" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_4" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_5" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_6" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_7" })
-          },
-          {
-            title: formatMessage({ id: "banner_6_word_8" })
-          }
-        ]
-      },
-      {
-        bg: bg7,
-        title: [formatMessage({ id: "banner_7_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "banner_7_word_1" })
-          },
-          {
-            title: formatMessage({ id: "banner_7_word_2" })
-          },
-          {
-            title: formatMessage({ id: "banner_7_word_3" })
-          },
-          {
-            title: formatMessage({ id: "banner_7_word_4" })
-          },
-          {
-            title: formatMessage({ id: "banner_7_word_5" })
-          },
-          {
-            title: formatMessage({ id: "banner_7_word_6" })
-          }
-        ]
-      },
-      {
-        bg: bg8,
-        title: [formatMessage({ id: "banner_8_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "banner_8_word_1" })
-          },
-          {
-            title: formatMessage({ id: "banner_8_word_2" })
-          },
-          {
-            title: formatMessage({ id: "banner_8_word_3" })
-          },
-          {
-            title: formatMessage({ id: "banner_8_word_4" })
-          }
-        ]
-      }
-    ];
+        ];
     return (
       <div
-        className="swiper-container"
-        style={{ height: "680px", minWidth: "1200px" }}
+        className={cx(css.container, "swiper-container")}
         ref={self => (this.swiperID = self)}
       >
         <Header2 scroll={true} />
@@ -230,5 +343,9 @@ class Banner extends Component {
 Banner.propTypes = {
   intl: intlShape.isRequired
 };
-
-export default injectIntl(Banner);
+function mapStateToProps(state) {
+  return {
+    isMobile: state.globalReducer.get("isMobile")
+  };
+}
+export default injectIntl(connect(mapStateToProps)(Banner));

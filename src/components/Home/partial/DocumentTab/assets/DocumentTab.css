@@ -6,7 +6,7 @@
 }
 .content {
   padding: 20px 10px;
-  width: 1200px;
+  min-width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
@@ -15,7 +15,13 @@
   text-align: left;
   width: 390px;
   display: inline-block;
-  tab-size: 14px;
+  vertical-align: top;
+}
+.tab2 {
+  padding: 30px 10px;
+  text-align: left;
+  width: 390px;
+  display: inline-block;
   vertical-align: top;
 }
 .title {
@@ -31,9 +37,8 @@
   height: 15px;
 }
 .right {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 5px;
-  font-size: 12px;
   color: #9b9b9b;
   float: right;
   text-decoration: none !important;
@@ -54,39 +59,39 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.document_line {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  margin-right: 5px;
-  transition: color 0.3s;
+.download_line {
+  padding: 5px;
+  transition: color 0.2s;
 }
-.document_line:hover .download_title {
+.download_line:hover .download_title {
   color: #69c1ed;
 }
-.document_line:hover .document_tip {
+.download_line:hover .download_tip {
   color: #69c1ed;
 }
-.paper_line {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  margin-right: 5px;
+.help_line {
+  padding: 5px;
   color: #4a4a4a;
   display: block;
   text-decoration: none !important;
-  overflow-y: hidden;
+  overflow: hidden;
+  transition: color 0.2s;
 }
-.time {
-  word-break: break-all;
-  font-size: 12px;
-  color: #9b9b9b;
-  letter-spacing: 0;
-  line-height: 12px;
-  width: 30px;
-  display: inline-block;
-  float: left;
-  margin-right: 10px;
+.help_line:hover {
+  color: #69c1ed;
+}
+.paper_line {
+  padding: 5px;
+  color: #4a4a4a;
+  display: block;
+  text-decoration: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s;
+}
+.paper_line:hover {
+  color: #69c1ed;
 }
 .download_title {
   white-space: nowrap;
@@ -95,21 +100,9 @@
   text-overflow: ellipsis;
   font-size: 12px;
   margin-bottom: 1px;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
-.help_title {
-  white-space: nowrap;
-  overflow: hidden;
-  color: #4a4a4a;
-  text-overflow: ellipsis;
-  font-size: 14px;
-  display: block;
-  margin-bottom: 1px;
-  transition: color 0.3s;
-}
-.help_title:hover {
-  color: #69c1ed;
-}
+
 .document_title {
   white-space: nowrap;
   overflow: hidden;
@@ -117,15 +110,87 @@
   text-overflow: ellipsis;
   font-size: 12px;
   margin-bottom: 1px;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 .document_title:hover {
   color: #69c1ed;
 }
-.document_tip {
-  transition: color 0.3s;
+.download_tip {
+  transition: color 0.2s;
   color: #9b9b9b;
   font-size: 12px;
   line-height: 16px;
   margin-left: 24px;
+}
+.more {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+  }
+  .content {
+    padding: 0;
+    min-width: 0;
+  }
+  .tab {
+    padding: 0.3rem 0.1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .tab2 {
+    padding: 0.3rem 0.1rem;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    background: #002b46 url("./bcgm.png") center center;
+  }
+  .line {
+    width: 0.3rem;
+    margin: 0.1rem auto 0.2rem;
+  }
+  .title {
+    font-size: 0.48rem;
+  }
+  .title2 {
+    font-size: 0.36rem;
+    color: #9b9b9b;
+    margin-bottom: 0.35rem;
+  }
+  .title3 {
+    height: 0.15rem;
+  }
+  .right {
+    display: none;
+  }
+  .download_line {
+    text-align: left;
+    padding: 0.05rem;
+  }
+  .more {
+    display: block;
+    border: 1px solid #69c1ed;
+    width: 6rem;
+    line-height: 0.65rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.35rem;
+    color: #69c1ed;
+    font-size: 0.24rem;
+  }
+  .help_line {
+    padding: 0;
+    background-color: #01a0b5;
+    color: #ffffff;
+    height: 0.65rem;
+    margin: 0.4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    line-height: 0.65rem;
+  }
+  .paper_line {
+    padding: 0.05rem;
+    text-align: left;
+  }
 }

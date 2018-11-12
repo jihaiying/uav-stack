@@ -7,7 +7,7 @@ class UpdateTab extends Component {
     const updateData = window.updateData;
     const fix = updateData.fix ? (
       <div className={css.tab}>
-        <div>
+        <div className={css.title}>
           <FormattedMessage id="updateTab_fix_title" />
         </div>
         {updateData.fix.map((item, key) => (
@@ -21,7 +21,7 @@ class UpdateTab extends Component {
       <div className={css.container}>
         <div className={css.content}>
           <div className={css.tab}>
-            <div>
+            <div className={css.title}>
               <FormattedMessage id="updateTab_update_title" />
             </div>
             <a href={updateData.href} target="_blank">

@@ -1,12 +1,11 @@
-.button {
-  text-align: center;
-  display: inline-block;
-  width: 160px;
-  font-size: 18px;
-  color: #ffffff;
-  text-decoration: none !important;
-  margin-top: 5px;
-  padding: 5px 5px;
-  background-color: #69c1ed;
-  border-radius: 1px;
+.container {
+  height: 680px;
+  min-width: 1200px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 0.96rem;
+    height: 6.5rem;
+    min-width: 0;
+  }
 }

@@ -1,13 +1,11 @@
 .container {
   border-radius: 2px;
   text-align: center;
-  padding: 30px 0;
-  min-width: 1200px;
 }
 .content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 50px 10px 10px;
 }
 .title {
   font-size: 36px;
@@ -22,8 +20,8 @@
   background-color: #69c1ed;
 }
 .swiper {
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding-bottom: 30px;
   width: 1000px;
   display: inline-block;
 }
@@ -37,4 +35,40 @@
   width: 20px;
   float: right;
   margin-top: 180px;
+}
+.pagination {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+  }
+  .content {
+    width: 7rem;
+    padding: 0.5rem 0 0;
+  }
+  .swiper {
+    width: 100%;
+    margin: 0.2rem auto;
+    padding-bottom: 0.4rem;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .title {
+    font-size: 0.36rem;
+  }
+  .line {
+    margin-top: 0rem;
+    width: 0.5rem;
+    height: 2px;
+  }
+  .pagination {
+    display: block;
+    bottom: 0.2rem;
+  }
 }

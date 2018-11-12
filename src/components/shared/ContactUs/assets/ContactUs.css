@@ -8,11 +8,10 @@
   border-radius: 2px;
   text-align: center;
   color: #ffffff;
-  min-width: 1200px;
   margin-top: 70px;
 }
 .content {
-  width: 1000px;
+  min-width: 1000px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -89,4 +88,63 @@
 .email:hover {
   border: 1px solid #ffffff;
   color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    background: #002c47 url("./bcgm.jpg") center center;
+  }
+  .content {
+    min-width: 0;
+  }
+  .title {
+    font-size: 0.36rem;
+  }
+  .tab {
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    line-height: 20px;
+    padding: 20px;
+  }
+  .tab1 {
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    line-height: 20px;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .tab2 {
+    text-align: center;
+    width: 100%;
+    line-height: 20px;
+    padding: 20px;
+  }
+  .img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    margin-top: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .email {
+    width: 3.2rem;
+    margin-top: 0.2rem;
+    padding: 0.05rem 0.2rem;
+    border: 1px solid #69c1ed;
+    color: #69c1ed;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .org {
+    text-align: center;
+    color: #4a4a4a;
+    height: 0.67rem;
+    padding: 0.1rem;
+    background: #f5f5f5;
+  }
 }

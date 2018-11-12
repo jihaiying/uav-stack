@@ -13,6 +13,7 @@ import lbay from "./assets/lbay.png";
 import zhouxinyu from "./assets/zhouxingyu.png";
 import left from "./assets/left.png";
 import right from "./assets/right.png";
+import cx from "classnames";
 
 class Contributor extends Component {
   componentDidMount() {
@@ -23,12 +24,15 @@ class Contributor extends Component {
 
   updateSwiper = () => {
     new Swiper(this.swiperID, {
-      slidesPerView: 6,
-      spaceBetween: 20,
+      slidesPerView: "auto",
       loop: true,
       navigation: {
         nextEl: this.nextID,
         prevEl: this.pervID
+      },
+      pagination: {
+        el: this.paginationID,
+        clickable: true
       }
     });
   };
@@ -106,17 +110,19 @@ class Contributor extends Component {
             src={left}
             alt="left"
           />
-          <div className={css.swiper}>
-            <div
-              className="swiper-container"
-              ref={self => (this.swiperID = self)}
-            >
-              <div className="swiper-wrapper">
-                {data.map((item, key) => (
-                  <ContributorTab key={key} data={item} />
-                ))}
-              </div>
+          <div
+            className={cx(css.swiper, "swiper-container")}
+            ref={self => (this.swiperID = self)}
+          >
+            <div className="swiper-wrapper">
+              {data.map((item, key) => (
+                <ContributorTab key={key} data={item} />
+              ))}
             </div>
+            <div
+              className={cx(css.pagination, "swiper-pagination")}
+              ref={self => (this.paginationID = self)}
+            />
           </div>
           <img
             className={css.right}

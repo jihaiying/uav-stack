@@ -5,18 +5,14 @@
 }
 .content {
   background: #f7f8fa;
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.divider {
-  height: 30px;
-}
+
 .line {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6px;
+  margin: 6px auto 30px;
   width: 50px;
   height: 2px;
   background-color: #69c1ed;
@@ -31,4 +27,22 @@
 .tip {
   font-size: 14px;
   color: #9b9b9b;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    min-height: 2rem;
+  }
+  .content {
+    margin: 0 auto;
+    min-width: 0;
+  }
+  .title {
+    font-size: 0.36rem;
+  }
+  .line {
+    margin: 0.1rem auto 0.3rem;
+    width: 0.5rem;
+  }
 }

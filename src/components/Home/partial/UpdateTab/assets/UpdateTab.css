@@ -6,6 +6,7 @@
   line-height: 26px;
   text-align: center;
   min-height: 150px;
+  word-wrap: break-word;
 }
 .content {
   background: #e8e9eb;
@@ -19,9 +20,31 @@
   text-align: left;
   width: 50%;
   display: inline-block;
-  tab-size: 14px;
   vertical-align: top;
 }
 .tip {
   margin-left: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    min-height: 2rem;
+  }
+  .content {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .tab {
+    padding: 0.2rem 0.3rem;
+    text-align: left;
+    width: 100%;
+  }
+  .title {
+    font-size: 0.36rem;
+    line-height: 0.5rem;
+  }
+  .tip {
+    margin-left: 0.16rem;
+  }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Header1 from "../../../shared/Header1.js";
 import Header2 from "../../../shared/Header2.js";
 import css from "./assets/Head.css";
 import { Link } from "react-router-dom";
@@ -23,7 +24,8 @@ class Head extends Component {
     };
     return (
       <div className={css.container}>
-        <Header2 position="static" />
+        <Header1 hide={true} />
+        <Header2 />
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <p className={css.org}>{tip}</p>

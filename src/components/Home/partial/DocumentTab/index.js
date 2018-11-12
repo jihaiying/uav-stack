@@ -89,7 +89,7 @@ class DocumentTab extends Component {
           <FormattedMessage id="documentTab_download_title2" />
         </h2>
         {download.map((item, key) => (
-          <div className={css.document_line} key={key}>
+          <div className={css.download_line} key={key}>
             <a href={item.link} target="_blank">
               <img
                 src={downloadpic}
@@ -98,18 +98,21 @@ class DocumentTab extends Component {
                 target="_blank"
               />
               <div className={css.download_title}>{item.title}</div>
-              <div className={css.document_tip}>{item.tip}</div>
+              <div className={css.download_tip}>{item.tip}</div>
             </a>
           </div>
         ))}
+        <Link to={"/download"} className={css.more}>
+          <FormattedMessage id="documentTab_more" />
+        </Link>
       </div>
     );
 
     var helphtml = (
-      <div className={css.tab}>
-        <h1 className={css.title}>
-          <FormattedMessage id="documentTab_help_title" />
-        </h1>
+      <div className={css.tab2}>
+        <div className={css.title}>
+          {formatMessage({ id: "documentTab_help_title" })}
+        </div>
         <Link to={"/document"} className={css.right}>
           <FormattedMessage id="documentTab_more" /> >
         </Link>
@@ -119,9 +122,9 @@ class DocumentTab extends Component {
             key={key}
             target="_blank"
             href={item.link}
-            className={css.paper_line}
+            className={css.help_line}
           >
-            <div className={css.help_title}>{item.title}</div>
+            {item.title}
           </a>
         ))}
       </div>
@@ -143,7 +146,7 @@ class DocumentTab extends Component {
             href={item.link}
             className={css.paper_line}
           >
-            <p className={css.document_title}>{"● " + item.title}</p>
+            {"● " + item.title}
           </a>
         ))}
       </div>

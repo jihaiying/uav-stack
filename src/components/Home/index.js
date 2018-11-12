@@ -11,6 +11,7 @@ import SupportPanel from "./partial/SupportPanel";
 import JoinUs from "./partial/JoinUs";
 import Contributor from "./partial/Contributor";
 import ContactUs from "../shared/ContactUs";
+import Cursor from "../shared/Cursor";
 import "antd/dist/antd.css";
 class Home extends Component {
   render() {
@@ -24,6 +25,7 @@ class Home extends Component {
           })}
         />
         <Head />
+        <Cursor />
         <Banner />
         <UpdateTab />
         <ProductPanel />

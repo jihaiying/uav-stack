@@ -3,6 +3,7 @@
   width: 180px;
   background: rgba(212, 234, 246, 0.23);
   padding: 10px;
+  margin: 10px;
 }
 .head {
   width: 80px;
@@ -36,4 +37,36 @@
   font-size: 12px;
   color: #4a4a4a;
   line-height: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 5rem;
+    width: 3.3rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
+  }
+  .head {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem auto 0.2rem;
+  }
+  .img {
+    width: 0.2rem;
+    border-radius: 50%;
+    margin-left: -0.06rem;
+    margin-right: 0.05rem;
+    margin-top: -0.06rem;
+  }
+  .title {
+    margin-top: 0.1rem;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+  }
+  .descCon {
+    margin-top: 0.1rem;
+  }
+  .descCon li {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+  }
 }

@@ -6,11 +6,10 @@
   color: #ffffff;
   font-size: 14px;
   vertical-align: middle;
-  min-width: 1200px;
   overflow-y: hidden;
 }
 .content {
-  width: 850px;
+  min-width: 850px;
   margin: 70px auto 0;
   padding-top: 30px;
   padding-bottom: 17px;
@@ -46,4 +45,40 @@
   margin-left: 5px;
   margin-right: 15px;
   margin-top: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+  }
+  .content {
+    min-width: 0;
+  }
+  .img {
+    width: 0.2rem;
+    height: 0.2rem;
+    display: inline;
+    margin-left: 0.05rem;
+    margin-right: 0.1rem;
+  }
+  .line {
+    margin: 0.1rem auto;
+    width: 0.5rem;
+    height: 2px;
+  }
+  .title {
+    font-size: 0.36rem;
+  }
+  .tab {
+    font-size: 0.12rem;
+    line-height: 0.24rem;
+    margin: 0.3rem 0.2rem;
+    padding: 0.2rem;
+  }
+  .tip {
+    width: 6.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
