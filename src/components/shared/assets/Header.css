@@ -11,12 +11,9 @@
   left: 0;
   top: 0;
 }
-.cursor {
-  display: none;
-}
 .container2 {
-  min-width: 1400px;
   width: 100%;
+  min-width: 1400px;
   overflow-y: hidden;
   transition: height 1s;
   opacity: 0.9;
@@ -32,7 +29,7 @@
 }
 @media (max-width: 1450px) {
   .content   {
-    width: 980px;
+    width: 900px;
   }
 }
 .title {
@@ -92,17 +89,34 @@
   position: absolute;
   float: left;
 }
+.drop {
+  display: none;
+}
+.cursor {
+  display: none;
+}
+.mobile_container {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .container {
-    height: 0.96rem;
-    min-width: 0;
-    transition: height 0s;
+    display: none;
   }
   .container2 {
     display: none;
   }
+  .mobile_container {
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 3;
+    background-color: #242a37;
+    left: 0;
+    top: 0;
+    height: 0.96rem;
+  }
   .title {
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
   }
   .title img {
     height: 0.8rem;
@@ -119,8 +133,61 @@
   .language {
     padding-top: 0.25rem;
     margin-right: 0.5rem;
-    float: right;
   }
+  .black {
+    display: inline-block;
+    height: 0.45rem;
+    font-size: 0.16rem;
+    width: 0.9rem;
+    border: 1px solid #f5f5f5;
+    border-radius: 1px;
+    color: white;
+    background-color: #000000;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 0.45rem;
+  }
+  .blue {
+    display: inline-block;
+    height: 0.45rem;
+    width: 0.9rem;
+    font-size: 0.16rem;
+    background-color: #69c1ed;
+    border: 1px solid #f5f5f5;
+    border-radius: 1px;
+    color: white;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 0.45rem;
+  }
+  .link {
+    line-height: 0.86rem;
+    padding-left: 0.4rem;
+    float: none;
+    width: 100%;
+    display: block;
+    font-size: 0.36rem;
+  }
+  .selected {
+    display: none;
+  }
+  .nav {
+    display: inline-block;
+    padding-top: 0.1rem;
+    margin-right: 0.4rem;
+    float: right;
+    color: #ffffff;
+    font-size: 0.5rem;
+  }
+  .menu {
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 3;
+    background-color: #242a37;
+    top: 0.96rem;
+  }
+
   .cursor {
     display: inline;
     border-radius: 50%;

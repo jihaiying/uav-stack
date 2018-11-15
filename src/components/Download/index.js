@@ -5,6 +5,7 @@ import ContactUs from "../shared/ContactUs";
 import css from "./assets/Download.css";
 
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
+import MobileMenu from "../shared/MobileMenu";
 
 class Download extends Component {
   render() {
@@ -70,6 +71,7 @@ class Download extends Component {
           </title>
         </Helmet>
         <Header1 />
+        <MobileMenu />
         <div className={css.container}>
           <div className={css.content}>
             <div className={css.head}>

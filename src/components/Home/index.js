@@ -12,7 +12,9 @@ import JoinUs from "./partial/JoinUs";
 import Contributor from "./partial/Contributor";
 import ContactUs from "../shared/ContactUs";
 import Cursor from "../shared/Cursor";
+import Menu from "../shared/MobileMenu";
 import "antd/dist/antd.css";
+
 class Home extends Component {
   render() {
     window.scroll(0, 0);
@@ -24,6 +26,7 @@ class Home extends Component {
             id: "home"
           })}
         />
+        <Menu />
         <Head />
         <Cursor />
         <Banner />

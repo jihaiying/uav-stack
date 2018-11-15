@@ -4,8 +4,6 @@ import LanguageSwitchBtn from "./LanguageSwitchBtn.js";
 import { FormattedMessage, injectIntl } from "react-intl";
 import css from "./assets/Header.css";
 import logo from "./assets/logo.png";
-import logom from "./assets/logom.png";
-import { connect } from "react-redux";
 
 class Header1 extends Component {
   scrollToAnchor = anchorName => {
@@ -17,20 +15,6 @@ class Header1 extends Component {
     }
   };
   render() {
-    const { isMobile } = this.props;
-    if (isMobile) {
-      return (
-        <div className={css.container}>
-          <Link to={"/"} className={css.title}>
-            <img src={logom} alt="download" />
-            <span>UAVStack</span>
-          </Link>
-          <div className={css.language}>
-            <LanguageSwitchBtn className={css.tag} />
-          </div>
-        </div>
-      );
-    }
     let h = this.props.hide ? "0" : "70px";
     let s = this.props.scroll ? "block" : "none";
     return (
@@ -116,10 +100,5 @@ class Header1 extends Component {
     );
   }
 }
-function mapStateToProps(state) {
-  return {
-    isMobile: state.globalReducer.get("isMobile")
-  };
-}
 
-export default connect(mapStateToProps)(injectIntl(Header1));
+export default injectIntl(Header1);

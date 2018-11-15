@@ -11,29 +11,12 @@ class Dialog extends Component {
     this.handleOk = this.handleOk.bind(this);
     this.handleCancel = this.handleCancel.bind(this);
     this.state = {
-      visible: false,
-      popup_os: []
+      visible: false
     };
   }
   componentDidMount() {
-    const { formatMessage } = this.props.intl;
     this.setState({
-      visible: false,
-      popup_href: formatMessage({ id: "popup_link" }),
-      popup_os: [
-        {
-          title: formatMessage({ id: "popup_windows" }),
-          link: formatMessage({ id: "popup_windows_link" })
-        },
-        {
-          title: formatMessage({ id: "popup_mac" }),
-          link: formatMessage({ id: "popup_mac_link" })
-        },
-        {
-          title: formatMessage({ id: "popup_linux" }),
-          link: formatMessage({ id: "popup_linux_link" })
-        }
-      ]
+      visible: false
     });
   }
   showModal = () => {
@@ -54,7 +37,24 @@ class Dialog extends Component {
   };
 
   render() {
-    const { popup_href, popup_os } = this.state;
+    const { formatMessage } = this.props.intl;
+    const { popup_href, popup_os } = {
+      popup_href: formatMessage({ id: "popup_link" }),
+      popup_os: [
+        {
+          title: formatMessage({ id: "popup_windows" }),
+          link: formatMessage({ id: "popup_windows_link" })
+        },
+        {
+          title: formatMessage({ id: "popup_mac" }),
+          link: formatMessage({ id: "popup_mac_link" })
+        },
+        {
+          title: formatMessage({ id: "popup_linux" }),
+          link: formatMessage({ id: "popup_linux_link" })
+        }
+      ]
+    };
     return (
       <div>
         <a className={css.button} onClick={this.showModal}>

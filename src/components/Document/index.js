@@ -4,6 +4,7 @@ import Header1 from "../shared/Header1.js";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Document.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
+import MobileMenu from "../shared/MobileMenu";
 
 class Document extends Component {
   render() {
@@ -124,6 +125,7 @@ class Document extends Component {
           </title>
         </Helmet>
         <Header1 />
+        <MobileMenu />
         <div className={css.container}>
           <h1 className={css.head}>
             <FormattedMessage id="documentTab_help_title" />
