@@ -113,42 +113,42 @@ const zh_CN = {
   productTab_details: "查看详情",
   productTab_none: "敬请期待",
   productTab_1_title: "（微）服务监控（Monitor）",
-  productTab_1_tip_1: "以无侵入方式实现对Java程序的画像与监控",
-  productTab_1_tip_2: "以心跳数据实现对应用容器的画像与监控",
-  productTab_1_tip_3: "提供预警策略实现自动报警",
-  productTab_1_tip_4: "提供应用/服务流图谱",
+  productTab_1_tip_1: "●  以无侵入方式实现对Java程序的画像与监控",
+  productTab_1_tip_2: "●  以心跳数据实现对应用容器的画像与监控",
+  productTab_1_tip_3: "●  提供预警策略实现自动报警",
+  productTab_1_tip_4: "●  提供应用/服务流图谱",
 
   productTab_2_title: "应用性能管理（APM）",
-  productTab_2_tip_1: "提供应用性能诊断工具箱",
-  productTab_2_tip_2: "提供调用链支持",
+  productTab_2_tip_1: "●  提供应用性能诊断工具箱",
+  productTab_2_tip_2: "●  提供调用链支持",
 
   productTab_3_title: "(微）服务治理（ServiceGovern）",
-  productTab_3_tip_1: "以服务画像实现服务注册",
-  productTab_3_tip_2: "提供服务发现接口",
-  productTab_3_tip_3: "无侵入实现服务调用干预",
-  productTab_3_tip_4: "提供服务授权访问机制",
-  productTab_3_tip_5: "提供服务降级与保护机制",
+  productTab_3_tip_1: "●  以服务画像实现服务注册",
+  productTab_3_tip_2: "●  提供服务发现接口",
+  productTab_3_tip_3: "●  无侵入实现服务调用干预",
+  productTab_3_tip_4: "●  提供服务授权访问机制",
+  productTab_3_tip_5: "●  提供服务降级与保护机制",
 
   productTab_4_title: "客户端体验（UEM）",
-  productTab_4_tip_1: "追踪Web浏览器端用户访问状况",
-  productTab_4_tip_2: "端到端跟踪联通",
+  productTab_4_tip_1: "●  追踪Web浏览器端用户访问状况",
+  productTab_4_tip_2: "●  端到端跟踪联通",
 
   productTab_5_title: "容器生态支持（Container）",
-  productTab_5_tip_1: "对容器生态的支持，包括Monitor+APM所有能力",
-  productTab_5_tip_2: "为容器生态提供智能容量规划与决策支持",
+  productTab_5_tip_1: "●  对容器生态的支持，包括Monitor+APM所有能力",
+  productTab_5_tip_2: "●  为容器生态提供智能容量规划与决策支持",
 
   productTab_6_title: "任务机器人平台（HIT）",
-  productTab_6_tip_1: "AI+ChatOps",
-  productTab_6_tip_2: "智能报警",
-  productTab_6_tip_3: "智能巡检",
+  productTab_6_tip_1: "●  AI+ChatOps",
+  productTab_6_tip_2: "●  智能报警",
+  productTab_6_tip_3: "●  智能巡检",
 
   productTab_7_title: "微服务计算平台（MSCP）",
   productTab_7_tip_1:
-    "提供微服务计算的编程框架和运行时，框架是以抽象组件为基础；提供通信，工作流，定时任务，处理模型（多线程，异步等），IO处理等组件",
+    "●  提供微服务计算的编程框架和运行时，框架是以抽象组件为基础；提供通信，工作流，定时任务，处理模型（多线程，异步等），IO处理等组件",
   productTab_7_tip_2:
-    "提供以组件编程构建业务功能的能力，即Feature；提供单binary多配置实现差异化运行的部署方式，即Profile",
+    "●  提供以组件编程构建业务功能的能力，即Feature；提供单binary多配置实现差异化运行的部署方式，即Profile",
   productTab_7_tip_3:
-    "基于共识数据，实现多个运行实例的协作能力，即动态计算编排；以动态计算编排为基础，实现跨实例多个Feature的协作能力，即动态服务编排",
+    "●  基于共识数据，实现多个运行实例的协作能力，即动态计算编排；以动态计算编排为基础，实现跨实例多个Feature的协作能力，即动态服务编排",
 
   outline_title: "全维度监控+应用运维解决方案",
 

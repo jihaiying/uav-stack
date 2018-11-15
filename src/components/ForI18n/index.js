@@ -9,6 +9,9 @@ import { HashRouter } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import * as globalActions from "../../actions/global";
 import { runFitPage } from "../../lib/fitPage";
+import "intl";
+import "intl/locale-data/jsonp/en";
+import "intl/locale-data/jsonp/zh";
 
 class ForI18n extends Component {
   componentDidMount() {
