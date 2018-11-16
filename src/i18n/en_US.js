@@ -279,9 +279,9 @@
 
   contactUs_title: "Contact Us",
   contactUs_tip_1: "Scan the QR code below to follow UAVStack on WeChat",
-  contactUs_tip_2: "Learn more about UAVStack",
-  contactUs_tip_3: "Scan the QR code below ",
-  contactUs_tip_4: "to join the user community",
+  contactUs_tip_2: " ",
+  contactUs_tip_3: "Scan the QR code below to join the user community",
+  contactUs_tip_4: " ",
   contactUs_mail: "Email",
 
   popup_title: "AllInOne",

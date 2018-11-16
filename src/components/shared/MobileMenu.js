@@ -69,13 +69,13 @@ class MobileMenu extends Component {
       <div>
         <div className={css.mobile_container}>
           <div onClick={this.handleClick} className={css.nav}>
-            <Icon type="bars" />
+            <Icon type={show ? "close" : "bars"} />
           </div>
           <Link to={"/"} className={css.title}>
             <img src={logom} alt="download" />
             <span>UAVStack</span>
           </Link>
-          <LanguageSwitchBtn />
+          {show ? null : <LanguageSwitchBtn />}
         </div>
         {show ? menu : null}
       </div>

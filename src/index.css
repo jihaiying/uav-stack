@@ -6,6 +6,7 @@
 body {
   font-family: sans-serif;
   min-width: 1200px;
+  font-size: 14px;
 }
 li {
   list-style: none;
@@ -13,5 +14,6 @@ li {
 @media screen and (max-width: 1024px) {
   body {
     min-width: 0;
+    font-size: 0.24rem;
   }
 }

@@ -4,7 +4,6 @@
   border-radius: 2px;
   text-align: center;
   color: #ffffff;
-  font-size: 14px;
   vertical-align: middle;
   overflow-y: hidden;
 }
@@ -70,8 +69,8 @@
     font-size: 0.36rem;
   }
   .tab {
-    font-size: 0.12rem;
-    line-height: 0.24rem;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
     margin: 0.3rem 0.2rem;
     padding: 0.2rem;
   }

@@ -2,7 +2,6 @@
   border: 1px solid #f5f5f5;
   color: #4a4a4a;
   text-align: center;
-  font-size: 14px;
 }
 .content {
   padding: 20px 10px;
@@ -184,9 +183,7 @@
     background-color: #01a0b5;
     color: #ffffff;
     height: 0.65rem;
-    margin: 0.4rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin: 0.2rem 0.4rem;
     line-height: 0.65rem;
   }
   .paper_line {

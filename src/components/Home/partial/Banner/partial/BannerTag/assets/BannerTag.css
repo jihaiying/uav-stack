@@ -17,7 +17,6 @@
 }
 .descCon li {
   margin-top: 6px;
-  font-size: 14px;
   color: #fff;
   line-height: 22px;
 }
@@ -48,8 +47,8 @@
     line-height: 0.3rem;
   }
   .descCon li {
-    font-size: 0.16rem;
-    line-height: 0.28rem;
+    font-size: 0.2rem;
+    line-height: 0.24rem;
     margin-top: 0.1rem;
   }
   .button {
