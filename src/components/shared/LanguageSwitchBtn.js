@@ -4,11 +4,11 @@ import { connect } from "react-redux";
 import * as languageActionCreator from "../../actions/language";
 import { LANGUAGES } from "../../config/enum";
 import Menu from "antd/lib/menu";
-import "antd/lib/menu/style";
+import "antd/lib/menu/style/css";
 import Dropdown from "antd/lib/dropdown";
-import "antd/lib/dropdown/style";
+import "antd/lib/dropdown/style/css";
 import Icon from "antd/lib/icon";
-import "antd/lib/icon/style";
+import "antd/lib/icon/style/css";
 
 class LanguageSwitchBtn extends Component {
   render() {
