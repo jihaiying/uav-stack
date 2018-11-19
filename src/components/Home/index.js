@@ -12,7 +12,7 @@ import JoinUs from "./partial/JoinUs";
 import Contributor from "./partial/Contributor";
 import ContactUs from "../shared/ContactUs";
 import Cursor from "../shared/Cursor";
-import Menu from "../shared/MobileMenu";
+import Menu from "../shared/MobileHeader";
 import "antd/dist/antd.css";
 
 class Home extends Component {

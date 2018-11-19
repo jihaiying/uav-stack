@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import LanguageSwitchBtn from "./LanguageSwitchBtn.js";
 import { FormattedMessage, injectIntl } from "react-intl";
-import css from "./assets/Header.css";
+import css from "./assets/Shared.css";
 import logo from "./assets/logo.png";
 
 class Header1 extends Component {

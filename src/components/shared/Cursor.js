@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
-import css from "./assets/Header.css";
+import css from "./assets/Shared.css";
 
 class Cursor extends Component {
   render() {

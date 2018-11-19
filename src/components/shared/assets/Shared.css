@@ -95,6 +95,9 @@
 .cursor {
   display: none;
 }
+.selector {
+  display: none;
+}
 .mobile_container {
   display: none;
 }
@@ -183,11 +186,27 @@
     width: 100%;
     display: block;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     background-color: #242a37;
     top: 0.96rem;
   }
-
+  .selector {
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0.96rem;
+    background-color: #d6d6d6;
+    text-align: center;
+  }
+  .selector div {
+    display: inline-block;
+    line-height: 0.76rem;
+    font-size: 0.24rem;
+  }
+  .selector .active {
+    border-bottom: 1px solid #69c1ed;
+    color: #69c1ed;
+  }
   .cursor {
     display: inline;
     border-radius: 50%;

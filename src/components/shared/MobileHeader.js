@@ -3,10 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 import logom from "./assets/logom.png";
 import LanguageSwitchBtn from "./LanguageSwitchBtn.js";
 import { FormattedMessage } from "react-intl";
-import css from "./assets/Header.css";
+import css from "./assets/Shared.css";
 import Icon from "antd/lib/icon";
 
-class MobileMenu extends Component {
+class MobileHeader extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,12 +17,6 @@ class MobileMenu extends Component {
     e.preventDefault(); // Fix event propagation on Android
     this.setState({
       show: !this.state.show
-    });
-  };
-
-  onMaskClick = () => {
-    this.setState({
-      show: false
     });
   };
 
@@ -83,4 +77,4 @@ class MobileMenu extends Component {
   }
 }
 
-export default MobileMenu;
+export default MobileHeader;

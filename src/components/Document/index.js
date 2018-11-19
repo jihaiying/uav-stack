@@ -3,14 +3,33 @@ import { Helmet } from "react-helmet";
 import Header1 from "../shared/Header1.js";
 import ContactUs from "../shared/ContactUs";
 import css from "./assets/Document.css";
-import { FormattedMessage, injectIntl, intlShape } from "react-intl";
-import MobileMenu from "../shared/MobileMenu";
+import { injectIntl, intlShape } from "react-intl";
+import MobileHeader from "../shared/MobileHeader";
+import MobileSelector from "../shared/MobileSelector";
+import { connect } from "react-redux";
 
 class Document extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+  setCount(c, e) {
+    this.setState(prevState => ({
+      count: c
+    }));
+  }
+
   render() {
     window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
-    const { help, document } = {
+    const { isMobile } = this.props;
+    const { head, help, document } = {
+      head: [
+        formatMessage({ id: "documentTab_help_title" }),
+        formatMessage({ id: "documentTab_paper_title" })
+      ],
       help: [
         {
           title: formatMessage({ id: "product_help_1_tip" }),
@@ -115,6 +134,7 @@ class Document extends Component {
         }
       ]
     };
+    var display = isMobile ? "none" : "block";
     return (
       <div>
         <Helmet>
@@ -125,19 +145,28 @@ class Document extends Component {
           </title>
         </Helmet>
         <Header1 />
-        <MobileMenu />
-        <div className={css.container}>
-          <h1 className={css.head}>
-            <FormattedMessage id="documentTab_help_title" />
-          </h1>
+        <MobileHeader />
+        <MobileSelector
+          item={head}
+          count={this.state.count}
+          setCount={this.setCount.bind(this)}
+        />
+        <div
+          className={css.container}
+          style={{ display: this.state.count === 0 ? "block" : display }}
+        >
+          <h1 className={css.head}>{head[0]}</h1>
           {help.map((item, key) => (
             <a href={item.link} target="_blank" key={key} className={css.tab}>
               {item.title}
             </a>
           ))}
-          <h1 className={css.head}>
-            <FormattedMessage id="documentTab_paper_title" />
-          </h1>
+        </div>
+        <div
+          className={css.container2}
+          style={{ display: this.state.count === 1 ? "block" : display }}
+        >
+          <h1 className={css.head}>{head[1]}</h1>
           <div className={css.body}>
             {document.map((item, key) => (
               <a
@@ -161,5 +190,10 @@ class Document extends Component {
 Document.propTypes = {
   intl: intlShape.isRequired
 };
+function mapStateToProps(state) {
+  return {
+    isMobile: state.globalReducer.get("isMobile")
+  };
+}
 
-export default injectIntl(Document);
+export default injectIntl(connect(mapStateToProps)(Document));

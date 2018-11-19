@@ -427,7 +427,8 @@ const zh_CN = {
   mbanner_8_title:
     "UAV.ServiceGovern：UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持。",
   mbanner_8_word_1:
-    "●	提供服务生命周期管理、统一服务发现机制、服务授权管及服务降级保护等能力，与UAV.Monitor、UAV.APM实现天然的一站式微服务治理/运维方案"
+    "●	提供服务生命周期管理、统一服务发现机制、服务授权管及服务降级保护等能力，与UAV.Monitor、UAV.APM实现天然的一站式微服务治理/运维方案",
+  msuggest_download: "注：建议PC端下载"
 };
 
 export default zh_CN;

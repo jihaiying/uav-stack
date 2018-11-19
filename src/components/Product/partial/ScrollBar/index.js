@@ -34,14 +34,8 @@ class ScrollBar extends Component {
   };
 
   render() {
-    const { formatMessage } = this.props.intl;
     const fix = this.state.top > 400 ? 0 : 400 - this.state.top;
-    const data = [
-      formatMessage({ id: "product_advangtage_title" }),
-      formatMessage({ id: "product_introductPanel_title" }),
-      formatMessage({ id: "product_outline_title" }),
-      formatMessage({ id: "product_help_title" })
-    ];
+    const data = this.props.data;
     return (
       <div className={css.container} style={{ marginTop: fix }}>
         <div className={css.content}>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import css from "./assets/IntroductionPannel.css";
 import IntroductionTab from "./partial/IntroductionTab";
+import MobileTab from "./partial/MobileTab";
 import { injectIntl } from "react-intl";
 import pic1 from "./assets/pic1.png";
 import pic1_en from "./assets/pic1_en.jpg";
@@ -23,7 +24,8 @@ import { connect } from "react-redux";
 
 function mapStateToProps(state) {
   return {
-    lang: state.languageReducer.get("lang")
+    lang: state.languageReducer.get("lang"),
+    isMobile: state.globalReducer.get("isMobile")
   };
 }
 
@@ -43,7 +45,7 @@ class IntroductionPanel extends Component {
 
   render() {
     const { count } = this.state;
-    const { lang } = this.props;
+    const { lang, isMobile } = this.props;
     const { formatMessage } = this.props.intl;
     const title = formatMessage({ id: "product_introductPanel_title" });
     const data = [
@@ -97,6 +99,15 @@ class IntroductionPanel extends Component {
         pic: lang === LANGUAGES.cn ? pic8 : pic8_en
       }
     ];
+    if (isMobile) {
+      return (
+        <div className={css.container}>
+          {data.map((item, key) => (
+            <MobileTab key={key} data={item} hide={key !== count} />
+          ))}
+        </div>
+      );
+    }
     return (
       <div className={css.container}>
         <div id={title} className={css.anchor} />

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import css from "./assets/Header.css";
+import css from "./assets/Shared.css";
 import * as languageActionCreator from "../../actions/language";
 import { LANGUAGES } from "../../config/enum";
 import Menu from "antd/lib/menu";

@@ -1,0 +1,11 @@
+.container {
+  height: 0.96rem;
+}
+.menu {
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 5;
+  background-color: #242a37;
+  top: 0.96rem;
+}
