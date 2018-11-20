@@ -6,11 +6,11 @@
   top: "Top",
 
   banner_1_title:
-    "UAV.Monitor Update: Support dynamic switch between alarm convergence modes",
+    "UAV.Monitor Update: Support dynamic switch of alarm convergence modes",
   banner_1_word_1:
-    "●  Convergence based on event automatic suppression: Default mode that identifies the same event automatically and send a preset amount of alarms within a specified time range",
+    "●  Convergence based on event automatic suppression: Default mode that identifies the same event automatically and sends a preset amount of alarms within a specified time range",
   banner_1_word_2:
-    "●  Convergence based on event frequency gradient: Customized mode that supports to set multiple frequency gradients, identify the same event and send alarms for each gradient escalation",
+    "●  Convergence based on event frequency gradient: Customized mode that supports to set multiple frequency gradients, identifies the same event and sends alarms for each gradient escalation",
   banner_1_word_3: "●  Support instant switch of convergence modes",
   banner_1_word_4:
     "●  Support fine granurality configuration of single alarm expressions",
