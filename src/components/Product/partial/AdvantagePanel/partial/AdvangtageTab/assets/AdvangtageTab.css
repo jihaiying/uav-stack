@@ -6,7 +6,7 @@
   padding: 20px;
   transition: box-shadow 0.1s;
   width: 280px;
-  margin: 15px 40px;
+  margin: 15px 60px;
 }
 .container:hover {
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);

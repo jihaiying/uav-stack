@@ -1,26 +1,24 @@
 import React, { Component } from "react";
 import css from "./assets/MobileTab.css";
+import Icon from "antd/lib/icon";
 
 class MobileTab extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      show: false
-    };
-  }
-  handleClick = e => {
-    e.preventDefault(); // Fix event propagation on Android
-    this.setState({
-      show: !this.state.show
-    });
-  };
-
   render() {
-    const { show } = this.state;
-    const menu = <div className={css.menu} />;
+    const { data, show } = this.props;
+    let menu = (
+      <div className={css.menu}>
+        {data.tips.map((item, key) => (
+          <div key={key}>{item} </div>
+        ))}
+        <img className={css.img} src={data.pic} alt={data.title} />
+      </div>
+    );
     return (
       <div>
-        <div className={css.container} />
+        <div className={css.container}>
+          {data.title}
+          <Icon className={css.icon} type={show ? "up" : "down"} />
+        </div>
         {show ? menu : null}
       </div>
     );

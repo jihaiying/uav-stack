@@ -1,10 +1,5 @@
 .container {
-  border-radius: 2px;
-  text-align: center;
-  padding: 30px 0;
-  background: #f5f5f5;
   margin-top: 70px;
-  color: #4a4a4a;
 }
 .container2 {
   border-radius: 2px;
@@ -100,18 +95,12 @@
 }
 @media screen and (max-width: 1024px) {
   .container {
-    background: #ffffff;
-    border-radius: 2px;
-    text-align: center;
-    margin-top: 1.73rem;
-    padding: 0.3rem 0;
-    font-size: 0.18rem;
+    margin-top: 0.96rem;
   }
   .container2 {
     border-radius: 2px;
     text-align: center;
     background: #ffffff;
-    margin-top: 1.73rem;
     padding: 0.3rem 0;
     font-size: 0.18rem;
   }

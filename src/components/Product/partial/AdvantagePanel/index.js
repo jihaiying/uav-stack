@@ -37,7 +37,10 @@ class AdvangtagePanel extends Component {
       ]
     };
     return (
-      <div className={css.container}>
+      <div
+        className={css.container}
+        style={{ display: this.props.show ? "block" : "none" }}
+      >
         <div id={title} className={css.anchor} />
         <div className={css.title}>{title}</div>
         <div className={css.content}>

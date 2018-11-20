@@ -191,10 +191,7 @@
     top: 0.96rem;
   }
   .selector {
-    width: 100%;
     display: block;
-    position: fixed;
-    top: 0.96rem;
     background-color: #d6d6d6;
     text-align: center;
   }
@@ -215,10 +212,12 @@
     z-index: 3;
     color: #ffffff !important;
     background-color: #01a0b5;
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 0.8rem;
+    height: 0.8rem;
     right: 0.15rem;
+    padding: 0.15rem;
     bottom: 0.25rem !important;
-    font-size: 0.18rem;
+    font-size: 0.2rem;
+    line-height: 0.25rem;
   }
 }

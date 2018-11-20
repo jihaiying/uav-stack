@@ -33,11 +33,14 @@ class IntroductionPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: this.props.isMobile ? -1 : 0
     };
   }
 
   setCount(c, e) {
+    if (this.props.isMobile && c === this.state.count) {
+      c = -1;
+    }
     this.setState(prevState => ({
       count: c
     }));
@@ -101,15 +104,23 @@ class IntroductionPanel extends Component {
     ];
     if (isMobile) {
       return (
-        <div className={css.container}>
+        <div
+          className={css.container}
+          style={{ display: this.props.show ? "block" : "none" }}
+        >
           {data.map((item, key) => (
-            <MobileTab key={key} data={item} hide={key !== count} />
+            <div key={key} onClick={this.setCount.bind(this, key)}>
+              <MobileTab data={item} show={key === count} />
+            </div>
           ))}
         </div>
       );
     }
     return (
-      <div className={css.container}>
+      <div
+        className={css.container}
+        style={{ display: this.props.show ? "block" : "none" }}
+      >
         <div id={title} className={css.anchor} />
         <div className={css.content}>
           <div className={css.title}>{title}</div>

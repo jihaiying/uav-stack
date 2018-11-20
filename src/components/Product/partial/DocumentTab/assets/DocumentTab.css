@@ -30,6 +30,7 @@
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0.5rem 0;
+    margin-top: 0.76rem;
   }
   .anchor {
     height: 0.3rem;

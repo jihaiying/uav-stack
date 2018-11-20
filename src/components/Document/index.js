@@ -14,6 +14,7 @@ class Document extends Component {
     this.state = {
       count: 0
     };
+    window.scroll(0, 0);
   }
   setCount(c, e) {
     this.setState(prevState => ({
@@ -22,7 +23,6 @@ class Document extends Component {
   }
 
   render() {
-    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
     const { isMobile } = this.props;
     const { head, help, document } = {
@@ -136,7 +136,7 @@ class Document extends Component {
     };
     var display = isMobile ? "none" : "block";
     return (
-      <div>
+      <div className={css.container}>
         <Helmet>
           <title>
             {formatMessage({
@@ -152,7 +152,7 @@ class Document extends Component {
           setCount={this.setCount.bind(this)}
         />
         <div
-          className={css.container}
+          className={css.container2}
           style={{ display: this.state.count === 0 ? "block" : display }}
         >
           <h1 className={css.head}>{head[0]}</h1>

@@ -24,7 +24,6 @@ class Head extends Component {
     return (
       <div className={css.container}>
         <Header2 />
-
         <div className={css.content}>
           <div className={css.title}>{title}</div>
           <p className={css.org}>{tip}</p>

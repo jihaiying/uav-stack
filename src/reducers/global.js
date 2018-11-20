@@ -12,7 +12,7 @@ export default function(state = initialState, action = {}) {
     case UPDATE_DIMENSION:
       return state
         .set("winWidth", action.width)
-        .set("isMobile", action.width < 1024);
+        .set("isMobile", action.width <= 1024);
     default:
       return state;
   }

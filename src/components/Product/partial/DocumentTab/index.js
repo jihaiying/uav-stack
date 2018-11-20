@@ -22,7 +22,10 @@ class DocumentTab extends Component {
       ]
     };
     return (
-      <div className={css.container}>
+      <div
+        className={css.container}
+        style={{ display: this.props.show ? "block" : "none" }}
+      >
         <div
           id={formatMessage({ id: "product_help_title" })}
           className={css.anchor}

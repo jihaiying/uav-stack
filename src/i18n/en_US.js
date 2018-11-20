@@ -395,57 +395,69 @@
   download_head: "AllInOne",
   more: "more",
 
-  mbanner_1_title: "UAV.Monitor新能力：支持动态切换报警收敛模式",
+  mbanner_1_title:
+    "UAV.Monitor Update: Support dynamic switch of alarm convergence modes",
   mbanner_1_word_1:
-    "●  默认模式：自动识别同一事件，在一定时间内只发生约定次数的报警",
-  mbanner_1_word_2: "●  自定义模式：根据同一事件发生次数，在出现梯度跃升时报警",
+    "●  Default mode: Identify the same event automatically and send a preset amount of alarms within a specified time range ",
+  mbanner_1_word_2:
+    "●  Customized mode: Send alarms upon gradient escalation of the frequency of the same event",
   mbanner_1_word_3:
-    "●  两种模式可自由切换，即时生效；可细粒度配置至单个报警表达式",
+    "●  Support dynamic switch between two modes and configuration of single alarm expressions",
 
-  mbanner_2_title: "UAV.APM新能力：深度线程分析",
-  mbanner_2_word_1: "●  单次线程Dump文件深度分析：自动发现死锁，跟踪死锁关系",
-  mbanner_2_word_2: "●  基于锁依赖的等待链路查询，发现系统阻塞点",
+  mbanner_2_title: "UAV.APM Update: Deep thread dump analysis",
+  mbanner_2_word_1:
+    "●  Deep analysis of single-thread dump: Detect dead locks automatically and track the causes",
+  mbanner_2_word_2:
+    "●  Spot chokepoints in the system by querying the lock-dependent waiting link",
   mbanner_2_word_3:
-    "●  多次线程Dump文件关联分析：基于时序的线程状态变迁，查找线程等待链路时序根因关系线程Dump可视化",
+    "●  Association analysis of multi-thread dump: Analyze thread status changes based on time series and time series causality of the thread waiting linkThread dump visualization",
 
-  mbanner_3_title: "UAV.APM新能力：调用链与日志关联的探索式查询",
+  mbanner_3_title:
+    "UAV.APM Update: Exploratory query based on the correlation of logs and invocation chains",
   mbanner_3_word_1:
-    "●  调用链为入口模式：从应用的调用链直观追踪每个环节的应用日志",
+    "●  Query beginning with invocation chains: Trace application logs of each link",
   mbanner_3_word_2:
-    "●  日志为入口模式：从应用日志搜索直观关联每条日志对应的调用链",
+    "●  Query beginning with logs: Correlate the invocation chains corresponding to each log",
   mbanner_3_word_3:
-    "●  切换模式：调用链和日志两种模式可随时互相切换，实现闭环探索式查询",
+    "●  Query mode switch: Free switch between two query modes for closed-loop exploratory query",
 
-  mbanner_4_title: "UAV.Monitor新能力：多模式预警支持",
-  mbanner_4_word_1: "●  流式预警：基于流式窗口时序数据的预警",
-  mbanner_4_word_2: "●  统计预警：基于时序指标历史统计值对标的预警",
-  mbanner_4_word_3: "●  混合预警告：允许流式预警与统计预警共存的预警策略定义",
+  mbanner_4_title:
+    "UAV.Monitor Update: Support stream alarm, statistical alarm and hybrid alarms",
+  mbanner_4_word_1: "●  Stream alarm: Alarms based on stream time series data",
+  mbanner_4_word_2:
+    "●  Statistical alarm: Alarms with history statistics of time series metrics as benchmarks",
+  mbanner_4_word_3:
+    "●  Hybrid alarms: Support co-existence of stream alarms and statistical alarms in alarm rules",
 
-  mbanner_5_title: "UAV.Monitor：业务、应用/服务、基础三维一体的监控平台",
-  mbanner_5_word_1: "● 支持单体、SOA、微服务架构",
-  mbanner_5_word_2: "● 只需部署1个Agent即可采集全维度数据",
-  mbanner_5_word_3: "● 支持物理机、虚拟机、Docker",
+  mbanner_5_title:
+    "UAV.Monitor：An integrated platform that monitors businesses, applications / services and runtime environment",
+  mbanner_5_word_1:
+    "● Adapt to monolithic, SOA and micro-service architectures",
+  mbanner_5_word_2: "● Collect all metrics after deploying one agent",
+  mbanner_5_word_3: "● Support physical and virtual machines and Docker",
   mbanner_5_word_4:
-    "● 支持基础环境与应用/服务性能指标、业务自定义指标及日志监控及报警",
-  mbanner_5_word_5: "● 	报警条件支持多维表达式",
+    "● Send alarms for logs and performance metrics of the runtime environment, applications/services and businesses",
+  mbanner_5_word_5: "●   Support hybrid alarm expressions",
 
   mbanner_6_title:
-    "UAV.APM：UAV.Monitor的增强扩展，实现对应用/服务性能全方位的管理",
-  mbanner_6_word_1: "● 支持应用/服务画像/自动绘制服务图谱",
-  mbanner_6_word_2: "● 支持无侵入式调用链跟踪",
-  mbanner_6_word_3: "● 一键收集目标JVM的线程Dump和线程性能数据",
-  mbanner_6_word_4:
-    "● 自动追踪来自浏览器的访问来源、目标、时间 ,支持同视图多维度数据对标分析",
-  mbanner_6_word_5: "● 展示任意时间范围内不同指标组合的数据",
+    "UAV.APM: Enhancement of UAV.Monitor that manages Application & Service performance",
+  mbanner_6_word_1:
+    "● Support application/service profiling and automatic service typology mapping",
+  mbanner_6_word_2: "● Support non-invasive invocation chain tracing",
+  mbanner_6_word_3:
+    "● Collect thread dump and thread performance data of targeted JVM",
+  mbanner_6_word_4: "● Trace the referer, target and time of browser access",
+  mbanner_6_word_5:
+    "● Trace performance metrics in different combinations within any time range",
 
-  mbanner_7_title: "UAV.MSCP：基于微服务架构的计算平台",
+  mbanner_7_title: "UAV.MSCP: A micro-service architecture computing platform",
   mbanner_7_word_1:
-    "●	使用Java语言提供了开发框架/组件支持、功能即服务、服务化支持、组件图谱、动态服务编排、动态计算编排等一系列特性来简化计算任务的开发工作",
+    "● Provide features like development framework/component support, FAAS, service support, component graph and dynamic service/computing orchestration to simplify computing tasks",
 
   mbanner_8_title:
-    "UAV.ServiceGovern：UAV.Monitor的增强扩展，同构/异构技术栈实现微服务架构的支持。",
+    "UAV.ServiceGovern: Enhancement of UAV.Monitor that supports isomorphic and non-isomorphic technology stacks with micro-service architecture",
   mbanner_8_word_1:
-    "●	提供服务生命周期管理、统一服务发现机制、服务授权管及服务降级保护等能力，与UAV.Monitor、UAV.APM实现天然的一站式微服务治理/运维方案",
+    "● Support service life cycle management, unified service discovery, service authorization management and service degradation protection",
   msuggest_download: "注：建议PC端下载"
 };
 

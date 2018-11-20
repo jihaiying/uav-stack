@@ -12,8 +12,9 @@ class Download extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 1
+      count: 0
     };
+    window.scroll(0, 0);
   }
   setCount(c, e) {
     this.setState(prevState => ({
@@ -22,7 +23,6 @@ class Download extends Component {
   }
 
   render() {
-    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
     const { isMobile } = this.props;
     var display = isMobile ? "none" : "block";
@@ -81,7 +81,7 @@ class Download extends Component {
     };
     let popupdiv = (
       <div
-        className={css.container}
+        className={css.container2}
         style={{ display: this.state.count === 0 ? "block" : display }}
       >
         <div className={css.content}>
@@ -187,9 +187,8 @@ class Download extends Component {
         </div>
       </div>
     );
-
     return (
-      <div>
+      <div className={css.container}>
         <Helmet>
           <title>
             {formatMessage({
