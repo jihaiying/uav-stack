@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import css from "./assets/Dialog.css";
 import { FormattedMessage, injectIntl, intlShape } from "react-intl";
 import Modal from "antd/lib/modal";
-import "antd/lib/modal/style";
+import "antd/lib/modal/style/css";
 
 class Dialog extends Component {
   constructor(props) {
