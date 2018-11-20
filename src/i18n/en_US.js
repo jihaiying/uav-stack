@@ -1,15 +1,15 @@
-﻿const zh_CN = {
+﻿const en_US = {
   home: "Home",
   product: "Products",
   download: "Download",
   document: "Documentation",
 
   banner_1_title:
-    "UAV.Monitor Update: Support dynamic switch between alarm convergence modes",
+    "UAV.Monitor Update: Support dynamic switch of alarm convergence modes",
   banner_1_word_1:
-    "●  Convergence based on event automatic suppression: Default mode that identifies the same event automatically and send a preset amount of alarms within a specified time range",
+    "●  Convergence based on event automatic suppression: Default mode that identifies the same event automatically and sends a preset amount of alarms within a specified time range",
   banner_1_word_2:
-    "●  Convergence based on event frequency gradient: Customized mode that supports to set multiple frequency gradients, identify the same event and send alarms for each gradient escalation",
+    "●  Convergence based on event frequency gradient: Customized mode that supports to set multiple frequency gradients, identifies the same event and sends alarms for each gradient escalation",
   banner_1_word_3: "●  Support instant switch of convergence modes",
   banner_1_word_4:
     "●  Support fine granurality configuration of single alarm expressions",
@@ -278,9 +278,9 @@
 
   contactUs_title: "Contact Us",
   contactUs_tip_1: "Scan the QR code below to follow UAVStack on WeChat",
-  contactUs_tip_2: "Learn more about UAVStack",
-  contactUs_tip_3: "Scan the QR code below ",
-  contactUs_tip_4: "to join the user community",
+  contactUs_tip_2: " ",
+  contactUs_tip_3: "Scan the QR code below to join the user community",
+  contactUs_tip_4: " ",
   contactUs_mail: "Email",
 
   popup_title: "AllInOne",
@@ -394,4 +394,4 @@
   download_head: "AllInOne"
 };
 
-export default zh_CN;
+export default en_US;
