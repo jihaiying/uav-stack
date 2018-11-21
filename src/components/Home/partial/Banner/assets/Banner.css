@@ -2,10 +2,16 @@
   height: 680px;
   min-width: 1200px;
 }
+.mcontainer {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .container {
+    display: none;
+  }
+  .mcontainer {
+    display: block;
     margin-top: 0.96rem;
-    height: 6.5rem;
-    min-width: 0;
+    height: 7rem;
   }
 }

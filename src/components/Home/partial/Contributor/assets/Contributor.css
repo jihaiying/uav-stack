@@ -5,7 +5,7 @@
 .content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 10px 10px;
+  padding: 50px 10px 20px;
 }
 .title {
   font-size: 36px;
@@ -51,7 +51,7 @@
   .swiper {
     width: 100%;
     margin: 0.2rem auto;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.6rem;
   }
   .left {
     display: none;
@@ -60,10 +60,10 @@
     display: none;
   }
   .title {
-    font-size: 0.36rem;
+    font-size: 0.48rem;
   }
   .line {
-    margin-top: 0rem;
+    margin-top: 0;
     width: 0.5rem;
     height: 2px;
   }

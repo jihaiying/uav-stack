@@ -43,10 +43,9 @@
 }
 .link {
   width: 100px;
-  height: 30px;
+  line-height: 30px;
   border: 1px solid;
   border-radius: 3px;
-  padding-top: 3px;
   color: #ffffff;
   display: inline-block;
   position: absolute;
@@ -73,32 +72,33 @@
     height: auto;
     margin: 0.2rem 0 0;
     padding: 0.4rem 0.2rem 0.8rem;
-    background: no-repeat bottom 0.1rem right 0.1rem;
+    background: #ffffff no-repeat bottom 0.1rem right 0.1rem;
   }
   .tip {
     color: #9b9b9b;
     line-height: 0.3rem;
     width: 4.8rem;
+    font-size: 0.24rem;
   }
   .cover {
     height: 100%;
   }
   .title {
-    font-size: 0.2rem;
-    line-height: 0.3rem;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
     margin-bottom: 0.15rem;
   }
   .link {
     width: 2rem;
-    height: 0.5rem;
-    font-size: 0.2rem;
+    line-height: 0.5rem;
+    font-size: 0.24rem;
     margin-left: -1rem;
     margin-top: -0.25rem;
   }
   .next {
     width: 2rem;
     height: 0.5rem;
-    font-size: 0.2rem;
+    font-size: 0.24rem;
     margin-left: -1rem;
     margin-top: -0.25rem;
   }

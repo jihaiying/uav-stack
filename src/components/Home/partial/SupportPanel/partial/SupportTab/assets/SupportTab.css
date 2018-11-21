@@ -28,18 +28,18 @@
 }
 @media screen and (max-width: 1024px) {
   .container {
-    height: 4.2rem;
+    height: 6rem;
     width: 3rem;
     padding: 0.2rem;
     margin-left: 0.1rem;
   }
   .title {
-    font-size: 0.2rem;
-    line-height: 0.22rem;
-    height: 0.55rem;
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    height: 0.65rem;
   }
   .tip {
-    font-size: 0.16rem;
+    font-size: 0.24rem;
     line-height: 0.32rem;
   }
   .img {

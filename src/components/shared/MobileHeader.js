@@ -57,6 +57,13 @@ class MobileHeader extends Component {
           <FormattedMessage id="document" />
           <div className={css.line} />
         </NavLink>
+        <a
+          href={" https://github.com/uavorg/uavstack"}
+          target="_blank"
+          className={css.link}
+        >
+          GitHub
+        </a>
       </div>
     );
     return (

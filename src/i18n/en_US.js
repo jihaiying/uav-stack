@@ -213,6 +213,7 @@
   supportTab_6_tip_4: "Tomcat DBCP/2 | Tomcat JDBC Pool",
 
   documentTab_more: "More",
+  documentTab_more2: "More",
 
   documentTab_download_title: "AllInOne",
   documentTab_download_title2: "UAV.Monitor+APM",
@@ -458,7 +459,7 @@
     "UAV.ServiceGovern: Enhancement of UAV.Monitor that supports isomorphic and non-isomorphic technology stacks with micro-service architecture",
   mbanner_8_word_1:
     "● Support service life cycle management, unified service discovery, service authorization management and service degradation protection",
-  msuggest_download: "注：建议PC端下载"
+  msuggest_download: "Note: download on PC is recommended"
 };
 
 export default en_US;

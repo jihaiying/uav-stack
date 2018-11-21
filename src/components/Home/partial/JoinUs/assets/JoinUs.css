@@ -33,17 +33,37 @@
   color: #60beca;
   background-color: #ffffff;
   text-decoration: none !important;
+  height: 50px;
+  line-height: 20px;
 }
 .tab:hover {
-  color: #60beca;
+  background: #60beca;
+  border-radius: 1px;
+  color: #ffffff;
 }
 .img {
   width: 20px;
-  height: 20px;
   display: inline;
   margin-left: 5px;
   margin-right: 15px;
-  margin-top: 2px;
+  background: url("./book.png") center center no-repeat;
+  background-size: 20px 20px;
+}
+.img2 {
+  width: 20px;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 15px;
+  background: url("./down.png") center center no-repeat;
+  background-size: 20px 20px;
+}
+.tab:hover .img {
+  background: url("./hbook.png") center center no-repeat;
+  background-size: 20px 20px;
+}
+.tab:hover .img2 {
+  background: url("./hdown.png") center center no-repeat;
+  background-size: 20px 20px;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -59,20 +79,36 @@
     display: inline;
     margin-left: 0.05rem;
     margin-right: 0.1rem;
+    background-size: 0.2rem 0.2rem;
+  }
+  .img2 {
+    width: 0.2rem;
+    height: 0.2rem;
+    display: inline;
+    margin-left: 0.05rem;
+    margin-right: 0.1rem;
+    background-size: 0.2rem 0.2rem;
+  }
+  .tab:hover .img {
+    background-size: 0.2rem 0.2rem;
+  }
+  .tab:hover .img2 {
+    background-size: 0.2rem 0.2rem;
   }
   .line {
-    margin: 0.1rem auto;
+    margin: 0.2rem auto;
     width: 0.5rem;
     height: 2px;
   }
   .title {
-    font-size: 0.36rem;
+    font-size: 0.48rem;
   }
   .tab {
-    font-size: 0.24rem;
-    line-height: 0.3rem;
+    font-size: 0.16rem;
+    line-height: 0.2rem;
     margin: 0.3rem 0.2rem;
     padding: 0.2rem;
+    height: 0.6rem;
   }
   .tip {
     width: 6.5rem;

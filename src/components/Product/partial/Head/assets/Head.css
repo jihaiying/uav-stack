@@ -1,6 +1,7 @@
 .container {
   overflow: hidden;
   background: url("./bcg.png") center center;
+  background-size: cover;
   border-radius: 2px;
   color: #ffffff;
   height: 400px;

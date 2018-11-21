@@ -21,16 +21,17 @@
   text-decoration: none !important;
   margin: 5px;
   line-height: 45px;
-  border: 1px solid #dcdbdb;
+  border: 2px solid #dcdbdb;
   border-radius: 3px;
 }
 .tab:hover {
-  color: #69c1ed;
+  background: #f5f5f5;
+  color: #4a4a4a;
 }
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0.5rem 0;
-    margin-top: 0.76rem;
+    margin-top: 0.86rem;
   }
   .anchor {
     height: 0.3rem;
@@ -39,12 +40,10 @@
     display: none;
   }
   .tab {
-    display: inline-block;
-    width: 270px;
+    width: 6.5rem;
     font-size: 0.2rem;
     margin: 0.1rem;
     line-height: 0.6rem;
-    border: 1px solid #dcdbdb;
     border-radius: 3px;
   }
 }

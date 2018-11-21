@@ -120,7 +120,7 @@ class Contributor extends Component {
               ))}
             </div>
             <div
-              className={cx(css.pagination, "swiper-pagination")}
+              className={cx("swiper-pagination", css.pagination)}
               ref={self => (this.paginationID = self)}
             />
           </div>

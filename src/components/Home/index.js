@@ -16,11 +16,8 @@ import Menu from "../shared/MobileHeader";
 import "antd/dist/antd.css";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    window.scroll(0, 0);
-  }
   render() {
+    window.scroll(0, 0);
     const { formatMessage } = this.props.intl;
     return (
       <div>

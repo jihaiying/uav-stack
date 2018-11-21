@@ -89,21 +89,16 @@ class DocumentTab extends Component {
           <FormattedMessage id="documentTab_download_title2" />
         </h2>
         {download.map((item, key) => (
-          <div className={css.download_line} key={key}>
-            <a href={item.link} target="_blank">
-              <img
-                src={downloadpic}
-                alt="download"
-                className={css.img}
-                target="_blank"
-              />
+          <a key={key} href={item.link} target="_blank">
+            <img src={downloadpic} alt="download" className={css.img} />
+            <div className={css.download_line}>
               <div className={css.download_title}>{item.title}</div>
               <div className={css.download_tip}>{item.tip}</div>
-            </a>
-          </div>
+            </div>
+          </a>
         ))}
         <Link to={"/download"} className={css.more}>
-          <FormattedMessage id="documentTab_more" />
+          <FormattedMessage id="documentTab_more2" />
         </Link>
       </div>
     );
@@ -149,6 +144,9 @@ class DocumentTab extends Component {
             {"● " + item.title}
           </a>
         ))}
+        <Link to={"/document"} className={css.more}>
+          <FormattedMessage id="documentTab_more2" />
+        </Link>
       </div>
     );
 

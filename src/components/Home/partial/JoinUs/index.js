@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import css from "./assets/JoinUs.css";
 import { injectIntl } from "react-intl";
-import book from "./assets/book.png";
-import down from "./assets/down.png";
 
 class JoinUs extends Component {
   render() {
@@ -23,11 +21,11 @@ class JoinUs extends Component {
           <div className={css.line} />
           <div className={css.tip}>{tip}</div>
           <a target="_blank" href={manual_link} className={css.tab}>
-            <img src={book} alt="book" className={css.img} />
+            <div className={css.img} />
             <span>{manual}</span>
           </a>
           <a target="_blank" href={download_link} className={css.tab}>
-            <img src={down} alt="download" className={css.img} />
+            <div className={css.img2} />
             <span>{download}</span>
           </a>
         </div>

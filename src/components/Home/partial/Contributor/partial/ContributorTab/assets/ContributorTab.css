@@ -42,8 +42,8 @@
   .container {
     height: 5rem;
     width: 3.3rem;
-    padding: 0.1rem;
-    margin: 0.1rem;
+    padding: 0.3rem;
+    margin: 0.2rem;
   }
   .head {
     width: 1rem;
@@ -59,8 +59,8 @@
   }
   .title {
     margin-top: 0.1rem;
-    font-size: 0.2rem;
-    line-height: 0.3rem;
+    font-size: 0.28rem;
+    line-height: 0.36rem;
   }
   .descCon {
     margin-top: 0.1rem;

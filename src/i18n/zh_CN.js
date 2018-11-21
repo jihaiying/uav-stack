@@ -197,6 +197,7 @@ const zh_CN = {
   supportTab_6_tip_4: "Tomcat DBCP/2 | Tomcat JDBC Pool",
 
   documentTab_more: "更多",
+  documentTab_more2: "查看更多",
 
   documentTab_download_title: "开发演示版",
   documentTab_download_title2: "UAV.Monitor+APM",
