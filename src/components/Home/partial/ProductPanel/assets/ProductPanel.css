@@ -4,7 +4,7 @@
   text-align: center;
 }
 .content {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0 auto 30px;
   background: #f7f8fa;
   padding: 20px;
@@ -40,7 +40,7 @@
   }
   .content {
     margin: 0 auto;
-    min-width: 0;
+    width: auto;
   }
   .title {
     font-size: 0.48rem;

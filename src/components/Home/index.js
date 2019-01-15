@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { injectIntl, intlShape } from "react-intl";
-import Banner from "./partial/Banner";
+import Banner from "./partial/Banner/banner";
+import MBanner from "./partial/Banner/mbanner";
 import Head from "./partial/Head";
 import UpdateTab from "./partial/UpdateTab";
 import ProductPanel from "./partial/ProductPanel";
@@ -30,6 +31,7 @@ class Home extends Component {
         <Head />
         <Cursor />
         <Banner />
+        <MBanner />
         <UpdateTab />
         <ProductPanel />
         <Outline />

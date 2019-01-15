@@ -54,116 +54,6 @@ class Banner extends Component {
 
   render() {
     const { formatMessage } = this.props.intl;
-    const mdata = [
-      {
-        bg: mbg1,
-        title: [formatMessage({ id: "mbanner_1_title" })],
-        word: [
-          { title: formatMessage({ id: "mbanner_1_word_1" }) },
-          { title: formatMessage({ id: "mbanner_1_word_2" }) },
-          { title: formatMessage({ id: "mbanner_1_word_3" }) }
-        ]
-      },
-      {
-        bg: mbg2,
-        title: [formatMessage({ id: "mbanner_2_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_2_word_1" })
-          },
-          { title: formatMessage({ id: "mbanner_2_word_2" }) },
-          {
-            title: formatMessage({ id: "mbanner_2_word_3" })
-          }
-        ]
-      },
-      {
-        bg: mbg3,
-        title: [formatMessage({ id: "mbanner_3_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_3_word_1" })
-          },
-          { title: formatMessage({ id: "mbanner_3_word_2" }) },
-          {
-            title: formatMessage({ id: "mbanner_3_word_3" })
-          }
-        ]
-      },
-      {
-        bg: mbg4,
-        title: [formatMessage({ id: "mbanner_4_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_4_word_1" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_4_word_2" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_4_word_3" })
-          }
-        ]
-      },
-      {
-        bg: mbg5,
-        title: [formatMessage({ id: "mbanner_5_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_5_word_1" })
-          },
-          { title: formatMessage({ id: "mbanner_5_word_2" }) },
-          {
-            title: formatMessage({ id: "mbanner_5_word_3" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_5_word_4" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_5_word_5" })
-          }
-        ]
-      },
-      {
-        bg: mbg6,
-        title: [formatMessage({ id: "mbanner_6_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_6_word_1" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_6_word_2" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_6_word_3" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_6_word_4" })
-          },
-          {
-            title: formatMessage({ id: "mbanner_6_word_5" })
-          }
-        ]
-      },
-      {
-        bg: mbg7,
-        title: [formatMessage({ id: "mbanner_7_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_7_word_1" })
-          }
-        ]
-      },
-      {
-        bg: mbg8,
-        title: [formatMessage({ id: "mbanner_8_title" })],
-        word: [
-          {
-            title: formatMessage({ id: "mbanner_8_word_1" })
-          }
-        ]
-      }
-    ];
     const data = [
       {
         bg: bg1,
@@ -327,37 +217,20 @@ class Banner extends Component {
       }
     ];
     return (
-      <div>
-        <div
-          className={cx(css.container, "swiper-container")}
-          ref={self => (this.swiperID = self)}
-        >
-          <Header2 scroll={true} />
-          <div className="swiper-wrapper">
-            {data.map((item, key) => (
-              <BannerTag key={key} data={item} />
-            ))}
-          </div>
-          <div
-            className="swiper-pagination"
-            ref={self => (this.paginationID = self)}
-          />
+      <div
+        className={cx(css.container, "swiper-container")}
+        ref={self => (this.swiperID = self)}
+      >
+        <Header2 scroll={true} />
+        <div className="swiper-wrapper">
+          {data.map((item, key) => (
+            <BannerTag key={key} data={item} />
+          ))}
         </div>
         <div
-          className={cx(css.mcontainer, "swiper-container")}
-          ref={self => (this.swiperID = self)}
-        >
-          <Header2 scroll={true} />
-          <div className="swiper-wrapper">
-            {mdata.map((item, key) => (
-              <BannerTag key={key} data={item} />
-            ))}
-          </div>
-          <div
-            className="swiper-pagination"
-            ref={self => (this.paginationID = self)}
-          />
-        </div>
+          className="swiper-pagination"
+          ref={self => (this.paginationID = self)}
+        />
       </div>
     );
   }
